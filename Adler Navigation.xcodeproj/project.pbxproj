@@ -37,6 +37,7 @@
 		B62E979C18A6E18200D290F4 /* mid.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979818A6E18200D290F4 /* mid.pdf */; };
 		B62E979D18A6E18200D290F4 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979918A6E18200D290F4 /* star.pdf */; };
 		B62E979E18A6E18200D290F4 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B62E979A18A6E18200D290F4 /* top.pdf */; };
+		B62E97A218A6F61800D290F4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B62E97A118A6F61800D290F4 /* Default.png */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		F382AE9D183AA28600CED1A0 /* MapData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F382AE9C183AA28600CED1A0 /* MapData.plist */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		B62E979818A6E18200D290F4 /* mid.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mid.pdf; sourceTree = "<group>"; };
 		B62E979918A6E18200D290F4 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
 		B62E979A18A6E18200D290F4 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = top.pdf; sourceTree = "<group>"; };
+		B62E97A118A6F61800D290F4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F382AE9C183AA28600CED1A0 /* MapData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MapData.plist; path = "../Adler Navigation/MapData.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B62E97A118A6F61800D290F4 /* Default.png */,
 				B62E979718A6E18200D290F4 /* lower.pdf */,
 				B62E979818A6E18200D290F4 /* mid.pdf */,
 				B62E979918A6E18200D290F4 /* star.pdf */,
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62E979B18A6E18200D290F4 /* lower.pdf in Resources */,
+				B62E97A218A6F61800D290F4 /* Default.png in Resources */,
 				B62E979D18A6E18200D290F4 /* star.pdf in Resources */,
 				B62E979E18A6E18200D290F4 /* top.pdf in Resources */,
 				30E5025E183607E100BCDA41 /* InfoPlist.strings in Resources */,
