@@ -49,7 +49,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
     return [self.exhibits_to_display count];
 }
 
@@ -89,31 +88,12 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"source"])
-    {
         TableViewController *ViewController = [segue destinationViewController];
         
         NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
         NSString *str = cell.textLabel.text;
         ViewController.data = str;
-    }
-    
-    //Sends data to the view controller to display details of the tapped individual.
-    if ([[segue identifier] isEqualToString:@"destination"])
-    {
-        TableViewController *ViewController = [segue destinationViewController];
-        
-        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
-        NSString *str = cell.textLabel.text;
-        ViewController.data = str;
-        
-    }
-    
 }
-
-    
-
 
 @end
