@@ -12,6 +12,9 @@
 
 @interface InfoViewController ()
 
+/// Items to be displayed in the facilities table.
+@property (strong, nonatomic) NSArray *facilitiesTableViewItems;
+
 @end
 
 @implementation InfoViewController
@@ -23,15 +26,15 @@
     [self displayHoursSegment];
     [self displayShowTimesSegment];
 
-    _facilitiesTableViewItems = @[ @"Coat Check",
-                                   @"Exit",
-                                   @"Information",
-                                   @"Restrooms",
-                                   @"Lockers",
-                                   @"ATM",
-                                   @"Café Galileo's",
-                                   @"Adler Store"
-                                   ];
+    self.facilitiesTableViewItems = @[ @"Coat Check",
+                                       @"Nearest Exit",
+                                       @"Box Office",
+                                       @"Restrooms",
+                                       @"Lockers",
+                                       @"ATM",
+                                       @"Café Galileo's",
+                                       @"Adler Store"
+                                       ];
 }
 
 - (void) displayShowTimesSegment
@@ -88,6 +91,15 @@
         else if ([str isEqualToString:@"Lockers"]) {
             // TODO: add a new node for lockers
             str = @"travel10";
+        }
+        else if ([str isEqualToString:@"Box Office"]) {
+            // TODO: check for nearest box office
+            // Also, find some way to rename
+            str = @"Coat Check";
+        }
+        else if ([str isEqualToString:@"Nearest Exit"]) {
+            // TODO: actually find the nearest exit
+            str = @"Main Entrance";
         }
         NavigationViewController *viewController = [segue destinationViewController];
         viewController.dest = str;

@@ -14,6 +14,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *weekday;
 @property (strong, nonatomic) IBOutlet UILabel *weekend;
 @property (strong, nonatomic) IBOutlet UITableView *showsTable;
+
+/// The TableView for the facilities tab.
 @property (strong, nonatomic) IBOutlet UITableView *facilitiesTable;
 
 @property (strong, nonatomic) IBOutlet UIView *HoursView;
@@ -23,7 +25,6 @@
 
 @property (strong, nonatomic) NSArray * allShows;
 @property (strong, nonatomic) NSMutableDictionary * allTimings;
-@property (strong, nonatomic) NSArray * facilitiesTableViewItems;
 
 - (IBAction)segmentedValueChanged:(id)sender;
 
