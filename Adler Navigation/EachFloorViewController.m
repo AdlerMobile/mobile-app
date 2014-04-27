@@ -7,7 +7,7 @@
 //
 
 #import "EachFloorViewController.h"
-#import "TableViewController.h"
+#import "NavigationViewController.h"
 
 @interface EachFloorViewController ()
 
@@ -87,7 +87,7 @@
 {
     if ([[segue identifier] isEqualToString:@"source"])
     {
-        TableViewController *ViewController = [segue destinationViewController];
+        NavigationViewController *ViewController = [segue destinationViewController];
         
         NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
@@ -98,7 +98,7 @@
     //Sends data to the view controller to display details of the tapped individual.
     if ([[segue identifier] isEqualToString:@"destination"])
     {
-        TableViewController *ViewController = [segue destinationViewController];
+        NavigationViewController *ViewController = [segue destinationViewController];
         
         NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];

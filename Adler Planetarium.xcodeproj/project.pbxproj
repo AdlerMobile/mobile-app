@@ -101,7 +101,7 @@
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BD18F3692800319486 /* downstairs.pdf */; };
 		FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BE18F3692800319486 /* upstairs.pdf */; };
-		FE5C87E918D63449009E2CC2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* TableViewController.m */; };
+		FE5C87E918D63449009E2CC2 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* NavigationViewController.m */; };
 		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
 		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
@@ -111,7 +111,7 @@
 		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
 		FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88B18F4E0D000A01AA8 /* black.png */; };
 		FEA4A88E18F4E0D900A01AA8 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88D18F4E0D900A01AA8 /* blue.png */; };
-		FED8ED8918F76290005A285B /* HoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8ED8818F76290005A285B /* HoursViewController.m */; };
+		FED8ED8918F76290005A285B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8ED8818F76290005A285B /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,9 +230,9 @@
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE3AE8BD18F3692800319486 /* downstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = downstairs.pdf; sourceTree = "<group>"; };
 		FE3AE8BE18F3692800319486 /* upstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = upstairs.pdf; sourceTree = "<group>"; };
-		FE5C87E618D63449009E2CC2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		FE5C87E618D63449009E2CC2 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachFloorViewController.h; sourceTree = "<group>"; };
-		FE5C87E818D63449009E2CC2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FE5C87E818D63449009E2CC2 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorViewController.h; sourceTree = "<group>"; };
@@ -247,8 +247,8 @@
 		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
 		FEA4A88B18F4E0D000A01AA8 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		FEA4A88D18F4E0D900A01AA8 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
-		FED8ED8718F76290005A285B /* HoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoursViewController.h; sourceTree = "<group>"; };
-		FED8ED8818F76290005A285B /* HoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoursViewController.m; sourceTree = "<group>"; };
+		FED8ED8718F76290005A285B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		FED8ED8818F76290005A285B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,8 +323,8 @@
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
-				FED8ED8718F76290005A285B /* HoursViewController.h */,
-				FED8ED8818F76290005A285B /* HoursViewController.m */,
+				FED8ED8718F76290005A285B /* InfoViewController.h */,
+				FED8ED8818F76290005A285B /* InfoViewController.m */,
 				726E853D19039777007F5803 /* ImageViewController.h */,
 				726E853E19039777007F5803 /* ImageViewController.m */,
 				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
@@ -333,8 +333,8 @@
 				30E3740A18403EAB00996B60 /* MapViewController.m */,
 				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
 				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
-				FE5C87E618D63449009E2CC2 /* TableViewController.m */,
-				FE5C87E818D63449009E2CC2 /* TableViewController.h */,
+				FE5C87E618D63449009E2CC2 /* NavigationViewController.m */,
+				FE5C87E818D63449009E2CC2 /* NavigationViewController.h */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
@@ -749,7 +749,7 @@
 				30E374161858464500996B60 /* PriorityQueue.m in Sources */,
 				FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */,
 				30E50267183607E100BCDA41 /* Adler_Navigation.xcdatamodeld in Sources */,
-				FE5C87E918D63449009E2CC2 /* TableViewController.m in Sources */,
+				FE5C87E918D63449009E2CC2 /* NavigationViewController.m in Sources */,
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
 				726E853F19039777007F5803 /* ImageViewController.m in Sources */,
 				FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */,
@@ -760,7 +760,7 @@
 				30E502891836084000BCDA41 /* Node.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
-				FED8ED8918F76290005A285B /* HoursViewController.m in Sources */,
+				FED8ED8918F76290005A285B /* InfoViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "ImageViewController.h"
+#import "NavigationViewController.h"
 
 @interface ImageViewController ()
 
@@ -64,7 +65,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {
-        TableViewController *tc = [segue destinationViewController];
+        NavigationViewController *tc = [segue destinationViewController];
         NSString *str = _curExhibit.ID;
         tc.dest = str;
     }

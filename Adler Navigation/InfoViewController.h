@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HoursViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface InfoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UILabel *today;
 
 @property (strong, nonatomic) IBOutlet UILabel *weekday;

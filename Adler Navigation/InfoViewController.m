@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Adler Planetarium. All rights reserved.
 //
 
-#import "HoursViewController.h"
-#import "TableViewController.h"
+#import "InfoViewController.h"
+#import "NavigationViewController.h"
 #import "MapViewController.h"
 
-@interface HoursViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation HoursViewController
+@implementation InfoViewController
 @synthesize HoursView, ShowTimesView, FacilitiesView,showsTable;
 
 - (void)viewDidLoad
@@ -90,7 +90,7 @@
             // TODO: add a new node for lockers
             str = @"travel10";
         }
-        TableViewController *viewController = [segue destinationViewController];
+        NavigationViewController *viewController = [segue destinationViewController];
         viewController.dest = str;
     }
 }

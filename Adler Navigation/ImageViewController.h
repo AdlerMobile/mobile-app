@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Exhibit.h"
-#import "TableViewController.h"
-
 
 
 @interface ImageViewController : UIViewController
