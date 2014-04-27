@@ -35,10 +35,25 @@
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
     [_mg createGraphFromFile:filePath];
     Node* pointA =  [_mg getNodeById:_source];
-    Node* pointB = [_mg getNodeById:_destination];
-    _path = [[NSMutableArray alloc] init];
     
-    _path = [MapViewController dijkstra:_mg from:pointA to:pointB];
+    if ([_destination isEqualToString:@"Restrooms"]) {
+        float bestDistance = MAXFLOAT;
+        for (Node *n in [[_mg nodes] allValues]) {
+            if ([[n id] rangeOfString:@"Restroom"].location != NSNotFound) {
+                //NSLog(@"%@", [n id]);
+                NSMutableArray *p = [MapViewController dijkstra:_mg from:pointA to:n];
+                float distance = [self pathTotalDistance:p];
+                if (distance < bestDistance) {
+                    _path = p;
+                    bestDistance = distance;
+                }
+            }
+        }
+        
+    } else {
+        Node* pointB = [_mg getNodeById:_destination];
+        _path = [MapViewController dijkstra:_mg from:pointA to:pointB];
+    }
     
     self.nextImage.maximumValue = ([_path count] - 2);
     
@@ -244,6 +259,18 @@
     //NSLog( @"Center: {%f,%f}", centerX, centerY);
     
     [view zoomToRect:rect animated:YES];
+}
+
+- (float)pathTotalDistance:(NSArray *)path
+{
+    float distance = 0.0;
+    for (int i = 0; i < [path count]-1; i++) {
+        Edge *e = [[Edge alloc] init];
+        e.node1 = [path objectAtIndex:i];
+        e.node2 = [path objectAtIndex:i+1];
+        distance += [e distance];
+    }
+    return distance;
 }
 
 @end

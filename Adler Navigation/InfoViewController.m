@@ -72,13 +72,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([tableView isEqual:self.facilitiesTable]) {
-        NSString *cellText = [self.facilitiesTable cellForRowAtIndexPath:indexPath].textLabel.text;
-        if ([cellText isEqualToString:@"Restrooms"]) {
-            // [self performSegueWithIdentifier:PUTMEHERE sender:self];
-        }
-        else {
-            [self performSegueWithIdentifier:@"toNavigationView" sender:self];
-        }
+        [self performSegueWithIdentifier:@"toNavigationView" sender:self];
     }
 }
 
