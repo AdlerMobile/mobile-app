@@ -203,9 +203,6 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
-                                                <connections>
-                                                    <segue destination="Ubn-9S-Wlv" kind="push" identifier="toNavigationView" id="htW-Mt-HYX"/>
-                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -246,11 +243,13 @@
                         <outlet property="today" destination="j4i-Vl-cIA" id="ChC-Mi-NOK"/>
                         <outlet property="weekday" destination="yLa-5a-Vrn" id="IYD-3u-olE"/>
                         <outlet property="weekend" destination="ugc-Dy-RPE" id="RbI-Kj-iGL"/>
+                        <segue destination="Ubn-9S-Wlv" kind="push" identifier="toNavigationView" id="0dy-Dm-Q40"/>
+                        <segue destination="9wA-nO-xUJ" kind="push" identifier="" id="Ern-fy-e2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUa-wT-tuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2671" y="969"/>
+            <point key="canvasLocation" x="2679" y="-1250"/>
         </scene>
         <!--Map Floor View Controller - Pick Level-->
         <scene sceneID="oic-jB-690">
@@ -393,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eY6-W4-Rh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153" y="-1262"/>
+            <point key="canvasLocation" x="2153" y="954"/>
         </scene>
         <!--Navigation View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
@@ -632,7 +631,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQZ-mh-PIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2145" y="969"/>
+            <point key="canvasLocation" x="2153" y="-1250"/>
         </scene>
         <!--Navigation Controller - Exihibits-->
         <scene sceneID="0f7-bB-w8Z">
@@ -667,7 +666,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="htW-Mt-HYX"/>
-        <segue reference="DdC-nR-jwV"/>
+        <segue reference="0dy-Dm-Q40"/>
+        <segue reference="Ern-fy-e2z"/>
     </inferredMetricsTieBreakers>
 </document>

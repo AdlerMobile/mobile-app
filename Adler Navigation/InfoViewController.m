@@ -71,8 +71,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([tableView isEqual:_facilitiesTable]) {
-        [self performSegueWithIdentifier:@"toNavigationView" sender:self];
+    if ([tableView isEqual:self.facilitiesTable]) {
+        NSString *cellText = [self.facilitiesTable cellForRowAtIndexPath:indexPath].textLabel.text;
+        if ([cellText isEqualToString:@"Restrooms"]) {
+            // [self performSegueWithIdentifier:PUTMEHERE sender:self];
+        }
+        else {
+            [self performSegueWithIdentifier:@"toNavigationView" sender:self];
+        }
     }
 }
 
@@ -257,11 +263,6 @@
     {
         _today.text = times[1];
     }
-}
-
-
-- (NSString*) findNearestBathroom{
-   return @"";
 }
 
 - (void)didReceiveMemoryWarning

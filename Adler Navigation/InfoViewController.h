@@ -30,6 +30,5 @@
 
 - (void) displayHoursSegment;
 - (void) displayShowTimesSegment;
-- (NSString*) findNearestBathroom;
 
 @end
