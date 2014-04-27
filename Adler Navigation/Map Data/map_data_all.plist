@@ -150,6 +150,7 @@
 			<string>Women&apos;s Restroom</string>
 			<string>Telescopes</string>
 			<string>womens_restroom_exitnode</string>
+			<string>rainbow_lobby_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -201,6 +202,7 @@
 			<string>left_exitnode</string>
 			<string>travel1</string>
 			<string>travel2</string>
+            <string>cafe_galileo_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -352,6 +354,7 @@
 		<array>
 			<string>telescopes_exitnode</string>
 			<string>south_stairs_exitnode</string>
+			<string>sky_theater_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -370,6 +373,7 @@
 			<string>right_exitnode</string>
 			<string>travel5</string>
 			<string>travel6</string>
+			<string>planet_explorers_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -715,6 +719,7 @@
 		<array>
 			<string>Education Pavilion</string>
 			<string>south_stairs_exitnode</string>
+			<string>sky_theater_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -889,6 +894,7 @@
 		<array>
 			<string>telescopes_exitnode</string>
 			<string>travel18</string>
+			<string>rainbow_lobby_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -1354,6 +1360,8 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel30</string>
+			<string>telescopes_exitnode</string>
+			<string>star_right_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -1371,6 +1379,8 @@
 		<array>
 			<string>south_stairs_exitnode</string>
 			<string>travel29</string>
+			<string>South Elevator</string>
+			<string>womens_restroom_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -1389,6 +1399,7 @@
 			<string>right_exitnode</string>
 			<string>travel31</string>
 			<string>travel33</string>
+			<string>the_universe_exitnode</string>
 		</array>
 	</dict>
 	<dict>
@@ -1408,6 +1419,7 @@
 			<string>travel26</string>
 			<string>travel34</string>
 			<string>travel27</string>
+			<string>cyberspace_exitnode</string>
 		</array>
 	</dict>
 	<dict>

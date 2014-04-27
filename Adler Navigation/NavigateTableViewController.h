@@ -25,6 +25,8 @@
 //label to display the direction in text form.
 @property (strong, nonatomic) IBOutlet UILabel *textDirection;
 
+@property (strong, nonatomic) IBOutlet UILabel *pinchLabel;
+
 - (IBAction)stepperValueChanged:(UIStepper *)sender;
 
 @end
