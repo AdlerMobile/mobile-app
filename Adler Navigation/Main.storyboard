@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PCi-Ir-NiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PCi-Ir-NiF">
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -394,10 +394,10 @@
             </objects>
             <point key="canvasLocation" x="2153" y="-1262"/>
         </scene>
-        <!--Table View Controller - Navigation-->
+        <!--Navigation View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
             <objects>
-                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="TableViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="NavigationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PFr-52-9ci"/>
                         <viewControllerLayoutGuide type="bottom" id="hN8-Z7-dws"/>

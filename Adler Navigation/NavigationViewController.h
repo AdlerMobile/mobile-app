@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UIViewController <UITextFieldDelegate>
+@interface NavigationViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *source;
 @property (strong, nonatomic) IBOutlet UITextField *destination;

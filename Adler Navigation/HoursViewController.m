@@ -7,7 +7,7 @@
 //
 
 #import "HoursViewController.h"
-#import "TableViewController.h"
+#import "NavigationViewController.h"
 #import "MapViewController.h"
 
 @interface HoursViewController ()
@@ -90,7 +90,7 @@
             // TODO: add a new node for lockers
             str = @"travel10";
         }
-        TableViewController *viewController = [segue destinationViewController];
+        NavigationViewController *viewController = [segue destinationViewController];
         viewController.dest = str;
     }
 }

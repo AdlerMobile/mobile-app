@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Adler Planetarium. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "NavigationViewController.h"
 #import "FloorViewController.h"
 #import "EachFloorViewController.h"
 #import "NavigateTableViewController.h"
 #import "MapGraph.h"
 
-@interface TableViewController ()
+@interface NavigationViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation NavigationViewController
 
 - (void)viewDidLoad
 {

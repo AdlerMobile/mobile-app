@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Exhibit.h"
-#import "TableViewController.h"
+#import "NavigationViewController.h"
 
 
 
