@@ -17,7 +17,7 @@
 - (IBAction)editingChanged;
 
 
-/// A destination passed to this view from the facilities view.
+/// A destination passed to Navigation from another view.
 @property NSString *dest;
 
 @end

@@ -26,6 +26,8 @@
     self.source.delegate = self;
     self.destination.delegate = self;
     
+    // This has to be set after the view loads. Attempting to set destination.text
+    // from another view controller will fail because it doesn't exist yet.
     if (self.dest) {
         self.destination.text = self.dest;
     }
