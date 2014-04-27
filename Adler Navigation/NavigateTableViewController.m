@@ -12,22 +12,24 @@
 
 
 @interface NavigateTableViewController ()
-
+@property (nonatomic) BOOL isImageTransition;
 @end
 
 @implementation NavigateTableViewController
 
 - (void)viewDidLoad
 {
-    [_view2 setHidden:YES];
+    [super viewDidLoad];
+
+    [_view1 setHidden:YES];
     _view1.scrollView.bounces = NO;
     _view2.scrollView.bounces = NO;
+    
+    _isImageTransition = YES;
     
     //[_nextImage setTintColor:[UIColor blueColor]];
     //[_nextImage setIncrementImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
     //[_nextImage setDecrementImage:[UIImage imageNamed:@"down"] forState:UIControlStateNormal];
-
-    [super viewDidLoad];
 
     _mg = [[MapGraph alloc] init];
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
@@ -45,7 +47,7 @@
     
     [self drawPath:_view1 node1:_n1 node2:_n2];
     
-    [NSTimer scheduledTimerWithTimeInterval:.045 target:self selector:@selector(zoomOnArrow:) userInfo:_view1 repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:.2 target:self selector:@selector(swapViews) userInfo:nil repeats:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,6 +95,7 @@
         [view loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
     }
     else {
+        _isImageTransition = YES;
         NSInteger sourceFloorLevel = 0;
         NSInteger destinationFloorLevel = 0;
         
@@ -154,15 +157,16 @@
         curView = _view1;
         nextView = _view2;
     }
+    
     if ([_n1.floor isEqualToString:_n2.floor]) {
         [self copyZoomFrom:[curView scrollView] to:[nextView scrollView]];
     }
+    
     [[nextView scrollView] setBounces:NO];
     [nextView setHidden:NO];
     [curView setHidden:YES];
     
-//    [nextView.scrollView setZoomScale:nextView.scrollView.bounds.size.width/140.0 animated:YES];
-    if ([_n1.floor isEqualToString:_n2.floor]) {
+    if ([_n1.floor isEqualToString:_n2.floor] && ![_n1.floor isEqualToString:@"star"]) {
         [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(zoomOnArrow:) userInfo:nextView repeats:NO];
     }
 }
@@ -178,7 +182,14 @@
     visibleRect.size.width *= scale;
     visibleRect.size.height *= scale;
     
-    NSLog( @"Visible rect: %@", NSStringFromCGRect(visibleRect) );
+    if (visibleRect.size.width == next.bounds.size.width) {
+        visibleRect.size.width--;
+    }
+    if (visibleRect.size.height == next.bounds.size.height) {
+        visibleRect.size.height--;
+    }
+    
+    //NSLog( @"Visible rect: %@", NSStringFromCGRect(visibleRect) );
     
     [next zoomToRect:visibleRect animated:NO];
 }
@@ -186,20 +197,38 @@
 - (void)zoomOnArrow:(NSTimer *)timer
 {
     UIScrollView *view = [[timer userInfo] scrollView];
-    CGRect pageRect = CGPDFPageGetBoxRect(_page, kCGPDFArtBox);
-    float scaleFactorX = view.bounds.size.width / pageRect.size.width;
-    float scaleFactorY = view.bounds.size.height / pageRect.size.height;
     
-    float centerX = (_n1.xCoordinate + _n2.xCoordinate) / 2.0 *scaleFactorX;
+    static float scaleFactorX;
+    static float scaleFactorY;
+    if ([_n1.floor isEqualToString:_n2.floor] && _isImageTransition) {
+        CGRect pageRect = CGPDFPageGetBoxRect(_page, kCGPDFArtBox);
+        scaleFactorX = view.contentSize.width / pageRect.size.width;
+        scaleFactorY = view.contentSize.height / pageRect.size.height;
+        _isImageTransition = NO;
+    }
+    float centerX = (_n1.xCoordinate + _n2.xCoordinate) / 2.0 * scaleFactorX;
     float centerY = (_n1.yCoordinate + _n2.yCoordinate) / 2.0 * scaleFactorY;
- //   float len = sqrtf( pow((n1.xCoordinate-n2.xCoordinate)*scaleFactorX,2) +
-     //                 pow((n1.yCoordinate-n2.yCoordinate)*scaleFactorY,2) );
+    
+    float zoomScale = 3.0;
     
     CGRect rect;
-    rect.origin = CGPointMake(centerX-70, centerY-70);
-    rect.size = CGSizeMake(140, 140);
+    rect.size = CGSizeMake(view.bounds.size.width / zoomScale,
+                           view.bounds.size.height / zoomScale);
+    rect.origin = CGPointMake(centerX-rect.size.width/2, centerY-rect.size.height/2);
     
-    NSLog( @"Rect: %@", NSStringFromCGRect(rect) );
+    if (rect.origin.x < 0) {
+        rect.origin.x = 0;
+    } else if (rect.origin.x >= view.bounds.size.width - rect.size.width) {
+        rect.origin.x = view.bounds.size.width - rect.size.width - 1;
+    }
+    if (rect.origin.y < 0) {
+        rect.origin.y = 0;
+    } else if (rect.origin.y >= view.bounds.size.height - rect.size.height) {
+        rect.origin.y = view.bounds.size.height - rect.size.height - 1;
+    }
+    
+    //NSLog( @"Rect: %@", NSStringFromCGRect(rect) );
+    //NSLog( @"Center: {%f,%f}", centerX, centerY);
     
     [view zoomToRect:rect animated:YES];
 }
