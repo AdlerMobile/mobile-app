@@ -77,6 +77,7 @@
 
 - (void)drawPath:(UIWebView *)view node1:(Node *)n1 node2:(Node *)n2
 {
+    [[self textDirection] setText:@""];
     if ([n1.floor isEqualToString:n2.floor]) {
         NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:n1.floor ofType: @"pdf"];
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
@@ -93,11 +94,13 @@
         NSData *data = [MapViewController drawPathFromSource:n1 destination:n2 path:pathVisible graph:_mg onPDF:_page];
         
         [view loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+        
+        [[self pinchLabel] setHidden:NO];
     }
     else {
         _isImageTransition = YES;
-        NSInteger sourceFloorLevel = 0;
-        NSInteger destinationFloorLevel = 0;
+        int sourceFloorLevel = 0;
+        int destinationFloorLevel = 0;
         
         if ([n1.floor isEqualToString:@"top"]) {
             sourceFloorLevel = 1;
@@ -132,15 +135,25 @@
         }
         
         NSString *myPdfFilePath;
+        int levelChange;
+        NSString *direction;
         if ((sourceFloorLevel - destinationFloorLevel) < 0) {
             myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"downstairs" ofType: @"pdf"];
+            levelChange = destinationFloorLevel - sourceFloorLevel;
+            direction = @"down";
         }
         else {
             myPdfFilePath  = [[NSBundle mainBundle] pathForResource:@"upstairs" ofType: @"pdf"];
+            levelChange = sourceFloorLevel - destinationFloorLevel;
+            direction = @"up";
         }
         
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         [view loadRequest:[NSURLRequest requestWithURL:targetURL]];
+        
+        [[self textDirection] setText:[NSString stringWithFormat:@"Take the stairs/elevator %@ %d level%@.", direction, levelChange, levelChange==1? @"" : @"s"]];
+        
+        [[self pinchLabel] setHidden:YES];
         
         // TODO: display how many floors to go up/down
     }

@@ -48,7 +48,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text direction display" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYB-f8-blp">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text direction display" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="MYB-f8-blp">
                                 <rect key="frame" x="12" y="70" width="297" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -87,6 +87,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nextImage" destination="6UP-05-I7G" id="FjV-BF-opY"/>
+                        <outlet property="pinchLabel" destination="Y3v-sH-sfe" id="w55-CS-kZe"/>
                         <outlet property="textDirection" destination="MYB-f8-blp" id="krU-wN-uGz"/>
                         <outlet property="view1" destination="MP2-C6-kbA" id="3Cy-Ro-kDh"/>
                         <outlet property="view2" destination="tjV-Oc-Cea" id="dNS-aA-kA1"/>
