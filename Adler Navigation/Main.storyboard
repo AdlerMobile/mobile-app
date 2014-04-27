@@ -203,7 +203,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <segue destination="Ubn-9S-Wlv" kind="push" identifier="takeToFacility" id="htW-Mt-HYX"/>
+                                                    <segue destination="Ubn-9S-Wlv" kind="push" identifier="toNavigationView" id="htW-Mt-HYX"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

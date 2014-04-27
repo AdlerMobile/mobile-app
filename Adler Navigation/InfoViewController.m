@@ -69,7 +69,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([tableView isEqual:_facilitiesTable]) {
-        [self performSegueWithIdentifier:@"takeToFacility" sender:self];
+        [self performSegueWithIdentifier:@"toNavigationView" sender:self];
     }
 }
 
@@ -79,7 +79,7 @@
     UITableViewCell *cell = [self.facilitiesTable cellForRowAtIndexPath:myIndexPath];
     NSString *str = cell.textLabel.text;
 
-    if ([[segue identifier] isEqualToString:@"takeToFacility"]) {
+    if ([[segue identifier] isEqualToString:@"toNavigationView"]) {
         if ([str isEqualToString:@"ATM"]) {
             // Closest node to the acual position of the ATMs?
             // TODO: add a new node for ATM
