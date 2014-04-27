@@ -15,24 +15,23 @@
 @end
 
 @implementation InfoViewController
-@synthesize HoursView, ShowTimesView, FacilitiesView,showsTable;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     [self displayHoursSegment];
     [self displayShowTimesSegment];
-    
+
     _facilitiesTableViewItems = @[ @"Coat Check",
-                             @"Exit",
-                             @"Information",
-                             @"Restrooms",
-                             @"Lockers",
-                             @"ATM",
-                             @"Café Galileo's",
-                             @"Adler Store"
-                             ];
+                                   @"Exit",
+                                   @"Information",
+                                   @"Restrooms",
+                                   @"Lockers",
+                                   @"ATM",
+                                   @"Café Galileo's",
+                                   @"Adler Store"
+                                   ];
 }
 
 - (void) displayShowTimesSegment
@@ -45,7 +44,7 @@
                              NSJSONReadingMutableContainers error:&error];
     _allShows = [response allKeys];
     _allTimings = [[NSMutableDictionary alloc] init];
-    
+
     for (int i = 0; i < [_allShows count]; i++) {
         NSArray * showTimes = [response objectForKey:[_allShows objectAtIndex:i]];
         NSString * allTimes = [[NSString alloc] init];
@@ -55,13 +54,13 @@
             NSArray * time = [dateTime componentsSeparatedByString:@" "];
             NSMutableString * modifiedTime = [NSMutableString stringWithString:time[3]];
             [modifiedTime deleteCharactersInRange:NSMakeRange(5, 7)];
-            
+
             if (j < ([showTimes count]) && j > 0) {
             allTimes = [allTimes stringByAppendingString:@", "];
             }
-            
+
             allTimes = [allTimes stringByAppendingString:modifiedTime];
-            
+
         }
         [_allTimings setValue:allTimes forKey:[_allShows objectAtIndex:i]];
     }
@@ -79,7 +78,7 @@
     NSIndexPath *myIndexPath = [self.facilitiesTable indexPathForSelectedRow];
     UITableViewCell *cell = [self.facilitiesTable cellForRowAtIndexPath:myIndexPath];
     NSString *str = cell.textLabel.text;
-    
+
     if ([[segue identifier] isEqualToString:@"takeToFacility"]) {
         if ([str isEqualToString:@"ATM"]) {
             // Closest node to the acual position of the ATMs?
@@ -103,7 +102,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([tableView isEqual:showsTable]) {
+    if ([tableView isEqual:self.showsTable]) {
         return [_allShows count];
     }
     else {
@@ -113,28 +112,28 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([tableView isEqual:showsTable]) {
-        
+    if ([tableView isEqual:self.showsTable]) {
+
     static NSString *CellIdentifier = @"Cell";
-    
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    
+
     NSString * shows = [_allShows objectAtIndex:indexPath.row];
     cell.textLabel.text = shows;
     NSString *timings = [_allTimings objectForKey:shows];
     cell.detailTextLabel.text = timings;
     return cell;
     }
-    
+
     else {
         static NSString *CellIdentifier = @"Cell";
-        
+
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
+
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         }
@@ -151,28 +150,28 @@
     NSError *error=nil;
     NSDictionary * response=[NSJSONSerialization JSONObjectWithData:data options:
                              NSJSONReadingMutableContainers error:&error];
-    
+
     NSArray * allKeys = [response allKeys];
-    
+
     //stores the weekday and weekend timings formatted and ready to display.
     NSMutableArray * times = [[NSMutableArray alloc] init];
-    
+
     //keeping message object out.
     for (int i = 0; i<[allKeys count] - 1; i++) {
         NSDictionary * open_close = [response objectForKey:allKeys[i]];
         NSDictionary * open = [open_close objectForKey:@"open"];
         NSDictionary * close = [open_close objectForKey:@"close"];
-        
+
         NSNumber * hour_open = [open objectForKey:@"hour"];
         NSNumber * min_open = [open objectForKey:@"min"];
-        
+
         NSNumber * hour_close = [close objectForKey:@"hour"];
         NSNumber * min_close = [close objectForKey:@"min"];
-        
+
         int flagForPM = 0;
         int modifyHour;
         NSString * closingHour,*closingMin, *openingHour, *openingMin;
-        
+
         /************* Opening Hour & Min ***************/
         if ([hour_open intValue] > 12) {
             modifyHour = [hour_open intValue] - 12;
@@ -182,7 +181,7 @@
             modifyHour = [hour_open intValue];
         }
         openingHour = [NSString stringWithFormat:@"%d", modifyHour];
-        
+
         if ([min_open isEqualToNumber:[NSNumber numberWithInt:0]]) {
             openingMin = @"00";
         }
@@ -193,7 +192,7 @@
         timings = [timings stringByAppendingString:openingHour];
         timings = [timings stringByAppendingString:@" : "];
         timings = [timings stringByAppendingString:openingMin];
-        
+
         if (flagForPM) {
             timings = [timings stringByAppendingString:@" PM - "];
         }
@@ -201,7 +200,7 @@
             timings = [timings stringByAppendingString:@" AM - "];
         }
         flagForPM = 0;
-        
+
         /*************** Closing Hour & Min *******************/
         if ([hour_close intValue] > 12) {
             modifyHour = [hour_close intValue] - 12;
@@ -211,7 +210,7 @@
             modifyHour = [hour_close intValue];
         }
         closingHour = [NSString stringWithFormat:@"%d", modifyHour];
-        
+
         if ([min_close isEqualToNumber:[NSNumber numberWithInt:0]]) {
             closingMin = @"00";
         }
@@ -221,7 +220,7 @@
         timings = [timings stringByAppendingString:closingHour];
         timings = [timings stringByAppendingString:@" : "];
         timings = [timings stringByAppendingString:closingMin];
-        
+
         if (flagForPM) {
             timings = [timings stringByAppendingString:@" PM"];
         }
@@ -230,15 +229,15 @@
         }
         [times addObject:timings];
     }
-    
-    
+
+
     _weekday.text = times[0];
     _weekend.text = times[1];
-    
+
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *comps = [gregorian components:NSWeekdayCalendarUnit fromDate:[NSDate date]];
     long day = [comps weekday];
-    
+
     if (day > 1 && day < 7) {
         _today.text = times[0];
     }
@@ -266,18 +265,18 @@
             self.FacilitiesView.hidden = YES;
             self.ShowTimesView.hidden = YES;
             break;
-            
+
         case 1:
             self.HoursView.hidden = YES;
             self.ShowTimesView.hidden = NO;
             self.FacilitiesView.hidden = YES;
             break;
-            
+
         case 2:
             self.FacilitiesView.hidden = NO;
             self.ShowTimesView.hidden = YES;
             self.HoursView.hidden = YES;
-            
+
         default:
             break;
     }
