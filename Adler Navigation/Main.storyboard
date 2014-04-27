@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="4652" y="-827"/>
         </scene>
-        <!--Hours View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="oRm-4d-GQN">
             <objects>
-                <viewController id="c2f-CT-tsW" customClass="HoursViewController" sceneMemberID="viewController">
+                <viewController id="c2f-CT-tsW" customClass="InfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cWl-gF-EP4"/>
                         <viewControllerLayoutGuide type="bottom" id="MH6-LB-tFQ"/>

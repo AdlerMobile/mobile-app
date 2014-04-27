@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Adler Planetarium. All rights reserved.
 //
 
-#import "HoursViewController.h"
+#import "InfoViewController.h"
 #import "NavigationViewController.h"
 #import "MapViewController.h"
 
-@interface HoursViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation HoursViewController
+@implementation InfoViewController
 @synthesize HoursView, ShowTimesView, FacilitiesView,showsTable;
 
 - (void)viewDidLoad
