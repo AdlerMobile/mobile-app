@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Exhibit.h"
-#import "NavigationViewController.h"
-
 
 
 @interface ImageViewController : UIViewController

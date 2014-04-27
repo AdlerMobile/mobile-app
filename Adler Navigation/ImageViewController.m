@@ -7,6 +7,7 @@
 //
 
 #import "ImageViewController.h"
+#import "NavigationViewController.h"
 
 @interface ImageViewController ()
 
