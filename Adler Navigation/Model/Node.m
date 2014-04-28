@@ -32,7 +32,7 @@
 - (BOOL)isEqualToNode:(Node *)otherNode{
     return _xCoordinate == otherNode.xCoordinate
             && _yCoordinate == otherNode.yCoordinate
-            && [_floor isEqualToString:otherNode.floor];
+            && [[self id] isEqualToString:[otherNode id]];
 }
 
 - (NSUInteger)hash{
@@ -41,8 +41,8 @@
     
     hash = hash * prime + _xCoordinate;
     hash = hash * prime + _yCoordinate;
-    for (int i = 0; i <[_floor length]; i++) {
-        hash = hash * prime + [_floor characterAtIndex:i];
+    for (int i = 0; i <[[self id] length]; i++) {
+        hash = hash * prime + [[self id] characterAtIndex:i];
     }
     
     return hash;

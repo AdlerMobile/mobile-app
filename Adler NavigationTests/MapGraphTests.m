@@ -30,18 +30,22 @@ Edge *e13;
     g = [[MapGraph alloc] init];
     
     n1 = [[Node alloc] init];
+    n1.id = @"n1";
     n1.xCoordinate = 1;
     n1.yCoordinate = 11;
     
     n2 = [[Node alloc] init];
+    n2.id = @"n2";
     n2.xCoordinate = 2;
     n2.yCoordinate = 12;
     
     n3 = [[Node alloc] init];
+    n3.id = @"n3";
     n3.xCoordinate = 3;
     n3.yCoordinate = 13;
     
     n4 = [[Node alloc] init];
+    n4.id = @"n4";
     n4.xCoordinate = 4;
     n4.yCoordinate = 14;
     
@@ -70,8 +74,8 @@ Edge *e13;
 
 - (void)testAddNode
 {
-    XCTAssertNotNil([g.adjacencyMatrix objectForKey:n1]);
-    XCTAssertNotNil([g.adjacencyMatrix objectForKey:n4]);
+    XCTAssertNotNil([[g nodes] objectForKey:@"n1"]);
+    XCTAssertNotNil([[g nodes] objectForKey:[n4 id]]);
     
     Node *n = [[Node alloc] init];
     n.xCoordinate = 101;

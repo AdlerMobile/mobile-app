@@ -61,22 +61,22 @@
     
     n1 = [[Node alloc] init];
     n1.id = @"n1";
-    n1.XCoordinate = 1;
+    n1.xCoordinate = 1;
     n1.yCoordinate = 1;
     
     n2 = [[Node alloc] init];
     n2.id = @"n2";
-    n2.XCoordinate = 2;
+    n2.xCoordinate = 2;
     n2.yCoordinate = 13;
     
     n3 = [[Node alloc] init];
     n3.id = @"n3";
-    n3.XCoordinate = 2.5;
+    n3.xCoordinate = 2.5;
     n3.yCoordinate = 7;
     
     n4 = [[Node alloc] init];
     n4.id = @"n4";
-    n4.XCoordinate = 4;
+    n4.xCoordinate = 4;
     n4.yCoordinate = 14;
     
     [g addNode:n1];
@@ -129,42 +129,42 @@
     
     n1 = [[Node alloc] init];
     n1.id = @"n1";
-    n1.XCoordinate = 0;
+    n1.xCoordinate = 0;
     n1.yCoordinate = 0;
     
     n2 = [[Node alloc] init];
     n2.id = @"n2";
-    n2.XCoordinate = 1;
+    n2.xCoordinate = 1;
     n2.yCoordinate = -1;
     
     n3 = [[Node alloc] init];
     n3.id = @"n3";
-    n3.XCoordinate = 2;
+    n3.xCoordinate = 2;
     n3.yCoordinate = 10;
     
     n4 = [[Node alloc] init];
     n4.id = @"n4";
-    n4.XCoordinate = 2;
+    n4.xCoordinate = 2;
     n4.yCoordinate = 1;
 
     n5 = [[Node alloc] init];
     n5.id = @"n5";
-    n5.XCoordinate = 5;
+    n5.xCoordinate = 5;
     n5.yCoordinate = 5;
     
     n6 = [[Node alloc] init];
     n6.id = @"n6";
-    n6.XCoordinate = 3;
+    n6.xCoordinate = 3;
     n6.yCoordinate = 1;
     
     n7 = [[Node alloc] init];
     n7.id = @"n7";
-    n7.XCoordinate = 4;
+    n7.xCoordinate = 4;
     n7.yCoordinate = -1;
     
     n8 = [[Node alloc] init];
     n8.id = @"n8";
-    n8.XCoordinate = 5;
+    n8.xCoordinate = 5;
     n8.yCoordinate = 1;
     
     [g addNode:n1]; [g addNode:n2];
@@ -231,7 +231,7 @@
     
     NSArray *expected = @[n1, n2, n7, n8, n5];
     
-    XCTAssertTrue([path isEqualToArray:expected]);
+    XCTAssertEqualObjects(path, expected);
 }
 
 @end

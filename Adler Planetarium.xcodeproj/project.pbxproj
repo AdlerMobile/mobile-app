@@ -906,14 +906,14 @@
 		30E50284183607E100BCDA41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Adler Navigation.app/Adler Navigation";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Adler Planetarium.app/Adler Planetarium";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -928,14 +928,14 @@
 		30E50285183607E100BCDA41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Adler Navigation.app/Adler Navigation";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Adler Planetarium.app/Adler Planetarium";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Navigation-Prefix.pch";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
 				INFOPLIST_FILE = "Adler NavigationTests/Adler PlanetariumTests-Info.plist";
 				PRODUCT_NAME = "Adler PlanetariumTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
