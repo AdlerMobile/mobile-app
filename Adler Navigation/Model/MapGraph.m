@@ -32,7 +32,7 @@
     if ([_adjacencyMatrix objectForKey:node] == nil)
     {
         [_nodes setObject:node forKey:node.id];
-        NSMutableSet *adjacentNodes = [[NSMutableSet alloc] init];
+        NSMutableDictionary *adjacentNodes = [[NSMutableDictionary alloc] init];
         [_adjacencyMatrix setObject:adjacentNodes forKey:node];
     }
 }
@@ -43,12 +43,10 @@
     [self addNode:edge.node1];
     [self addNode:edge.node2];
     
-    [[_adjacencyMatrix objectForKey:edge.node1] addObject:edge];
-    
-    //[[_adjacencyMatrix objectForKey:edge.node2] addObject:edge];
+    [[_adjacencyMatrix objectForKey:edge.node1] setObject:edge forKey:edge.node2];
 }
 
-- (void)addEdgeFromNode:(NSString *)nodeId1 toNode:(NSString *)nodeId2
+- (void)addEdgeFromNode:(NSString *)nodeId1 toNode:(NSString *)nodeId2 textDirection:(NSString *)textDirection
 {
     Node *n1 = [_nodes objectForKey:nodeId1];
     Node *n2 = [_nodes objectForKey:nodeId2];
@@ -61,6 +59,7 @@
     Edge *e = [[Edge alloc]init];
     e.node1 = n1;
     e.node2 = n2;
+    e.textDirection = textDirection;
     [self addEdge:e];
 }
 
@@ -69,12 +68,17 @@
     return [_nodes objectForKey:id];
 }
 
+- (Edge *)getEdgeFrom:(Node *)n1 to:(Node *)n2
+{
+    return [[[self adjacencyMatrix] objectForKey:n1] objectForKey:n2];
+}
+
 /**
  * Returns a set of Edge objects
  */
 - (NSSet *)getAdjacentNodes:(Node *)node
 {
-    return [_adjacencyMatrix objectForKey:node];
+    return [NSSet setWithArray:[[[self adjacencyMatrix] objectForKey:node] allValues]];
 }
 
 /**
@@ -83,7 +87,7 @@
 - (NSArray *)getIDsOfAdjacentNodes:(Node *)node
 {
     NSMutableArray * adjacentNodeUIDs = [[NSMutableArray alloc] init];
-    NSSet * edges = [_adjacencyMatrix objectForKey:node];
+    NSSet * edges = [self getAdjacentNodes:node];
     for(Edge * currentEdge in edges) {
         NSString * node1ID = currentEdge.node1.id;
         NSString * node2ID = currentEdge.node2.id;
@@ -134,8 +138,20 @@
         NSString * uniqueID = [nodeDict objectForKey:@"uid"];
         NSArray * adjacentNodes = [nodeDict objectForKey:@"adjacent"];
         
-        for(id nodeID in adjacentNodes) {
-            [self addEdgeFromNode:uniqueID toNode:nodeID];
+        for(NSString *nodeString in adjacentNodes) {
+            NSString *id, *textDirection;
+            NSUInteger splitIndex = [nodeString rangeOfString:@"^^"].location;
+            if (splitIndex != NSNotFound) {
+                id = [nodeString substringToIndex:splitIndex];
+                if (splitIndex+2 < [nodeString length]) {
+                    textDirection = [nodeString substringFromIndex:splitIndex+2];
+                }
+                NSLog(@"%@:%@", id, textDirection);
+            } else {
+                id = nodeString;
+                textDirection = @"";
+            }
+            [self addEdgeFromNode:uniqueID toNode:id textDirection:textDirection];
         }
     }
 }

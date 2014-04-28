@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) Node *node1;
 @property (weak, nonatomic) Node *node2;
+@property (strong, nonatomic) NSString *textDirection;
 
 - (float)distance;
 

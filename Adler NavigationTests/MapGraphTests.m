@@ -99,6 +99,11 @@ Edge *e13;
     XCTAssertEqualObjects(n, [g getNodeById:n.id]);
 }
 
+- (void)testGetEdge
+{
+    XCTAssertEqual([g getEdgeFrom:n1 to:n2], e12);
+}
+
 - (void)testAdjacent
 {
     NSSet *adjacent = [g getAdjacentNodes:n1];

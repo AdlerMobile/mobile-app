@@ -110,6 +110,9 @@
         
         [view loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
         
+        Edge *e = [[self mg] getEdgeFrom:n1 to:n2];
+        [[self textDirection] setText:[e textDirection]];
+        
         [[self pinchLabel] setHidden:NO];
     }
     else {
