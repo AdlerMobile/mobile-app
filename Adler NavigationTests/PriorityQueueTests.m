@@ -38,7 +38,7 @@
     [pq addItem:n1 withPriority:8];
     XCTAssertTrue(pq.isEmpty==NO);
     
-    Node *t1 = [pq getItemLeastPriority];
+    [pq getItemLeastPriority];
     XCTAssertTrue(pq.isEmpty==YES);
 
 }

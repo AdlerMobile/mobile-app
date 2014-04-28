@@ -84,7 +84,7 @@ const integer_t INFINIT = FLT_MAX;
     while (![Q isEmpty]) {
   
         Node *cur = (Node *)[Q getItemLeastPriority];
-        NSSet *neighbors = [graph.adjacencyMatrix objectForKey:cur];
+        NSSet *neighbors = [graph getAdjacentNodes:cur];
         Node *otherNode;
         
         for(Edge * e in neighbors){
