@@ -18,6 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([_sourceORDestination isEqualToString:@"1"])
+    {
+        [_navBarItem setTitle:@"My Location Level"];
+    }
+    
+    if ([_sourceORDestination isEqualToString:@"2"])
+    {
+        [_navBarItem setTitle:@"Destionation Level"];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,8 +36,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if ([_sourceORDestination isEqualToString:@"1"])
+    {
+        return 4;
+    }
     
-    return 4;
+    else return 5;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -62,6 +75,10 @@
         cell.textLabel.text = @"Star Level";
     }
     
+    if (indexPath.row == 4) {
+        cell.textLabel.text = @"Facilities";
+    }
+    
     return cell;
 }
 
@@ -92,6 +109,9 @@
         }
         if (myIndexPath.row == 3) {
             ViewController.currentFloor = @"star";
+        }
+        if (myIndexPath.row == 4) {
+            ViewController.currentFloor = @"facilities";
         }
         
     }

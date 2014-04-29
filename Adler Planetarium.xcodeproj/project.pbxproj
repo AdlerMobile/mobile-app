@@ -109,6 +109,10 @@
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
 		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
+		FE8D868E190F02FF002CCE9A /* AboutThisAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D868D190F02FF002CCE9A /* AboutThisAppViewController.m */; };
+		FE8D8693190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */; };
+		FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */; };
+		FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8D8697190F4780002CCE9A /* uiuc_logo.png */; };
 		FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88B18F4E0D000A01AA8 /* black.png */; };
 		FEA4A88E18F4E0D900A01AA8 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88D18F4E0D900A01AA8 /* blue.png */; };
 		FED8ED8918F76290005A285B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8ED8818F76290005A285B /* InfoViewController.m */; };
@@ -245,6 +249,12 @@
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
 		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
 		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
+		FE8D868C190F02FF002CCE9A /* AboutThisAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutThisAppViewController.h; sourceTree = "<group>"; };
+		FE8D868D190F02FF002CCE9A /* AboutThisAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutThisAppViewController.m; sourceTree = "<group>"; };
+		FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Adler Mobile Navigation App Documentation.pdf"; sourceTree = "<group>"; };
+		FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailsViewController.h; sourceTree = "<group>"; };
+		FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailsViewController.m; sourceTree = "<group>"; };
+		FE8D8697190F4780002CCE9A /* uiuc_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uiuc_logo.png; sourceTree = "<group>"; };
 		FEA4A88B18F4E0D000A01AA8 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		FEA4A88D18F4E0D900A01AA8 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		FED8ED8718F76290005A285B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
@@ -336,6 +346,10 @@
 				FE5C87E618D63449009E2CC2 /* NavigationViewController.m */,
 				FE5C87E818D63449009E2CC2 /* NavigationViewController.h */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
+				FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */,
+				FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */,
+				FE8D868C190F02FF002CCE9A /* AboutThisAppViewController.h */,
+				FE8D868D190F02FF002CCE9A /* AboutThisAppViewController.m */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
 				30E50265183607E100BCDA41 /* Adler_Navigation.xcdatamodeld */,
@@ -347,6 +361,8 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */,
+				FE8D8697190F4780002CCE9A /* uiuc_logo.png */,
 				FEA4A88B18F4E0D000A01AA8 /* black.png */,
 				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
 				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
@@ -665,6 +681,7 @@
 				726E85A11903C8A6007F5803 /* sfm_name.txt in Resources */,
 				726E85921903B332007F5803 /* tele_short.txt in Resources */,
 				726E85771903B332007F5803 /* hist0.png in Resources */,
+				FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */,
 				726E85721903B332007F5803 /* cyb_long.txt in Resources */,
 				726E85781903B332007F5803 /* hist_long.txt in Resources */,
 				FEA4A88E18F4E0D900A01AA8 /* blue.png in Resources */,
@@ -696,6 +713,7 @@
 				726E85841903B332007F5803 /* pe_long.txt in Resources */,
 				726E85791903B332007F5803 /* hist_short.txt in Resources */,
 				726E85821903B332007F5803 /* solar_short.txt in Resources */,
+				FE8D8693190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf in Resources */,
 				726E85831903B332007F5803 /* pe0.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
 				7269812B1907658D003D3C60 /* home2.png in Resources */,
@@ -761,6 +779,8 @@
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
 				FED8ED8918F76290005A285B /* InfoViewController.m in Sources */,
+				FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */,
+				FE8D868E190F02FF002CCE9A /* AboutThisAppViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

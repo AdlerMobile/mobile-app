@@ -202,7 +202,7 @@
 			<string>left_exitnode</string>
 			<string>travel1</string>
 			<string>travel2</string>
-            <string>cafe_galileo_exitnode</string>
+            <string>ATM</string>
 		</array>
 	</dict>
 	<dict>
@@ -425,7 +425,7 @@
 		<integer>74</integer>
 		<key>adjacent</key>
 		<array>
-			<string>cafe_galileo_exitnode</string>
+			<string>ATM</string>
 			<string>cyberspace_exitnode</string>
 			<string>travel8</string>
 		</array>
@@ -463,8 +463,44 @@
 		<array>
 			<string>Unknown Restroom 2</string>
 			<string>travel8</string>
+            <string>traveltemp</string>
 		</array>
 	</dict>
+    <dict>
+		<key>isSourceOrDestination</key>
+		<false/>
+		<key>uid</key>
+		<string>traveltemp</string>
+		<key>floor</key>
+		<string>mid</string>
+		<key>x</key>
+		<integer>100</integer>
+		<key>y</key>
+		<integer>250</integer>
+		<key>adjacent</key>
+		<array>
+			<string>travel9</string>
+            <string>getout</string>
+		</array>
+	</dict>
+    
+    <dict>
+		<key>isSourceOrDestination</key>
+		<false/>
+		<key>uid</key>
+		<string>getout</string>
+		<key>floor</key>
+		<string>mid</string>
+		<key>x</key>
+		<integer>80</integer>
+		<key>y</key>
+		<integer>250</integer>
+		<key>adjacent</key>
+		<array>
+			<string>traveltemp</string>
+		</array>
+	</dict>
+
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
@@ -512,14 +548,14 @@
 		<array>
 			<string>the_universe_exitnode</string>
 			<string>planet_explorers_exitnode</string>
-			<string>travel10</string>
+			<string>Lockers</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<false/>
+		<true/>
 		<key>uid</key>
-		<string>travel10</string>
+		<string>Lockers</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -547,7 +583,7 @@
 		<integer>117</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel10</string>
+			<string>Lockers</string>
 			<string>Classroom B</string>
 			<string>Vending</string>
 		</array>
@@ -565,7 +601,7 @@
 		<integer>154</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel10</string>
+			<string>Lockers</string>
 		</array>
 	</dict>
 	<dict>
@@ -633,7 +669,7 @@
 			<string>Education Pavilion</string>
 			<string>Unknown Restroom 4</string>
 			<string>travel13</string>
-			<string>travel10</string>
+			<string>Lockers</string>
 		</array>
 	</dict>
 	<dict>
@@ -684,6 +720,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>South Entrance</string>
+            <string>getoutSouth</string>
 			<string>South Elevator</string>
 			<string>travel12</string>
 		</array>
@@ -693,6 +730,22 @@
 		<true/>
 		<key>uid</key>
 		<string>South Entrance</string>
+		<key>floor</key>
+		<string>mid</string>
+		<key>x</key>
+		<integer>639</integer>
+		<key>y</key>
+		<integer>250</integer>
+		<key>adjacent</key>
+		<array>
+			<string>Education Pavilion</string>
+		</array>
+	</dict>
+    <dict>
+		<key>isSourceOrDestination</key>
+		<false/>
+		<key>uid</key>
+		<string>getoutSouth</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -1034,14 +1087,14 @@
 			<string>Our Solar System</string>
 			<string>travel25</string>
 			<string>travel35</string>
-			<string>cafe_galileo_exitnode</string>
+			<string>ATM</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>
-		<string>travel27</string>
+		<string>getout27</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
@@ -1051,7 +1104,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>Café Galileo&apos;s</string>
-			<string>cafe_galileo_exitnode</string>
+			<string>ATM</string>
 		</array>
 	</dict>
 	<dict>
@@ -1146,7 +1199,7 @@
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>
-		<string>travel33</string>
+		<string>getout33</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
@@ -1173,7 +1226,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>travel20</string>
-			<string>cafe_galileo_exitnode</string>
+			<string>ATM</string>
 		</array>
 	</dict>
 	<dict>
@@ -1207,8 +1260,10 @@
 		<key>adjacent</key>
 		<array>
 			<string>Coat Check</string>
+            <string>Box Office</string>
 			<string>travel30</string>
 			<string>Main Entrance</string>
+            <string>getoutMain</string>
 		</array>
 	</dict>
 	<dict>
@@ -1216,6 +1271,23 @@
 		<true/>
 		<key>uid</key>
 		<string>Coat Check</string>
+		<key>floor</key>
+		<string>top</string>
+		<key>x</key>
+		<integer>288</integer>
+		<key>y</key>
+		<integer>601</integer>
+		<key>adjacent</key>
+		<array>
+			<string>Clark Family Welcome Gallery</string>
+			<string>Rainbow Lobby</string>
+		</array>
+	</dict>
+    <dict>
+		<key>isSourceOrDestination</key>
+		<true/>
+		<key>uid</key>
+		<string>Box Office</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
@@ -1244,6 +1316,7 @@
 			<string>travel20</string>
 			<string>travel21</string>
 			<string>Coat Check</string>
+            <string>Box Office</string>
 		</array>
 	</dict>
 	<dict>
@@ -1292,7 +1365,7 @@
 		<integer>454</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel27</string>
+			<string>getout27</string>
 		</array>
 	</dict>
 	<dict>
@@ -1342,7 +1415,7 @@
 		<integer>455</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel33</string>
+			<string>getout33</string>
 			<string>travel32</string>
 		</array>
 	</dict>
@@ -1398,15 +1471,15 @@
 		<array>
 			<string>right_exitnode</string>
 			<string>travel31</string>
-			<string>travel33</string>
+			<string>getout33</string>
 			<string>the_universe_exitnode</string>
 		</array>
 	</dict>
 	<dict>
 		<key>isSourceOrDestination</key>
-		<false/>
+		<true/>
 		<key>uid</key>
-		<string>cafe_galileo_exitnode</string>
+		<string>ATM</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>
@@ -1418,7 +1491,7 @@
 			<string>left_exitnode</string>
 			<string>travel26</string>
 			<string>travel34</string>
-			<string>travel27</string>
+			<string>getout27</string>
 			<string>cyberspace_exitnode</string>
 		</array>
 	</dict>
@@ -1427,6 +1500,22 @@
 		<true/>
 		<key>uid</key>
 		<string>Main Entrance</string>
+		<key>floor</key>
+		<string>top</string>
+		<key>x</key>
+		<integer>352</integer>
+		<key>y</key>
+		<integer>694</integer>
+		<key>adjacent</key>
+		<array>
+			<string>Rainbow Lobby</string>
+		</array>
+	</dict>
+    <dict>
+		<key>isSourceOrDestination</key>
+		<false/>
+		<key>uid</key>
+		<string>getoutMain</string>
 		<key>floor</key>
 		<string>top</string>
 		<key>x</key>

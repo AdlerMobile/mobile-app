@@ -17,8 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    _Floor.text = _levelToDisplay;
+    [_navBarItem setTitle:_levelToDisplay];
     NSString *myPdfFilePath;
     if ([_levelToDisplay  isEqual: @"Upper Level"]) {
         myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"top" ofType: @"pdf"];

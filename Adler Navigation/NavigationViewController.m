@@ -77,6 +77,27 @@
             [navigateAlert show];
             return NO;
         }
+        
+        if ([_source.text isEqualToString:_destination.text]) {
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nTadaaa!! You have reached your destination.\n\n"
+                                                                   delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                                          otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
+            [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
+            [navigateAlert show];
+            return NO;
+
+        }
+        
+        if (([_source.text isEqualToString:@"Box Office"] && [_destination.text isEqualToString:@"Coat Check"]) || ([_source.text isEqualToString:@"Coat Check"] && [_destination.text isEqualToString:@"Box Office"])) {
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nBox Office and Coat Check is the same place.\n\n"
+                                                                   delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                                          otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
+            [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
+            [navigateAlert show];
+            return NO;
+            
+        }
+        
     }
     return YES;
 }

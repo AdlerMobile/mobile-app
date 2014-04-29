@@ -10,4 +10,5 @@
 
 @interface FloorViewController : UITableViewController
 @property (nonatomic, strong) NSString *sourceORDestination;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navBarItem;
 @end

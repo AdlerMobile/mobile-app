@@ -83,24 +83,6 @@
     NSString *str = cell.textLabel.text;
 
     if ([[segue identifier] isEqualToString:@"toNavigationView"]) {
-        if ([str isEqualToString:@"ATM"]) {
-            // Closest node to the acual position of the ATMs?
-            // TODO: add a new node for ATM
-            str = @"Café Galileo's";
-        }
-        else if ([str isEqualToString:@"Lockers"]) {
-            // TODO: add a new node for lockers
-            str = @"travel10";
-        }
-        else if ([str isEqualToString:@"Box Office"]) {
-            // TODO: check for nearest box office
-            // Also, find some way to rename
-            str = @"Coat Check";
-        }
-        else if ([str isEqualToString:@"Nearest Exit"]) {
-            // TODO: actually find the nearest exit
-            str = @"Main Entrance";
-        }
         NavigationViewController *viewController = [segue destinationViewController];
         viewController.dest = str;
     }

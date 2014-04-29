@@ -19,9 +19,34 @@
 {
     [super viewDidLoad];
 
+    if ([_sourceORdestination isEqualToString:@"1"])
+    {
+        [_navBarItem setTitle:@"My Location"];
+    }
+    
+    if ([_sourceORdestination isEqualToString:@"2"])
+    {
+        [_navBarItem setTitle:@"Destination"];
+    }
+
+    
     NSArray * exhibits = [[NSArray alloc] init];
     _exhibits_to_display = [[NSMutableArray alloc] init];
 
+    if ([_currentFloor isEqualToString:@"facilities"])
+    {
+        self.exhibits_to_display[0] = @"Coat Check";
+        self.exhibits_to_display[1] = @"Nearest Exit";
+        self.exhibits_to_display[2] = @"Box Office";
+        self.exhibits_to_display[3] = @"Restrooms";
+        self.exhibits_to_display[4] = @"Lockers";
+        self.exhibits_to_display[5] = @"ATM";
+        self.exhibits_to_display[6] = @"Café Galileo's";
+        self.exhibits_to_display[7] = @"Adler Store";
+        
+    }
+    else
+    {
     NSString *myPlistFilePath = [[NSBundle mainBundle] pathForResource: @"map_data_all" ofType: @"plist"];
     exhibits = [NSArray arrayWithContentsOfFile: myPlistFilePath];
     
@@ -36,6 +61,7 @@
                 }
             }
         }
+    }
 }
 
 - (void)didReceiveMemoryWarning

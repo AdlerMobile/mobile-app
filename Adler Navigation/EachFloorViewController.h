@@ -12,4 +12,5 @@
 @property (strong, nonatomic) NSString * currentFloor;
 @property (strong, nonatomic) NSString * sourceORdestination;
 @property (strong, nonatomic) NSMutableArray * exhibits_to_display;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navBarItem;
 @end

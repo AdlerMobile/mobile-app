@@ -50,7 +50,22 @@
             }
         }
         
-    } else {
+    }
+    else if([_destination isEqualToString:@"Nearest Exit"]) {
+        float bestDistance = MAXFLOAT;
+        for (Node *n in [[_mg nodes] allValues]) {
+            if ([[n id] rangeOfString:@"getout"].location != NSNotFound) {
+                //NSLog(@"%@", [n id]);
+                NSMutableArray *p = [MapViewController dijkstra:_mg from:pointA to:n];
+                float distance = [self pathTotalDistance:p];
+                if (distance < bestDistance) {
+                    _path = p;
+                    bestDistance = distance;
+                }
+            }
+        }
+    }
+    else {
         Node* pointB = [_mg getNodeById:_destination];
         _path = [MapViewController dijkstra:_mg from:pointA to:pointB];
     }

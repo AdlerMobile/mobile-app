@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface HomeViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *HomeImage;
 @property (weak, nonatomic) IBOutlet UIButton *tutorial;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar;
 
-@property (strong, nonatomic) IBOutlet UITableView *aboutTableView;
 
 @end
