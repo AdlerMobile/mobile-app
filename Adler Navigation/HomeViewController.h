@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ * View Controller for the Home Page i.e Home Tab.
+ */
 @interface HomeViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIImageView *HomeImage;
-@property (weak, nonatomic) IBOutlet UIButton *tutorial;
-@property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar;
+@property (strong, nonatomic) IBOutlet UIImageView *HomeImage; //image view displaying the image on home page.
+@property (weak, nonatomic) IBOutlet UIButton *tutorial; //connected to the button which opens view with about this app.
+@property (strong, nonatomic) IBOutlet UINavigationItem *navigationBar; //connected to the navigation item.
 
 
 @end

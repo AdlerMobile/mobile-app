@@ -16,7 +16,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>star_left_exitnode</string>
-			<string>Men&apos;s Restroom</string>
+			<string>Men&apos;s Restroom Lower Level</string>
 			<string>Astronomy in Culture</string>
 		</array>
 	</dict>
@@ -147,7 +147,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>star_right_exitnode</string>
-			<string>Women&apos;s Restroom</string>
+			<string>Women&apos;s Restroom Lower Level</string>
 			<string>Telescopes</string>
 			<string>womens_restroom_exitnode</string>
 			<string>rainbow_lobby_exitnode</string>
@@ -157,7 +157,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Men&apos;s Restroom</string>
+		<string>Men&apos;s Restroom Lower Level</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -327,7 +327,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Women&apos;s Restroom</string>
+		<string>Women&apos;s Restroom Lower Level</string>
 		<key>floor</key>
 		<string>lower</string>
 		<key>x</key>
@@ -443,7 +443,7 @@
 		<integer>131</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Unknown Restroom 1</string>
+			<string>Men&apos;s Restroom Mid Level</string>
 			<string>travel9</string>
 			<string>left_exitnode</string>
 		</array>
@@ -461,7 +461,7 @@
 		<integer>180</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Unknown Restroom 2</string>
+			<string>Women&apos;s Restroom Mid Level</string>
 			<string>travel8</string>
             <string>traveltemp</string>
 		</array>
@@ -505,7 +505,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Unknown Restroom 1</string>
+		<string>Men&apos;s Restroom Mid Level</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -521,7 +521,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Unknown Restroom 2</string>
+		<string>Women&apos;s Restroom Mid Level</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -565,7 +565,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>right_exitnode</string>
-			<string>Unknown Restroom 3</string>
+			<string>Men&apos;s Restroom South Side</string>
 			<string>travel12</string>
 			<string>travel11</string>
 		</array>
@@ -592,7 +592,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Unknown Restroom 3</string>
+		<string>Men&apos;s Restroom South Side</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -608,7 +608,7 @@
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
-		<string>Unknown Restroom 4</string>
+		<string>Women&apos;s Restroom South Side</string>
 		<key>floor</key>
 		<string>mid</string>
 		<key>x</key>
@@ -667,7 +667,7 @@
 		<key>adjacent</key>
 		<array>
 			<string>Education Pavilion</string>
-			<string>Unknown Restroom 4</string>
+			<string>Women&apos;s Restroom South Side</string>
 			<string>travel13</string>
 			<string>Lockers</string>
 		</array>

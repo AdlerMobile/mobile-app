@@ -38,11 +38,12 @@
         self.exhibits_to_display[0] = @"Coat Check";
         self.exhibits_to_display[1] = @"Nearest Exit";
         self.exhibits_to_display[2] = @"Box Office";
-        self.exhibits_to_display[3] = @"Restrooms";
-        self.exhibits_to_display[4] = @"Lockers";
-        self.exhibits_to_display[5] = @"ATM";
-        self.exhibits_to_display[6] = @"Café Galileo's";
-        self.exhibits_to_display[7] = @"Adler Store";
+        self.exhibits_to_display[3] = @"Men's Restroom";
+        self.exhibits_to_display[4] = @"Women's Restroom";
+        self.exhibits_to_display[5] = @"Lockers";
+        self.exhibits_to_display[6] = @"ATM";
+        self.exhibits_to_display[7] = @"Café Galileo's";
+        self.exhibits_to_display[8] = @"Adler Store";
         
     }
     else

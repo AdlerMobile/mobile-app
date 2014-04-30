@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Views to display sponsored by view and how to use this app view.
+ */
+
 @interface AboutDetailsViewController : UIViewController
 
 @property (strong, nonatomic) NSString * data;

@@ -36,10 +36,25 @@
     [_mg createGraphFromFile:filePath];
     Node* pointA =  [_mg getNodeById:_source];
     
-    if ([_destination isEqualToString:@"Restrooms"]) {
+    if ([_destination isEqualToString:@"Men's Restroom"]) {
         float bestDistance = MAXFLOAT;
         for (Node *n in [[_mg nodes] allValues]) {
-            if ([[n id] rangeOfString:@"Restroom"].location != NSNotFound) {
+            if ([[n id] rangeOfString:@"Men's Restroom"].location != NSNotFound) {
+                //NSLog(@"%@", [n id]);
+                NSMutableArray *p = [MapViewController dijkstra:_mg from:pointA to:n];
+                float distance = [self pathTotalDistance:p];
+                if (distance < bestDistance) {
+                    _path = p;
+                    bestDistance = distance;
+                }
+            }
+        }
+        
+    }
+    else if ([_destination isEqualToString:@"Women's Restroom"]) {
+        float bestDistance = MAXFLOAT;
+        for (Node *n in [[_mg nodes] allValues]) {
+            if ([[n id] rangeOfString:@"Women's Restroom"].location != NSNotFound) {
                 //NSLog(@"%@", [n id]);
                 NSMutableArray *p = [MapViewController dijkstra:_mg from:pointA to:n];
                 float distance = [self pathTotalDistance:p];

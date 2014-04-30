@@ -22,7 +22,6 @@
 {
     [super viewDidLoad];
 
-    //[_giveDirections setEnabled:NO];
     self.source.delegate = self;
     self.destination.delegate = self;
     
@@ -31,6 +30,8 @@
     if (self.dest) {
         self.destination.text = self.dest;
     }
+    
+    //Designs for the text fields and buttons on this page.
     UITextField *src = (UITextField *)[self.view viewWithTag:1];
     UITextField *des = (UITextField *)[self.view viewWithTag:2];
     NSMutableArray *arr = [[NSMutableArray alloc]init];
@@ -44,15 +45,10 @@
     UIButton *btn = (UIButton *)[self.view viewWithTag:3];
     btn.layer.borderWidth = 1.5f;
     btn.layer.cornerRadius = 9.0f;
-}
-
-- (IBAction)editingChanged {
-    if ([_source.text length] != 0 && [_destination.text length] != 0) {
-        [_giveDirections setEnabled:YES];
-    }
-    else {
-        [_giveDirections setEnabled:NO];
-    }
+    
+    
+    _enterCode.layer.borderWidth = 1.5f;
+    _enterCode.layer.cornerRadius = 9.0f;
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,6 +57,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//hide keyboard on tapping the text field.
 - (void) textFieldDidBeginEditing:(UITextField *)input{
     
     [input resignFirstResponder];
@@ -68,7 +65,9 @@
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    //checking if segue being used called Navigate. i.e. is get directions button pressed.
     if ([identifier isEqualToString:@"Navigate"]){
+        //handling when either of the fields are empty. Create an alert.
         if ([_source.text isEqualToString:@""]||[_destination.text isEqualToString:@""]){
             UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"Ummm.." message:@"\nPlease fill in both fields.\n\n"
                                             delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
@@ -78,6 +77,7 @@
             return NO;
         }
         
+        //handling when both the fields have teh same exhibit.
         if ([_source.text isEqualToString:_destination.text]) {
             UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nTadaaa!! You have reached your destination.\n\n"
                                                                    delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
@@ -88,6 +88,18 @@
 
         }
         
+        //handling when a user tries visiting the closest restroom while at the restroom.
+        if ((([_source.text rangeOfString:@"Men's Restroom"].location != NSNotFound) && ([_destination.text rangeOfString:@"Men's Restroom"].location != NSNotFound))|| (([_source.text rangeOfString:@"Women's Restroom"].location != NSNotFound) && ([_destination.text rangeOfString:@"Women's Restroom"].location != NSNotFound))) {
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nTadaaa!! You have reached your destination.\n\n"
+                                                                   delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                                          otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
+            [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
+            [navigateAlert show];
+            return NO;
+            
+        }
+        
+        //handling for when box office and coat check is selected as they both are the same place.
         if (([_source.text isEqualToString:@"Box Office"] && [_destination.text isEqualToString:@"Coat Check"]) || ([_source.text isEqualToString:@"Coat Check"] && [_destination.text isEqualToString:@"Box Office"])) {
             UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nBox Office and Coat Check is the same place.\n\n"
                                                                    delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
@@ -104,6 +116,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
     FloorViewController *fv = [segue destinationViewController];
     if ([[segue identifier] isEqualToString:@"SourceTableView"])
     {
@@ -127,6 +140,12 @@
 
 - (IBAction)sourceUnwindToViewController:(UIStoryboardSegue *)sourceUnwindSegue
 {
+    _source.text = _data;
+}
+
+- (IBAction)codeUnwindToViewController:(UIStoryboardSegue *)codeUnwindSegue
+{
+    //code to convert _data which is the code to the exhibit name goes here.
     _source.text = _data;
 }
 

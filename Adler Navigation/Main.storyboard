@@ -247,7 +247,6 @@
                         <outlet property="weekday" destination="yLa-5a-Vrn" id="IYD-3u-olE"/>
                         <outlet property="weekend" destination="ugc-Dy-RPE" id="RbI-Kj-iGL"/>
                         <segue destination="Ubn-9S-Wlv" kind="push" identifier="toNavigationView" id="0dy-Dm-Q40"/>
-                        <segue destination="9wA-nO-xUJ" kind="push" identifier="" id="Ern-fy-e2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUa-wT-tuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -589,6 +588,18 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khf-Eo-9Il">
+                                <rect key="frame" x="18" y="434" width="284" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Press here to enter code for your location">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f4T-vK-aM3" kind="push" identifier="enterCode" id="gCx-ZG-wtZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -602,6 +613,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="destination" destination="C7z-GM-WKD" id="lN0-py-ljj"/>
+                        <outlet property="enterCode" destination="khf-Eo-9Il" id="Rja-Fh-T70"/>
                         <outlet property="giveDirections" destination="scW-Dc-VgU" id="oZf-TO-yUw"/>
                         <outlet property="source" destination="srR-rB-4QV" id="y5X-xe-QVf"/>
                     </connections>
@@ -755,6 +767,55 @@
             </objects>
             <point key="canvasLocation" x="3028" y="194"/>
         </scene>
+        <!--Enter Code View Controller - Enter Code-->
+        <scene sceneID="pH8-oH-rkE">
+            <objects>
+                <viewController id="f4T-vK-aM3" customClass="EnterCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ILI-q8-bQO"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDF-1G-cxc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YaP-xi-MMe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDW-kU-par">
+                                <rect key="frame" x="67" y="175" width="186" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Code to find your current location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4m-Ur-h8R">
+                                <rect key="frame" x="31" y="130" width="258" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJX-Cr-BTI">
+                                <rect key="frame" x="118" y="223" width="84" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Locate Me!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y1E-Sy-gji" kind="unwind" unwindAction="codeUnwindToViewController:" id="Syl-Fm-WMH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enter Code" id="vyT-YA-NcI"/>
+                    <connections>
+                        <outlet property="crunchCode" destination="lJX-Cr-BTI" id="0vm-cc-CkZ"/>
+                        <outlet property="inputField" destination="DDW-kU-par" id="Uui-zM-7Ca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GuS-Wm-Seh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="y1E-Sy-gji" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3752" y="199"/>
+        </scene>
         <!--Navigation Controller - Info-->
         <scene sceneID="fIB-Zq-Eux">
             <objects>
@@ -810,7 +871,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AK-bc-fCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153" y="954"/>
+            <point key="canvasLocation" x="2091" y="954"/>
         </scene>
     </scenes>
     <resources>

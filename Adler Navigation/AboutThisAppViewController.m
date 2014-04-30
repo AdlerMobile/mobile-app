@@ -43,6 +43,9 @@
     return 1;
 }
 
+/**
+ * Displays the table w.r.t the row index.
+ */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
     
@@ -70,19 +73,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    //Action when selected row is row 2 i.e. Adler Website.
     if (indexPath.row == 1)
     {
+        //open the link in Safari.
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.adlerplanetarium.org"]];
     }
     
+    //if other two selected then perform segue with identifier details to display details.
     else
     {
+        
         [self performSegueWithIdentifier:@"details" sender:self];
     }
     
 }
 
+/**
+ * Connects to AboutDetailsViewController to display the view based on user selection.
+ */
+ 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
@@ -94,6 +104,7 @@
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:myIndexPath];
         NSString *str = cell.textLabel.text;
         
+        //sending data through segues.
         if ([str isEqualToString:@"How to Use This App"])
         {
             vc.data = @"How to Use This App";
