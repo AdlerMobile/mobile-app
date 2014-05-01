@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+ 
     UIButton *adlerIntro = (UIButton *)[self.view viewWithTag:1];
     adlerIntro.layer.cornerRadius = 9.0f;
     
@@ -38,6 +38,10 @@
     
     UIButton *appSponsors = (UIButton *)[self.view viewWithTag:4];
     appSponsors.layer.cornerRadius = 9.0f;
+    
+
+    
+
 }
 
 - (void)didReceiveMemoryWarning

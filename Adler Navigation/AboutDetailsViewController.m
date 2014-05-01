@@ -26,7 +26,7 @@
         self.howToUseView.hidden = NO;
         
         //to load pdf which contains instructions on using this app.
-        NSString *myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Adler Mobile Navigation App Documentation" ofType: @"pdf"];
+        NSString *myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Adler_Intro" ofType: @"pdf"];
     
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];

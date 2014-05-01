@@ -34,6 +34,10 @@
         
         UIButton *btn = (UIButton *)[self.view viewWithTag:100];
         btn.backgroundColor = [UIColor blackColor];
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
+        btn.layer.borderWidth = 1.5f;
+        btn.layer.borderColor = [[UIColor whiteColor] CGColor];
+        btn.layer.cornerRadius = 9.0f;
     }
 }
 

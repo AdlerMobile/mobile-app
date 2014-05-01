@@ -89,6 +89,13 @@
 		726E85A91903C8CA007F5803 /* ast_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85A81903C8CA007F5803 /* ast_name.txt */; };
 		726E85AB1903C903007F5803 /* cla_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85AA1903C903007F5803 /* cla_name.txt */; };
 		72714FB919123AF2002D39CA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FB819123AF2002D39CA /* AboutViewController.m */; };
+		72714FBD19124286002D39CA /* Adler_Intro.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72714FBC19124286002D39CA /* Adler_Intro.pdf */; };
+		72714FC619124706002D39CA /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FC519124706002D39CA /* PageContentViewController.m */; };
+		72714FCB19124989002D39CA /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FC719124989002D39CA /* page1.png */; };
+		72714FCC19124989002D39CA /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FC819124989002D39CA /* page2.png */; };
+		72714FCD19124989002D39CA /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FC919124989002D39CA /* page3.png */; };
+		72714FCE19124989002D39CA /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FCA19124989002D39CA /* page4.png */; };
+		72714FD119124A86002D39CA /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FD019124A86002D39CA /* TutorialViewController.m */; };
 		727A228518F092ED005DF50E /* Exhibit.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A228418F092ED005DF50E /* Exhibit.m */; };
 		72DF6DF218F0BEE200B7B6F6 /* lower_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */; };
 		72DF6DF318F0BEE200B7B6F6 /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE118F0BEE200B7B6F6 /* lower.pdf */; };
@@ -227,6 +234,15 @@
 		726E85AA1903C903007F5803 /* cla_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cla_name.txt; sourceTree = "<group>"; };
 		72714FB719123AF2002D39CA /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		72714FB819123AF2002D39CA /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		72714FBC19124286002D39CA /* Adler_Intro.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Adler_Intro.pdf; sourceTree = "<group>"; };
+		72714FC419124706002D39CA /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		72714FC519124706002D39CA /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		72714FC719124989002D39CA /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
+		72714FC819124989002D39CA /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
+		72714FC919124989002D39CA /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		72714FCA19124989002D39CA /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
+		72714FCF19124A86002D39CA /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		72714FD019124A86002D39CA /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
 		727A228318F092ED005DF50E /* Exhibit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exhibit.h; path = Model/Exhibit.h; sourceTree = "<group>"; };
 		727A228418F092ED005DF50E /* Exhibit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exhibit.m; path = Model/Exhibit.m; sourceTree = "<group>"; };
 		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
@@ -252,7 +268,7 @@
 		FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachMapViewController.h; sourceTree = "<group>"; };
 		FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFloorViewController.h; sourceTree = "<group>"; };
-		FE5C87F418D634C3009E2CC2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FE5C87F418D634C3009E2CC2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		FE5C87F518D634C3009E2CC2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
 		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
@@ -338,14 +354,22 @@
 			children = (
 				30E50262183607E100BCDA41 /* AppDelegate.h */,
 				30E50263183607E100BCDA41 /* AppDelegate.m */,
+				72714FB719123AF2002D39CA /* AboutViewController.h */,
+				72714FB819123AF2002D39CA /* AboutViewController.m */,
+				FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */,
+				FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */,
 				FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */,
 				FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */,
-				720700DD18F8F2C400B17AD3 /* ExhibitViewController.h */,
-				720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */,
-				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
-				FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */,
 				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
+				FE9F45DF1910FD8C00B8CC6C /* EnterCodeViewController.h */,
+				FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */,
+				720700DD18F8F2C400B17AD3 /* ExhibitViewController.h */,
+				720700DE18F8F2C400B17AD3 /* ExhibitViewController.m */,
+				FE9F45E21911EF9200B8CC6C /* FacilityDetailViewController.h */,
+				FE9F45E31911EF9200B8CC6C /* FacilityDetailViewController.m */,
+				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
+				FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */,
 				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
 				FED8ED8718F76290005A285B /* InfoViewController.h */,
@@ -362,14 +386,10 @@
 				FE5C87E618D63449009E2CC2 /* NavigationViewController.m */,
 				FE9F45ED1911FF6C00B8CC6C /* MenuViewController.h */,
 				FE9F45EE1911FF6C00B8CC6C /* MenuViewController.m */,
-				FE9F45E21911EF9200B8CC6C /* FacilityDetailViewController.h */,
-				FE9F45E31911EF9200B8CC6C /* FacilityDetailViewController.m */,
-				FE9F45DF1910FD8C00B8CC6C /* EnterCodeViewController.h */,
-				FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */,
-				FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */,
-				FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */,
-				72714FB719123AF2002D39CA /* AboutViewController.h */,
-				72714FB819123AF2002D39CA /* AboutViewController.m */,
+				72714FC419124706002D39CA /* PageContentViewController.h */,
+				72714FC519124706002D39CA /* PageContentViewController.m */,
+				72714FCF19124A86002D39CA /* TutorialViewController.h */,
+				72714FD019124A86002D39CA /* TutorialViewController.m */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
@@ -382,6 +402,11 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				72714FC719124989002D39CA /* page1.png */,
+				72714FC819124989002D39CA /* page2.png */,
+				72714FC919124989002D39CA /* page3.png */,
+				72714FCA19124989002D39CA /* page4.png */,
+				72714FBC19124286002D39CA /* Adler_Intro.pdf */,
 				FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */,
 				FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */,
 				FE9F45E91911F5CD00B8CC6C /* cafe.jpg */,
@@ -715,12 +740,14 @@
 				726E85991903C879007F5803 /* hid_name.txt in Resources */,
 				726E85881903B332007F5803 /* sfm_short.txt in Resources */,
 				FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */,
+				72714FBD19124286002D39CA /* Adler_Intro.pdf in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				72DF6DF518F0BEE200B7B6F6 /* map_data_all.plist in Resources */,
 				FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */,
 				FE9F45EC1911F5DA00B8CC6C /* store.jpg in Resources */,
 				72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */,
 				726E857C1903B332007F5803 /* solar2.jpg in Resources */,
+				72714FCB19124989002D39CA /* page1.png in Resources */,
 				726E85911903B332007F5803 /* tele_long.txt in Resources */,
 				726E85A91903C8CA007F5803 /* ast_name.txt in Resources */,
 				726E858E1903B332007F5803 /* sund_long.txt in Resources */,
@@ -750,6 +777,7 @@
 				72DF6DFB18F0BEE200B7B6F6 /* star_paths.pdf in Resources */,
 				726E859F1903C89B007F5803 /* pe_name.txt in Resources */,
 				726E85901903B332007F5803 /* tele0.png in Resources */,
+				72714FCC19124989002D39CA /* page2.png in Resources */,
 				726E85861903B332007F5803 /* sfm0.png in Resources */,
 				726E85711903B332007F5803 /* cyb0.jpg in Resources */,
 				720700D618F8F25500B17AD3 /* ast0.jpg in Resources */,
@@ -759,6 +787,7 @@
 				726E858D1903B332007F5803 /* sund4.jpg in Resources */,
 				726E85811903B332007F5803 /* solar_long.txt in Resources */,
 				726E85731903B332007F5803 /* cyb_short.txt in Resources */,
+				72714FCE19124989002D39CA /* page4.png in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 				726E85A51903C8BA007F5803 /* tele_name.txt in Resources */,
 				FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */,
@@ -767,6 +796,7 @@
 				726E85931903B332007F5803 /* unv0.png in Resources */,
 				726E857E1903B332007F5803 /* solar4.jpg in Resources */,
 				726E859B1903C882007F5803 /* hist_name.txt in Resources */,
+				72714FCD19124989002D39CA /* page3.png in Resources */,
 				726E85951903B332007F5803 /* unv_short.txt in Resources */,
 				726E85891903B332007F5803 /* sund0.jpg in Resources */,
 				FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */,
@@ -798,6 +828,7 @@
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
 				726E853F19039777007F5803 /* ImageViewController.m in Sources */,
 				FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */,
+				72714FD119124A86002D39CA /* TutorialViewController.m in Sources */,
 				FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */,
 				72714FB919123AF2002D39CA /* AboutViewController.m in Sources */,
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
@@ -805,6 +836,7 @@
 				720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */,
 				FE9F45E11910FD8D00B8CC6C /* EnterCodeViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
+				72714FC619124706002D39CA /* PageContentViewController.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
 				FE9F45E41911EF9200B8CC6C /* FacilityDetailViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,

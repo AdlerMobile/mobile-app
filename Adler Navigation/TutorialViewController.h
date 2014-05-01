@@ -1,5 +1,5 @@
 //
-//  AboutViewController.h
+//  TutorialViewController.h
 //  Adler Planetarium
 //
 //  Created by Shi Qiu on 5/1/14.
@@ -7,16 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AboutDetailsViewController.h"
 #import "PageContentViewController.h"
 
-@interface AboutViewController : UIViewController 
-
+@interface TutorialViewController : UIViewController <UIPageViewControllerDataSource>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (strong, nonatomic) NSArray *pageTitles;
 @property (strong, nonatomic) NSArray *pageImages;
 
-
 - (IBAction)startWalkthrough:(id)sender;
+
 @end
