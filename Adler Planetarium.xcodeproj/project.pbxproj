@@ -936,6 +936,7 @@
 				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
 				INFOPLIST_FILE = "Adler Navigation/Adler Planetarium-Info.plist";
 				PRODUCT_NAME = "Adler Planetarium";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -949,6 +950,7 @@
 				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
 				INFOPLIST_FILE = "Adler Navigation/Adler Planetarium-Info.plist";
 				PRODUCT_NAME = "Adler Planetarium";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
