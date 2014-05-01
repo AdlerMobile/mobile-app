@@ -162,10 +162,8 @@
 {
     if ([segue.identifier isEqualToString:@"viewExhibitDetail"]) {
         
-        NSLog(@"in prepare for segue   .");
-        
         ImageViewController *vc = [segue destinationViewController];
-        vc.exhibits = _exhibits;;
+        vc.exhibits = _exhibits;
         
         if(!vc.exhibits){
             NSLog(@"exhibits nil");

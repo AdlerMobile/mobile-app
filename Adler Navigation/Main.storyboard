@@ -5,6 +5,35 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller - Café Galelio's Menu-->
+        <scene sceneID="pPy-l8-5Qj">
+            <objects>
+                <viewController id="eAa-qS-fNt" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bOp-YL-WSN"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8n-eX-NfK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lkp-HI-juA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMe-7l-KXJ">
+                                <rect key="frame" x="0.0" y="65" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Café Galelio's Menu" id="mJg-47-AKI"/>
+                    <connections>
+                        <outlet property="displayMenu" destination="BMe-7l-KXJ" id="6QM-oB-jh9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTo-EA-S9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3752" y="-1873"/>
+        </scene>
         <!--Floor View Controller - Pick your floor-->
         <scene sceneID="Pwo-dj-B9c">
             <objects>
@@ -206,6 +235,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="YwU-uU-Kal" kind="push" identifier="detailFacility" id="gOx-q4-Yi9"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -252,6 +284,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUa-wT-tuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2679" y="-1250"/>
+        </scene>
+        <!--Facility Detail View Controller - Detail Facility-->
+        <scene sceneID="2eD-Vx-V5X">
+            <objects>
+                <viewController id="YwU-uU-Kal" customClass="FacilityDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q2H-bd-bbS"/>
+                        <viewControllerLayoutGuide type="bottom" id="feQ-Rd-80b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o77-Ou-HpU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KN6-dn-djI">
+                                <rect key="frame" x="0.0" y="62" width="320" height="250"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNs-z8-bLW">
+                                <rect key="frame" x="0.0" y="313" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-Of-a59">
+                                <rect key="frame" x="112" y="480" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take me here!">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.011788656139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ubn-9S-Wlv" kind="push" identifier="takeToFacility" id="kbg-Hk-ZC9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09R-qP-9qT">
+                                <rect key="frame" x="112" y="442" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eAa-qS-fNt" kind="push" identifier="viewMenu" id="tez-14-0JG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-Bi-Qwz">
+                                <rect key="frame" x="88" y="449" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Online Store">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewMenu:" destination="YwU-uU-Kal" eventType="touchUpInside" id="Aq1-J3-vJA"/>
+                                    <action selector="viewOnlineStore:" destination="YwU-uU-Kal" eventType="touchUpInside" id="cDq-jJ-yVe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail Facility" id="Qb1-3l-PNJ"/>
+                    <connections>
+                        <outlet property="image" destination="KN6-dn-djI" id="zeG-fM-PYL"/>
+                        <outlet property="navBar" destination="Qb1-3l-PNJ" id="RMn-p5-wlg"/>
+                        <outlet property="navButton" destination="A6g-Of-a59" id="aCO-wc-4HT"/>
+                        <outlet property="onlineStoreButton" destination="0Su-Bi-Qwz" id="1zt-9O-her"/>
+                        <outlet property="textDescription" destination="yNs-z8-bLW" id="COd-84-mnC"/>
+                        <outlet property="viewMenuButton" destination="09R-qP-9qT" id="EVq-c8-XTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgK-Jh-Bd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3134" y="-1250"/>
         </scene>
         <!--Map Floor View Controller - Pick Level-->
         <scene sceneID="oic-jB-690">
@@ -419,7 +525,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="k5i-HD-caL">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="AboutThisAppCell" id="k5i-HD-caL">
                                         <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k5i-HD-caL" id="zSP-jx-fCb">
@@ -728,7 +834,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="50" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ak2-H7-WdQ" customClass="ImageView">
+                            <imageView userInteractionEnabled="NO" tag="50" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ak2-H7-WdQ">
                                 <rect key="frame" x="0.0" y="66" width="320" height="316"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -743,10 +849,8 @@
                             <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEe-BL-xLa">
                                 <rect key="frame" x="0.0" y="472" width="320" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <state key="normal" title="Navigate to Here">
-                                    <color key="titleColor" red="0.80935801630434789" green="0.60575084248430133" blue="0.23652045657740028" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.55203379755434789" green="0.098458825134949482" blue="0.14034348993289797" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Take me here!">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.011788656139999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="toNavigate:" destination="hFn-Lw-tlt" eventType="touchUpInside" id="ctF-ea-6iG"/>
@@ -760,6 +864,7 @@
                     <connections>
                         <outlet property="display" destination="Ak2-H7-WdQ" id="5Sv-TT-3Uh"/>
                         <outlet property="longDetails" destination="jVX-N4-yDQ" id="jzb-LA-Q1Y"/>
+                        <outlet property="navBar" destination="K34-bv-s3d" id="rxm-SW-lU8"/>
                         <outlet property="naviButton" destination="LEe-BL-xLa" id="MA0-AN-0cl"/>
                     </connections>
                 </viewController>
@@ -888,7 +993,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0dy-Dm-Q40"/>
+        <segue reference="JOX-VC-a77"/>
         <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>

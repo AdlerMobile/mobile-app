@@ -114,6 +114,11 @@
 		FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */; };
 		FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8D8697190F4780002CCE9A /* uiuc_logo.png */; };
 		FE9F45E11910FD8D00B8CC6C /* EnterCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */; };
+		FE9F45E41911EF9200B8CC6C /* FacilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F45E31911EF9200B8CC6C /* FacilityDetailViewController.m */; };
+		FE9F45EA1911F5CD00B8CC6C /* cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9F45E91911F5CD00B8CC6C /* cafe.jpg */; };
+		FE9F45EC1911F5DA00B8CC6C /* store.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE9F45EB1911F5DA00B8CC6C /* store.jpg */; };
+		FE9F45EF1911FF6C00B8CC6C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F45EE1911FF6C00B8CC6C /* MenuViewController.m */; };
+		FE9F45F11911FFEA00B8CC6C /* galileo_menu_2014.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */; };
 		FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88B18F4E0D000A01AA8 /* black.png */; };
 		FEA4A88E18F4E0D900A01AA8 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4A88D18F4E0D900A01AA8 /* blue.png */; };
 		FED8ED8918F76290005A285B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8ED8818F76290005A285B /* InfoViewController.m */; };
@@ -258,6 +263,13 @@
 		FE8D8697190F4780002CCE9A /* uiuc_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uiuc_logo.png; sourceTree = "<group>"; };
 		FE9F45DF1910FD8C00B8CC6C /* EnterCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterCodeViewController.h; sourceTree = "<group>"; };
 		FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterCodeViewController.m; sourceTree = "<group>"; };
+		FE9F45E21911EF9200B8CC6C /* FacilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilityDetailViewController.h; sourceTree = "<group>"; };
+		FE9F45E31911EF9200B8CC6C /* FacilityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilityDetailViewController.m; sourceTree = "<group>"; };
+		FE9F45E91911F5CD00B8CC6C /* cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafe.jpg; sourceTree = "<group>"; };
+		FE9F45EB1911F5DA00B8CC6C /* store.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = store.jpg; sourceTree = "<group>"; };
+		FE9F45ED1911FF6C00B8CC6C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FE9F45EE1911FF6C00B8CC6C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = galileo_menu_2014.pdf; sourceTree = "<group>"; };
 		FEA4A88B18F4E0D000A01AA8 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		FEA4A88D18F4E0D900A01AA8 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		FED8ED8718F76290005A285B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
@@ -349,6 +361,10 @@
 				FE5C87E818D63449009E2CC2 /* NavigationViewController.h */,
 				FE5C87E618D63449009E2CC2 /* NavigationViewController.m */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
+				FE9F45ED1911FF6C00B8CC6C /* MenuViewController.h */,
+				FE9F45EE1911FF6C00B8CC6C /* MenuViewController.m */,
+				FE9F45E21911EF9200B8CC6C /* FacilityDetailViewController.h */,
+				FE9F45E31911EF9200B8CC6C /* FacilityDetailViewController.m */,
 				FE9F45DF1910FD8C00B8CC6C /* EnterCodeViewController.h */,
 				FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */,
 				FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */,
@@ -367,6 +383,9 @@
 			isa = PBXGroup;
 			children = (
 				FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */,
+				FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */,
+				FE9F45E91911F5CD00B8CC6C /* cafe.jpg */,
+				FE9F45EB1911F5DA00B8CC6C /* store.jpg */,
 				FE8D8697190F4780002CCE9A /* uiuc_logo.png */,
 				FEA4A88B18F4E0D000A01AA8 /* black.png */,
 				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
@@ -699,12 +718,14 @@
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				72DF6DF518F0BEE200B7B6F6 /* map_data_all.plist in Resources */,
 				FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */,
+				FE9F45EC1911F5DA00B8CC6C /* store.jpg in Resources */,
 				72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */,
 				726E857C1903B332007F5803 /* solar2.jpg in Resources */,
 				726E85911903B332007F5803 /* tele_long.txt in Resources */,
 				726E85A91903C8CA007F5803 /* ast_name.txt in Resources */,
 				726E858E1903B332007F5803 /* sund_long.txt in Resources */,
 				726E857F1903B332007F5803 /* solar5.jpg in Resources */,
+				FE9F45EA1911F5CD00B8CC6C /* cafe.jpg in Resources */,
 				726E85751903B332007F5803 /* hid_long.txt in Resources */,
 				726E85801903B332007F5803 /* solar6.jpg in Resources */,
 				726E857A1903B332007F5803 /* solar0.png in Resources */,
@@ -742,6 +763,7 @@
 				726E85A51903C8BA007F5803 /* tele_name.txt in Resources */,
 				FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */,
 				726E859D1903C88E007F5803 /* solar_name.txt in Resources */,
+				FE9F45F11911FFEA00B8CC6C /* galileo_menu_2014.pdf in Resources */,
 				726E85931903B332007F5803 /* unv0.png in Resources */,
 				726E857E1903B332007F5803 /* solar4.jpg in Resources */,
 				726E859B1903C882007F5803 /* hist_name.txt in Resources */,
@@ -783,7 +805,9 @@
 				FE9F45E11910FD8D00B8CC6C /* EnterCodeViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
 				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
+				FE9F45E41911EF9200B8CC6C /* FacilityDetailViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
+				FE9F45EF1911FF6C00B8CC6C /* MenuViewController.m in Sources */,
 				FED8ED8918F76290005A285B /* InfoViewController.m in Sources */,
 				FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */,
 				FE8D868E190F02FF002CCE9A /* AboutThisAppViewController.m in Sources */,

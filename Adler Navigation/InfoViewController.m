@@ -9,6 +9,7 @@
 #import "InfoViewController.h"
 #import "NavigationViewController.h"
 #import "MapViewController.h"
+#import "FacilityDetailViewController.h"
 
 @interface InfoViewController ()
 
@@ -73,7 +74,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([tableView isEqual:self.facilitiesTable]) {
+        if (indexPath.row == 7 || indexPath.row == 8) {
+            [self performSegueWithIdentifier:@"detailFacility" sender:self];
+        }
+        else {
         [self performSegueWithIdentifier:@"toNavigationView" sender:self];
+        }
     }
 }
 
@@ -87,6 +93,12 @@
         NavigationViewController *viewController = [segue destinationViewController];
         viewController.dest = str;
     }
+    
+    if ([[segue identifier] isEqualToString:@"detailFacility"]) {
+        FacilityDetailViewController * vc = [segue destinationViewController];
+        vc.data = str;
+    }
+    
 }
 
 

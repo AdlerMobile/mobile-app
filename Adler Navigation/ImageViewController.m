@@ -15,20 +15,12 @@
 
 @implementation ImageViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     if(self.curExhibit){
+        [_navBar setTitle:_curExhibit.ID];
         self.longDetails.editable = NO;
         self.longDetails.text = self.curExhibit.description;
         self.display.image = self.curExhibit.images[0];

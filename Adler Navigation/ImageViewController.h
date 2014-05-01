@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *exhibitName;
 @property (weak, nonatomic) IBOutlet UIImageView *display;
 @property (weak, nonatomic) IBOutlet UITextView *longDetails;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navBar;
 @property (weak, nonatomic) IBOutlet UIButton *naviButton;
 
 @property NSMutableArray *exhibits;
