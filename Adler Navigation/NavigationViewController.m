@@ -84,7 +84,7 @@
             return NO;
         }
         
-        //handling when both the fields have teh same exhibit.
+        //handling when both the fields have same exhibits.
         if ([_source.text isEqualToString:_destination.text]) {
             UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nTadaaa!! You have reached your destination.\n\n"
                                                                    delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
