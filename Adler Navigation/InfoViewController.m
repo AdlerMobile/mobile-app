@@ -23,7 +23,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     [self displayHoursSegment];
     [self displayShowTimesSegment];
 
@@ -56,7 +55,19 @@
         for (int j = 0; j<[showTimes count]; j++) {
             NSDictionary * timing = [showTimes objectAtIndex:j];
             NSString * dateTime = [timing objectForKey:@"StartDateTime"];
-            NSArray * time = [dateTime componentsSeparatedByString:@" "];
+            
+            NSMutableArray *time = [NSMutableArray array];
+            NSScanner      *scanner = [NSScanner scannerWithString:dateTime];
+            NSCharacterSet *charSet = [NSCharacterSet characterSetWithCharactersInString:@" "];
+            
+            //to take strings and not blank spaces
+            while ([scanner isAtEnd] == NO)
+            {
+                NSString *string;
+                [scanner scanUpToCharactersFromSet:charSet intoString:&string];
+                [time addObject:string];
+            }
+            
             NSMutableString * modifiedTime = [NSMutableString stringWithString:time[3]];
             [modifiedTime deleteCharactersInRange:NSMakeRange(5, 7)];
 
@@ -151,6 +162,7 @@
 
 - (void) displayHoursSegment
 {
+    
     NSString *str=@"http://adlersiteserver.herokuapp.com/open_hours";
     NSURL *url=[NSURL URLWithString:str];
     NSData *data=[NSData dataWithContentsOfURL:url];
