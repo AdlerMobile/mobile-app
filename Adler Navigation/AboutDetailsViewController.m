@@ -36,7 +36,7 @@
     }
     
     //Preparing view for Sponsored By.
-    if ([_data isEqualToString:@"Sponsored By"])
+    if ([_data isEqualToString:@"getSponsors"])
     {
         self.sponsorView.hidden = NO;
         self.howToUseView.hidden = YES;

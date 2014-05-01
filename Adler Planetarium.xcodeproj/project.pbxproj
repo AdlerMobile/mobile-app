@@ -88,6 +88,7 @@
 		726E85A71903C8C4007F5803 /* unv_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85A61903C8C4007F5803 /* unv_name.txt */; };
 		726E85A91903C8CA007F5803 /* ast_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85A81903C8CA007F5803 /* ast_name.txt */; };
 		726E85AB1903C903007F5803 /* cla_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 726E85AA1903C903007F5803 /* cla_name.txt */; };
+		72714FB919123AF2002D39CA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FB819123AF2002D39CA /* AboutViewController.m */; };
 		727A228518F092ED005DF50E /* Exhibit.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A228418F092ED005DF50E /* Exhibit.m */; };
 		72DF6DF218F0BEE200B7B6F6 /* lower_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */; };
 		72DF6DF318F0BEE200B7B6F6 /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE118F0BEE200B7B6F6 /* lower.pdf */; };
@@ -109,7 +110,6 @@
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
 		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
-		FE8D868E190F02FF002CCE9A /* AboutThisAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D868D190F02FF002CCE9A /* AboutThisAppViewController.m */; };
 		FE8D8693190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */; };
 		FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */; };
 		FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8D8697190F4780002CCE9A /* uiuc_logo.png */; };
@@ -225,6 +225,8 @@
 		726E85A61903C8C4007F5803 /* unv_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unv_name.txt; sourceTree = "<group>"; };
 		726E85A81903C8CA007F5803 /* ast_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ast_name.txt; sourceTree = "<group>"; };
 		726E85AA1903C903007F5803 /* cla_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cla_name.txt; sourceTree = "<group>"; };
+		72714FB719123AF2002D39CA /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		72714FB819123AF2002D39CA /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		727A228318F092ED005DF50E /* Exhibit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exhibit.h; path = Model/Exhibit.h; sourceTree = "<group>"; };
 		727A228418F092ED005DF50E /* Exhibit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exhibit.m; path = Model/Exhibit.m; sourceTree = "<group>"; };
 		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
@@ -255,8 +257,6 @@
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
 		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
 		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
-		FE8D868C190F02FF002CCE9A /* AboutThisAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutThisAppViewController.h; sourceTree = "<group>"; };
-		FE8D868D190F02FF002CCE9A /* AboutThisAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutThisAppViewController.m; sourceTree = "<group>"; };
 		FE8D8692190F12FF002CCE9A /* Adler Mobile Navigation App Documentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Adler Mobile Navigation App Documentation.pdf"; sourceTree = "<group>"; };
 		FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailsViewController.h; sourceTree = "<group>"; };
 		FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailsViewController.m; sourceTree = "<group>"; };
@@ -368,8 +368,8 @@
 				FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */,
 				FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */,
 				FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */,
-				FE8D868C190F02FF002CCE9A /* AboutThisAppViewController.h */,
-				FE8D868D190F02FF002CCE9A /* AboutThisAppViewController.m */,
+				72714FB719123AF2002D39CA /* AboutViewController.h */,
+				72714FB819123AF2002D39CA /* AboutViewController.m */,
 				B6D85FAE184FC4B9002B33BF /* Main.storyboard */,
 				30E502861836080B00BCDA41 /* Model */,
 				30E5025A183607E100BCDA41 /* Supporting Files */,
@@ -799,6 +799,7 @@
 				726E853F19039777007F5803 /* ImageViewController.m in Sources */,
 				FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */,
 				FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */,
+				72714FB919123AF2002D39CA /* AboutViewController.m in Sources */,
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
 				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */,
@@ -810,7 +811,6 @@
 				FE9F45EF1911FF6C00B8CC6C /* MenuViewController.m in Sources */,
 				FED8ED8918F76290005A285B /* InfoViewController.m in Sources */,
 				FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */,
-				FE8D868E190F02FF002CCE9A /* AboutThisAppViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

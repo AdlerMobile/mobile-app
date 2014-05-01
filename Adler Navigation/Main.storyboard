@@ -489,7 +489,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ahv-sp-bwk" kind="push" id="eMc-zj-xbE"/>
+                                    <segue destination="xLy-Ug-3jn" kind="push" id="2H5-HI-Nqq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -508,51 +508,67 @@
             </objects>
             <point key="canvasLocation" x="2679" y="954"/>
         </scene>
-        <!--About This App View Controller - About This App-->
-        <scene sceneID="YLE-nK-QG7">
+        <!--About View Controller-->
+        <scene sceneID="8nO-oY-3DX">
             <objects>
-                <viewController id="ahv-sp-bwk" customClass="AboutThisAppViewController" sceneMemberID="viewController">
+                <viewController id="xLy-Ug-3jn" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hek-09-1oe"/>
-                        <viewControllerLayoutGuide type="bottom" id="EA8-rz-pCM"/>
+                        <viewControllerLayoutGuide type="top" id="c3G-S7-mpg"/>
+                        <viewControllerLayoutGuide type="bottom" id="FQJ-Hf-5aL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bUa-vu-6lO">
+                    <view key="view" contentMode="scaleToFill" id="bxb-MS-hNd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-Ho-Wog" userLabel="tableView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="AboutThisAppCell" id="k5i-HD-caL">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k5i-HD-caL" id="zSP-jx-fCb">
-                                            <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="VNH-8P-ZFL" kind="push" identifier="details" id="mmi-1z-U8Z"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7f-hn-8uT">
+                                <rect key="frame" x="63" y="193" width="242" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="How to Use the App">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0J-Nc-Kub">
+                                <rect key="frame" x="20" y="65" width="260" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Intro to Adler Planetarium">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="dataSource" destination="ahv-sp-bwk" id="mDM-18-Asr"/>
-                                    <outlet property="delegate" destination="ahv-sp-bwk" id="flw-1V-aVZ"/>
+                                    <segue destination="VNH-8P-ZFL" kind="push" identifier="getAdlerIntro" id="7qi-An-SEi"/>
                                 </connections>
-                            </tableView>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgK-4s-IEU">
+                                <rect key="frame" x="188" y="367" width="117" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="About Sponsors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VNH-8P-ZFL" kind="push" identifier="getSponsors" id="oga-qg-85w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnm-ve-Uqs">
+                                <rect key="frame" x="9" y="355" width="162" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Adler Website">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToWebsite:" destination="xLy-Ug-3jn" eventType="touchUpInside" id="nQv-kd-zf6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About This App" id="AuE-76-uTE"/>
-                    <connections>
-                        <outlet property="tableView" destination="IKX-Ho-Wog" id="8pC-96-Arq"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="sDf-H8-otX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p7B-qi-MF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8O-no-efp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3212" y="954"/>
+            <point key="canvasLocation" x="3207" y="932"/>
         </scene>
         <!--About Details View Controller-->
         <scene sceneID="yFh-tR-PME">
@@ -638,7 +654,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCD-AI-CVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3823" y="954"/>
+            <point key="canvasLocation" x="3744" y="932"/>
         </scene>
         <!--Navigation View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
@@ -1007,5 +1023,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="JOX-VC-a77"/>
         <segue reference="dCW-N5-2nI"/>
+        <segue reference="oga-qg-85w"/>
     </inferredMetricsTieBreakers>
 </document>
