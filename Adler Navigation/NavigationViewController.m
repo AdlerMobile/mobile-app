@@ -34,8 +34,10 @@
     //Designs for the text fields and buttons on this page.
     UITextField *src = (UITextField *)[self.view viewWithTag:1];
     src.layer.borderWidth = 1.5f;
+    src.layer.cornerRadius = 9.0f;
     UITextField *des = (UITextField *)[self.view viewWithTag:2];
     des.layer.borderWidth = 1.5f;
+    des.layer.cornerRadius = 9.0f;
     
     UIButton *enterLocation = (UIButton *)[self.view viewWithTag:3];
     enterLocation.layer.borderWidth = 1.5f;
@@ -82,7 +84,7 @@
         
         //handling when both the fields have same exhibits.
         if ([_source.text isEqualToString:_destination.text]) {
-            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nTadaaa!! You have reached your destination.\n\n"
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nYou are already at your destination.\n\n"
                                                                    delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
                                                           otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
             [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
@@ -93,7 +95,7 @@
         
         //handling when a user tries visiting the closest restroom while at the restroom.
         if ((([_source.text rangeOfString:@"Men's Restroom"].location != NSNotFound) && ([_destination.text rangeOfString:@"Men's Restroom"].location != NSNotFound))|| (([_source.text rangeOfString:@"Women's Restroom"].location != NSNotFound) && ([_destination.text rangeOfString:@"Women's Restroom"].location != NSNotFound))) {
-            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nTadaaa!! You have reached your destination.\n\n"
+            UIAlertView *navigateAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"\nYou are already at your destination.\n\n"
                                                                    delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
                                                           otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
             [navigateAlert setTransform:CGAffineTransformMakeTranslation(0,109)];
