@@ -309,10 +309,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-Of-a59">
-                                <rect key="frame" x="107" y="480" width="107" height="30"/>
+                                <rect key="frame" x="96" y="480" width="129" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Take me here!">
+                                <state key="normal" title="Take me here">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -320,7 +321,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09R-qP-9qT">
-                                <rect key="frame" x="112" y="449" width="96" height="30"/>
+                                <rect key="frame" x="106" y="442" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="View Menu">
@@ -331,7 +332,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-Bi-Qwz">
-                                <rect key="frame" x="90" y="449" width="140" height="30"/>
+                                <rect key="frame" x="84" y="442" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="View Online Store">
@@ -524,7 +525,7 @@
                     <connections>
                         <segue destination="VNH-8P-ZFL" kind="push" identifier="getSponsors" id="9qI-XO-kTR"/>
                         <segue destination="pbQ-jD-liQ" kind="push" identifier="getFAQ" id="4ek-vq-gJz"/>
-                        <segue destination="0Zc-5M-HhX" kind="push" identifier="getTutorial" id="qgk-kZ-THO"/>
+                        <segue destination="0Zc-5M-HhX" kind="push" identifier="getTutorial" id="OIL-uy-3Zn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8O-no-efp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1100,7 +1101,7 @@ We Value
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JOX-VC-a77"/>
+        <segue reference="kbg-Hk-ZC9"/>
         <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>
