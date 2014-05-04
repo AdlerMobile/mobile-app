@@ -36,9 +36,9 @@
     //button design with the rectangualar box.
     //Connects to AboutThisAppViewController.
     UIButton *btn = (UIButton *)[self.view viewWithTag:100];
-    btn.backgroundColor = [UIColor clearColor];
+    btn.backgroundColor = [UIColor whiteColor];
     btn.layer.borderWidth = 1.5f;
-    btn.layer.borderColor = [[UIColor whiteColor] CGColor];
+    btn.layer.borderColor = [[UIColor blackColor] CGColor];
     btn.layer.cornerRadius = 10.0f;
 }
 

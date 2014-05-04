@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
+    //self.view.backgroundColor = [UIColor blackColor];
     if(self.curExhibit){
         [_navBar setTitle:_curExhibit.ID];
         self.longDetails.editable = NO;
@@ -29,14 +29,14 @@
             _naviButton.hidden = YES;
         }
         UITextView *tv = self.longDetails;
-        tv.backgroundColor = [UIColor blackColor];
-        tv.textColor = [UIColor whiteColor];
+        //tv.backgroundColor = [UIColor blackColor];
+        //tv.textColor = [UIColor whiteColor];
         
         UIButton *btn = (UIButton *)[self.view viewWithTag:100];
-        btn.backgroundColor = [UIColor blackColor];
-        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
+        //btn.backgroundColor = [UIColor blackColor];
+        //[btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
         btn.layer.borderWidth = 1.5f;
-        btn.layer.borderColor = [[UIColor whiteColor] CGColor];
+        //btn.layer.borderColor = [[UIColor whiteColor] CGColor];
         btn.layer.cornerRadius = 9.0f;
     }
 }

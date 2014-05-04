@@ -16,6 +16,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *navButton;
 @property (strong, nonatomic) IBOutlet UIButton *onlineStoreButton;
 @property (strong, nonatomic) IBOutlet UIButton *viewMenuButton;
-- (IBAction)viewOnlineStore:(UIButton *)sender;
+- (IBAction)viewOnlineStore;
 
 @end

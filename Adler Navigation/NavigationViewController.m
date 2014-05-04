@@ -37,11 +37,11 @@
     NSMutableArray *arr = [[NSMutableArray alloc]init];
     [arr addObject:src];
     [arr addObject:des];
-    for (int i=0;i<2;i++){
-        UITextField *t = [arr objectAtIndex:i];
-        t.layer.borderWidth = 1.5f;
-        t.layer.borderColor = [[UIColor blackColor] CGColor];
-    }
+//    for (int i=0;i<2;i++){
+//        UITextField *t = [arr objectAtIndex:i];
+//        t.layer.borderWidth = 1.5f;
+//        t.layer.borderColor = [[UIColor blackColor] CGColor];
+//    }
     UIButton *enterLocation = (UIButton *)[self.view viewWithTag:3];
     enterLocation.layer.borderWidth = 1.5f;
     enterLocation.layer.cornerRadius = 9.0f;
