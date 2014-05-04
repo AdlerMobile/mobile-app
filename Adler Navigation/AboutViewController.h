@@ -12,11 +12,4 @@
 
 @interface AboutViewController : UIViewController 
 
-
-@property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) NSArray *pageTitles;
-@property (strong, nonatomic) NSArray *pageImages;
-
-
-- (IBAction)startWalkthrough:(id)sender;
 @end

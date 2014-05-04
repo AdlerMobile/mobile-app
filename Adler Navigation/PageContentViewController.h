@@ -9,13 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface PageContentViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *page;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property NSUInteger pageIndex;
 @property NSString *titleText;
 @property NSString *imageFile;
-
 
 @end

@@ -17,13 +17,15 @@
 - (void)viewDidLoad
 {
     
-    [self.navItem setTitle:_data];
+    
     
     //Preparing view for how to use this app.
-    if ([_data isEqualToString:@"How to Use This App"])
+    if ([_data isEqualToString:@"getAdlerIntro"])
     {
         self.sponsorView.hidden = YES;
         self.howToUseView.hidden = NO;
+        
+        [self.navItem setTitle:@"Adler"];
         
         //to load pdf which contains instructions on using this app.
         NSString *myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Adler_Intro" ofType: @"pdf"];
@@ -40,12 +42,14 @@
     {
         self.sponsorView.hidden = NO;
         self.howToUseView.hidden = YES;
+        [self.navItem setTitle:@"Sponsors"];
+        
         //displaying the U of I logo as an UIImageView.
         _uiucLogo.image = [UIImage imageNamed:@"uiuc_logo.png"];
     }
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
