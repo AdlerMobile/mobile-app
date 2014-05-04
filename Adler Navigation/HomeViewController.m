@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     //sets background color
-    self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
+    //self.view.backgroundColor = [UIColor colorWithRed:215.0/255 green:255.0/255 blue:240.0/255 alpha:1.0];
     
     //sets the image to be home2.png. To modify the home image add image to project and change the name of image here.
     _HomeImage.image = [UIImage imageNamed:@"home2.png"];
