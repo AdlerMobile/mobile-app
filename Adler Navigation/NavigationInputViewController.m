@@ -38,21 +38,6 @@
     UITextField *des = (UITextField *)[self.view viewWithTag:2];
     des.layer.borderWidth = 1.5f;
     des.layer.cornerRadius = 9.0f;
-    
-    UIButton *enterLocation = (UIButton *)[self.view viewWithTag:3];
-    enterLocation.layer.borderWidth = 1.5f;
-    enterLocation.layer.cornerRadius = 9.0f;
-    
-    UIButton *enterDestination = (UIButton *)[self.view viewWithTag:4];
-    enterDestination.layer.borderWidth = 1.5f;
-    enterDestination.layer.cornerRadius = 9.0f;
-    
-    UIButton *btn = (UIButton *)[self.view viewWithTag:5];
-    btn.layer.borderWidth = 1.5f;
-    btn.layer.cornerRadius = 9.0f;
-    
-    _enterCode.layer.borderWidth = 1.5f;
-    _enterCode.layer.cornerRadius = 9.0f;
 }
 
 
