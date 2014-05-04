@@ -33,15 +33,10 @@
     
     //Designs for the text fields and buttons on this page.
     UITextField *src = (UITextField *)[self.view viewWithTag:1];
+    src.layer.borderWidth = 1.5f;
     UITextField *des = (UITextField *)[self.view viewWithTag:2];
-    NSMutableArray *arr = [[NSMutableArray alloc]init];
-    [arr addObject:src];
-    [arr addObject:des];
-//    for (int i=0;i<2;i++){
-//        UITextField *t = [arr objectAtIndex:i];
-//        t.layer.borderWidth = 1.5f;
-//        t.layer.borderColor = [[UIColor blackColor] CGColor];
-//    }
+    des.layer.borderWidth = 1.5f;
+    
     UIButton *enterLocation = (UIButton *)[self.view viewWithTag:3];
     enterLocation.layer.borderWidth = 1.5f;
     enterLocation.layer.cornerRadius = 9.0f;
@@ -57,6 +52,7 @@
     _enterCode.layer.borderWidth = 1.5f;
     _enterCode.layer.cornerRadius = 9.0f;
 }
+
 
 - (void)didReceiveMemoryWarning
 {
