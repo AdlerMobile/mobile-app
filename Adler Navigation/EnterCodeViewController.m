@@ -21,9 +21,6 @@
     _inputField.keyboardType = UIKeyboardTypeNumberPad;
     
     UIButton *btn = (UIButton *)[self.view viewWithTag:1];
-    btn.backgroundColor = [UIColor blackColor];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
-    //    btn.layer.borderColor = [[UIColor whiteColor] CGColor];
     btn.layer.borderWidth = 1.5f;
     btn.layer.cornerRadius = 9.0f;
 }

@@ -27,14 +27,9 @@
 {
     [super viewDidLoad];
     
-    //UIImageView *background = (UIImageView *)[self.view viewWithTag:5];
     UIImageView *background = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 360, 568)];
     [background setImage:[UIImage imageNamed: @"about.png"]];
-    //background.image=[UIImage imageNamed:@"image.png"];
-    //background.contentMode = UIViewContentModeCenter;
     [self.view addSubview:background];
-    
-    //UIImageView *imageview=[[UIImageView alloc]initWithFrame:CGRectMake(250, 10, 40, 25)];
 
     
 
@@ -44,7 +39,7 @@
   forControlEvents:UIControlEventTouchUpInside];
     [bt1 setTitle:@"How to use this app" forState:UIControlStateNormal];
     [bt1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    bt1.frame = CGRectMake(80.0, 110.0, 160.0, 40.0);
+    bt1.frame = CGRectMake(80.0, 80.0, 160.0, 40.0);
     bt1.layer.borderWidth = 1.5f;
     bt1.layer.cornerRadius = 9.0f;
     [bt1.layer setBorderColor:[[UIColor whiteColor] CGColor]];
@@ -56,7 +51,7 @@
   forControlEvents:UIControlEventTouchUpInside];
     [bt2 setTitle:@"Intro to Adler" forState:UIControlStateNormal];
     [bt2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    bt2.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    bt2.frame = CGRectMake(80.0, 180.0, 160.0, 40.0);
     bt2.layer.borderWidth = 1.5f;
     bt2.layer.cornerRadius = 9.0f;
     [bt2.layer setBorderColor:[[UIColor whiteColor] CGColor]];
@@ -69,7 +64,7 @@
   forControlEvents:UIControlEventTouchUpInside];
     [bt3 setTitle:@"Go to Adler Website" forState:UIControlStateNormal];
     [bt3 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    bt3.frame = CGRectMake(80.0, 310.0, 160.0, 40.0);
+    bt3.frame = CGRectMake(80.0, 280.0, 160.0, 40.0);
     bt3.layer.borderWidth = 1.5f;
     bt3.layer.cornerRadius = 9.0f;
     [bt3.layer setBorderColor:[[UIColor whiteColor] CGColor]];
@@ -82,7 +77,7 @@
   forControlEvents:UIControlEventTouchUpInside];
     [bt4 setTitle:@"About Sponsors" forState:UIControlStateNormal];
     [bt4 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    bt4.frame = CGRectMake(80.0, 410.0, 160.0, 40.0);
+    bt4.frame = CGRectMake(80.0, 380.0, 160.0, 40.0);
     bt4.layer.borderWidth = 1.5f;
     bt4.layer.cornerRadius = 9.0f;
     [bt4.layer setBorderColor:[[UIColor whiteColor] CGColor]];
