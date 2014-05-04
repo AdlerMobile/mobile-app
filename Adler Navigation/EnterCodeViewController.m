@@ -7,7 +7,7 @@
 //
 
 #import "EnterCodeViewController.h"
-#import "NavigationViewController.h"
+#import "NavigationInputViewController.h"
 
 @interface EnterCodeViewController ()
 
@@ -64,7 +64,7 @@
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
     NSArray * nodeDataArray = [[NSArray alloc] initWithContentsOfFile:filePath];
     int index = [_inputField.text intValue];
-    NavigationViewController * vc = [segue destinationViewController];
+    NavigationInputViewController * vc = [segue destinationViewController];
     
     vc.data = [nodeDataArray[index] objectForKey:@"uid"];
 }

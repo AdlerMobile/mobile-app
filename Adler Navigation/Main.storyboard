@@ -548,7 +548,7 @@
                                 <rect key="frame" x="0.0" y="66" width="320" height="451"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Frequently Asked Questions
+                                <string key="text">Frequently Asked Questions
 
 Q: When did the Adler first open?
 A: May 12, 1930 was the Adler’s opening date, and Max Adler's 64th birthday.
@@ -571,7 +571,7 @@ We Value
 	•	Well-managed collections
 	•	Adherence to results-oriented planning
 	•	A professional work environment and highly motivated, diverse staff
-	•	Long-term financial stability and the economic viability of our endeavors.</mutableString>
+	•	Long-term financial stability and the economic viability of our endeavors.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                             </textView>
@@ -745,10 +745,10 @@ We Value
             </objects>
             <point key="canvasLocation" x="4599" y="932"/>
         </scene>
-        <!--Navigation View Controller - Navigation-->
+        <!--Navigation Input View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
             <objects>
-                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="NavigationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="NavigationInputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PFr-52-9ci"/>
                         <viewControllerLayoutGuide type="bottom" id="hN8-Z7-dws"/>

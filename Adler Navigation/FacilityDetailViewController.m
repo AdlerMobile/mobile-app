@@ -7,7 +7,7 @@
 //
 
 #import "FacilityDetailViewController.h"
-#import "NavigationViewController.h"
+#import "NavigationInputViewController.h"
 #import "MenuViewController.h"
 
 @interface FacilityDetailViewController ()
@@ -53,7 +53,7 @@
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"takeToFacility"]) {
-    NavigationViewController * vc = [segue destinationViewController];
+    NavigationInputViewController * vc = [segue destinationViewController];
     vc.dest = _data;
     }
 }

@@ -7,7 +7,7 @@
 //
 
 #import "InfoViewController.h"
-#import "NavigationViewController.h"
+#import "NavigationInputViewController.h"
 #import "MapViewController.h"
 #import "FacilityDetailViewController.h"
 
@@ -101,7 +101,7 @@
     NSString *str = cell.textLabel.text;
 
     if ([[segue identifier] isEqualToString:@"toNavigationView"]) {
-        NavigationViewController *viewController = [segue destinationViewController];
+        NavigationInputViewController *viewController = [segue destinationViewController];
         viewController.dest = str;
     }
     
