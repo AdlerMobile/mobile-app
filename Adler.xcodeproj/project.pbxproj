@@ -114,9 +114,10 @@
 		72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */; };
 		72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEE18F0BEE200B7B6F6 /* top.pdf */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
+		F34B278E1916F96A0003FE8C /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F34B278D1916F96A0003FE8C /* CustomButton.m */; };
 		FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BD18F3692800319486 /* downstairs.pdf */; };
 		FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BE18F3692800319486 /* upstairs.pdf */; };
-		FE5C87E918D63449009E2CC2 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* NavigationViewController.m */; };
+		FE5C87E918D63449009E2CC2 /* NavigationInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* NavigationInputViewController.m */; };
 		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
 		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
@@ -270,11 +271,13 @@
 		72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top_paths.pdf; path = "Map Data/top_paths.pdf"; sourceTree = "<group>"; };
 		72DF6DEE18F0BEE200B7B6F6 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top.pdf; path = "Map Data/top.pdf"; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F34B278C1916F96A0003FE8C /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		F34B278D1916F96A0003FE8C /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		FE3AE8BD18F3692800319486 /* downstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = downstairs.pdf; sourceTree = "<group>"; };
 		FE3AE8BE18F3692800319486 /* upstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = upstairs.pdf; sourceTree = "<group>"; };
-		FE5C87E618D63449009E2CC2 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		FE5C87E618D63449009E2CC2 /* NavigationInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationInputViewController.m; sourceTree = "<group>"; };
 		FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachFloorViewController.h; sourceTree = "<group>"; };
-		FE5C87E818D63449009E2CC2 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		FE5C87E818D63449009E2CC2 /* NavigationInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationInputViewController.h; sourceTree = "<group>"; };
 		FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorViewController.h; sourceTree = "<group>"; };
@@ -365,6 +368,8 @@
 		30E50259183607E100BCDA41 /* Adler Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F34B278C1916F96A0003FE8C /* CustomButton.h */,
+				F34B278D1916F96A0003FE8C /* CustomButton.m */,
 				30E50262183607E100BCDA41 /* AppDelegate.h */,
 				30E50263183607E100BCDA41 /* AppDelegate.m */,
 				72714FB719123AF2002D39CA /* AboutViewController.h */,
@@ -397,8 +402,8 @@
 				30E3740A18403EAB00996B60 /* MapViewController.m */,
 				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
 				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
-				FE5C87E818D63449009E2CC2 /* NavigationViewController.h */,
-				FE5C87E618D63449009E2CC2 /* NavigationViewController.m */,
+				FE5C87E818D63449009E2CC2 /* NavigationInputViewController.h */,
+				FE5C87E618D63449009E2CC2 /* NavigationInputViewController.m */,
 				FE9F45ED1911FF6C00B8CC6C /* MenuViewController.h */,
 				FE9F45EE1911FF6C00B8CC6C /* MenuViewController.m */,
 				72714FC419124706002D39CA /* PageContentViewController.h */,
@@ -857,7 +862,7 @@
 				30E374161858464500996B60 /* PriorityQueue.m in Sources */,
 				FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */,
 				30E50267183607E100BCDA41 /* Adler_Navigation.xcdatamodeld in Sources */,
-				FE5C87E918D63449009E2CC2 /* NavigationViewController.m in Sources */,
+				FE5C87E918D63449009E2CC2 /* NavigationInputViewController.m in Sources */,
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
 				726E853F19039777007F5803 /* ImageViewController.m in Sources */,
 				FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */,
@@ -875,6 +880,7 @@
 				FE9F45E41911EF9200B8CC6C /* FacilityDetailViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
 				FE9F45EF1911FF6C00B8CC6C /* MenuViewController.m in Sources */,
+				F34B278E1916F96A0003FE8C /* CustomButton.m in Sources */,
 				FED8ED8918F76290005A285B /* InfoViewController.m in Sources */,
 				FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,
