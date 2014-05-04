@@ -93,16 +93,15 @@
 		72714FB919123AF2002D39CA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FB819123AF2002D39CA /* AboutViewController.m */; };
 		72714FBD19124286002D39CA /* Adler_Intro.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72714FBC19124286002D39CA /* Adler_Intro.pdf */; };
 		72714FC619124706002D39CA /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FC519124706002D39CA /* PageContentViewController.m */; };
-		72714FCB19124989002D39CA /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FC719124989002D39CA /* page1.png */; };
-		72714FCC19124989002D39CA /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FC819124989002D39CA /* page2.png */; };
-		72714FCD19124989002D39CA /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FC919124989002D39CA /* page3.png */; };
-		72714FCE19124989002D39CA /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = 72714FCA19124989002D39CA /* page4.png */; };
 		72714FD119124A86002D39CA /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FD019124A86002D39CA /* TutorialViewController.m */; };
 		727A228518F092ED005DF50E /* Exhibit.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A228418F092ED005DF50E /* Exhibit.m */; };
-		72A64FCA19161D2B00268F48 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A64FC619161D2B00268F48 /* code.png */; };
-		72A64FCB19161D2B00268F48 /* exhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A64FC719161D2B00268F48 /* exhi.png */; };
-		72A64FCC19161D2B00268F48 /* faci.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A64FC819161D2B00268F48 /* faci.png */; };
-		72A64FCD19161D2B00268F48 /* navi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A64FC919161D2B00268F48 /* navi.png */; };
+		72BEAE221916E243000CF7D3 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE1D1916E243000CF7D3 /* code.png */; };
+		72BEAE231916E243000CF7D3 /* exhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE1E1916E243000CF7D3 /* exhi.png */; };
+		72BEAE241916E243000CF7D3 /* faci.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE1F1916E243000CF7D3 /* faci.png */; };
+		72BEAE251916E243000CF7D3 /* hours.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE201916E243000CF7D3 /* hours.png */; };
+		72BEAE261916E243000CF7D3 /* hp.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE211916E243000CF7D3 /* hp.png */; };
+		72BEAE291916E448000CF7D3 /* navi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE271916E448000CF7D3 /* navi.png */; };
+		72BEAE2A1916E448000CF7D3 /* showtimes.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE281916E448000CF7D3 /* showtimes.png */; };
 		72D5FAE81915CCFF006207E7 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5FAE71915CCFF006207E7 /* about.png */; };
 		72D5FAEB1916001C006207E7 /* FAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D5FAEA1916001C006207E7 /* FAQViewController.m */; };
 		72DF6DF218F0BEE200B7B6F6 /* lower_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */; };
@@ -246,19 +245,18 @@
 		72714FBC19124286002D39CA /* Adler_Intro.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Adler_Intro.pdf; sourceTree = "<group>"; };
 		72714FC419124706002D39CA /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		72714FC519124706002D39CA /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
-		72714FC719124989002D39CA /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
-		72714FC819124989002D39CA /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
-		72714FC919124989002D39CA /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
-		72714FCA19124989002D39CA /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
 		72714FCF19124A86002D39CA /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
 		72714FD019124A86002D39CA /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
 		727A228318F092ED005DF50E /* Exhibit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exhibit.h; path = Model/Exhibit.h; sourceTree = "<group>"; };
 		727A228418F092ED005DF50E /* Exhibit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exhibit.m; path = Model/Exhibit.m; sourceTree = "<group>"; };
 		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
-		72A64FC619161D2B00268F48 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
-		72A64FC719161D2B00268F48 /* exhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exhi.png; sourceTree = "<group>"; };
-		72A64FC819161D2B00268F48 /* faci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faci.png; sourceTree = "<group>"; };
-		72A64FC919161D2B00268F48 /* navi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi.png; sourceTree = "<group>"; };
+		72BEAE1D1916E243000CF7D3 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		72BEAE1E1916E243000CF7D3 /* exhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exhi.png; sourceTree = "<group>"; };
+		72BEAE1F1916E243000CF7D3 /* faci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faci.png; sourceTree = "<group>"; };
+		72BEAE201916E243000CF7D3 /* hours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hours.png; sourceTree = "<group>"; };
+		72BEAE211916E243000CF7D3 /* hp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hp.png; sourceTree = "<group>"; };
+		72BEAE271916E448000CF7D3 /* navi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi.png; sourceTree = "<group>"; };
+		72BEAE281916E448000CF7D3 /* showtimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showtimes.png; sourceTree = "<group>"; };
 		72D5FAE71915CCFF006207E7 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		72D5FAE91916001C006207E7 /* FAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAQViewController.h; sourceTree = "<group>"; };
 		72D5FAEA1916001C006207E7 /* FAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAQViewController.m; sourceTree = "<group>"; };
@@ -419,24 +417,7 @@
 		30E5025A183607E100BCDA41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				72A64FC619161D2B00268F48 /* code.png */,
-				72A64FC719161D2B00268F48 /* exhi.png */,
-				72A64FC819161D2B00268F48 /* faci.png */,
-				72A64FC919161D2B00268F48 /* navi.png */,
-				72D5FAE71915CCFF006207E7 /* about.png */,
-				72714FC719124989002D39CA /* page1.png */,
-				72714FC819124989002D39CA /* page2.png */,
-				72714FC919124989002D39CA /* page3.png */,
-				72714FCA19124989002D39CA /* page4.png */,
-				72714FBC19124286002D39CA /* Adler_Intro.pdf */,
-				FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */,
-				FE9F45E91911F5CD00B8CC6C /* cafe.jpg */,
-				FE9F45EB1911F5DA00B8CC6C /* store.jpg */,
-				FE8D8697190F4780002CCE9A /* uiuc_logo.png */,
-				FEA4A88B18F4E0D000A01AA8 /* black.png */,
-				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
-				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
-				7269812A1907658D003D3C60 /* home2.png */,
+				72BEAE1C1916E216000CF7D3 /* Images */,
 				727A22F018F0BA36005DF50E /* Exhibit Data */,
 				727A22EF18F0BA31005DF50E /* Map Data */,
 				30E5025F183607E100BCDA41 /* main.m */,
@@ -642,6 +623,30 @@
 			name = "Exhibit Data";
 			sourceTree = "<group>";
 		};
+		72BEAE1C1916E216000CF7D3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				72BEAE271916E448000CF7D3 /* navi.png */,
+				72BEAE281916E448000CF7D3 /* showtimes.png */,
+				72D5FAE71915CCFF006207E7 /* about.png */,
+				72714FBC19124286002D39CA /* Adler_Intro.pdf */,
+				FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */,
+				FE9F45E91911F5CD00B8CC6C /* cafe.jpg */,
+				FE9F45EB1911F5DA00B8CC6C /* store.jpg */,
+				FE8D8697190F4780002CCE9A /* uiuc_logo.png */,
+				FEA4A88B18F4E0D000A01AA8 /* black.png */,
+				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
+				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
+				7269812A1907658D003D3C60 /* home2.png */,
+				72BEAE1D1916E243000CF7D3 /* code.png */,
+				72BEAE1E1916E243000CF7D3 /* exhi.png */,
+				72BEAE1F1916E243000CF7D3 /* faci.png */,
+				72BEAE201916E243000CF7D3 /* hours.png */,
+				72BEAE211916E243000CF7D3 /* hp.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		72DF6D7E18F0BECD00B7B6F6 /* AstronomyInCulture */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +757,7 @@
 				720700DB18F8F28800B17AD3 /* cla_short.txt in Resources */,
 				726E85A11903C8A6007F5803 /* sfm_name.txt in Resources */,
 				726E85921903B332007F5803 /* tele_short.txt in Resources */,
+				72BEAE291916E448000CF7D3 /* navi.png in Resources */,
 				726E85771903B332007F5803 /* hist0.png in Resources */,
 				FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */,
 				726E85721903B332007F5803 /* cyb_long.txt in Resources */,
@@ -772,11 +778,12 @@
 				FE9F45EC1911F5DA00B8CC6C /* store.jpg in Resources */,
 				72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */,
 				726E857C1903B332007F5803 /* solar2.jpg in Resources */,
-				72714FCB19124989002D39CA /* page1.png in Resources */,
+				72BEAE2A1916E448000CF7D3 /* showtimes.png in Resources */,
 				726E85911903B332007F5803 /* tele_long.txt in Resources */,
 				726E85A91903C8CA007F5803 /* ast_name.txt in Resources */,
 				726E858E1903B332007F5803 /* sund_long.txt in Resources */,
 				726E857F1903B332007F5803 /* solar5.jpg in Resources */,
+				72BEAE261916E243000CF7D3 /* hp.png in Resources */,
 				FE9F45EA1911F5CD00B8CC6C /* cafe.jpg in Resources */,
 				726E85751903B332007F5803 /* hid_long.txt in Resources */,
 				726E85801903B332007F5803 /* solar6.jpg in Resources */,
@@ -790,10 +797,9 @@
 				72DF6DF818F0BEE200B7B6F6 /* mid.pdf in Resources */,
 				726E85841903B332007F5803 /* pe_long.txt in Resources */,
 				726E85791903B332007F5803 /* hist_short.txt in Resources */,
-				72A64FCD19161D2B00268F48 /* navi.png in Resources */,
 				726E85821903B332007F5803 /* solar_short.txt in Resources */,
 				726E85831903B332007F5803 /* pe0.png in Resources */,
-				72A64FCA19161D2B00268F48 /* code.png in Resources */,
+				72BEAE221916E243000CF7D3 /* code.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
 				7269812B1907658D003D3C60 /* home2.png in Resources */,
 				726E85871903B332007F5803 /* sfm_long.txt in Resources */,
@@ -803,7 +809,6 @@
 				72DF6DFB18F0BEE200B7B6F6 /* star_paths.pdf in Resources */,
 				726E859F1903C89B007F5803 /* pe_name.txt in Resources */,
 				726E85901903B332007F5803 /* tele0.png in Resources */,
-				72714FCC19124989002D39CA /* page2.png in Resources */,
 				726E85861903B332007F5803 /* sfm0.png in Resources */,
 				726E85711903B332007F5803 /* cyb0.jpg in Resources */,
 				720700D618F8F25500B17AD3 /* ast0.jpg in Resources */,
@@ -811,24 +816,23 @@
 				72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */,
 				726E857B1903B332007F5803 /* solar1.jpg in Resources */,
 				726E858D1903B332007F5803 /* sund4.jpg in Resources */,
+				72BEAE251916E243000CF7D3 /* hours.png in Resources */,
 				726E85811903B332007F5803 /* solar_long.txt in Resources */,
 				304998E71915CD19003C7AAA /* leftexit_to_obs.pdf in Resources */,
 				726E85731903B332007F5803 /* cyb_short.txt in Resources */,
-				72714FCE19124989002D39CA /* page4.png in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
 				726E85A51903C8BA007F5803 /* tele_name.txt in Resources */,
 				FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */,
 				726E859D1903C88E007F5803 /* solar_name.txt in Resources */,
 				FE9F45F11911FFEA00B8CC6C /* galileo_menu_2014.pdf in Resources */,
 				726E85931903B332007F5803 /* unv0.png in Resources */,
-				72A64FCB19161D2B00268F48 /* exhi.png in Resources */,
+				72BEAE231916E243000CF7D3 /* exhi.png in Resources */,
 				726E857E1903B332007F5803 /* solar4.jpg in Resources */,
 				726E859B1903C882007F5803 /* hist_name.txt in Resources */,
-				72714FCD19124989002D39CA /* page3.png in Resources */,
 				726E85951903B332007F5803 /* unv_short.txt in Resources */,
 				726E85891903B332007F5803 /* sund0.jpg in Resources */,
 				FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */,
-				72A64FCC19161D2B00268F48 /* faci.png in Resources */,
+				72BEAE241916E243000CF7D3 /* faci.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

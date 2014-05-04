@@ -19,8 +19,8 @@
 {
     [super viewDidLoad];
 	
-    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
-    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
+    _pageTitles = @[@"Get to know Adler",@"Choose your location and desination", @"Enter code to find out where you are", @"View curent exhibits Adler has to offer", @"Check the openning hours", @"Make sure you catch the events on time", @"All you need at your fingertips"];
+    _pageImages = @[@"hp.png", @"navi.png", @"code.png", @"exhi.png", @"hours.png", @"showtimes.png", @"faci.png" ];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
