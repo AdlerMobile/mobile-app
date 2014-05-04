@@ -743,7 +743,7 @@ We Value
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcD-D5-mPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4599" y="932"/>
+            <point key="canvasLocation" x="4623" y="1618"/>
         </scene>
         <!--Navigation View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
@@ -1101,7 +1101,7 @@ We Value
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dCW-N5-2nI"/>
         <segue reference="JOX-VC-a77"/>
+        <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>
