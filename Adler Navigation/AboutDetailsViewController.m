@@ -18,7 +18,6 @@
 {
     
     
-    
     //Preparing view for how to use this app.
     if ([_data isEqualToString:@"getAdlerIntro"])
     {
@@ -29,12 +28,12 @@
         
         //to load pdf which contains instructions on using this app.
         NSString *myPdfFilePath = [[NSBundle mainBundle] pathForResource: @"Adler_Intro" ofType: @"pdf"];
-    
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
         
         //loading the pdf in a UIWebView.
         [_howToUse loadRequest:request];
+ 
     }
     
     //Preparing view for Sponsored By.

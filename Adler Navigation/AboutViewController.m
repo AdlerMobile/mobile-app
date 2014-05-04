@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     
     UIImageView *background = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 360, 568)];
     [background setImage:[UIImage imageNamed: @"about.png"]];
@@ -49,7 +50,7 @@
     [bt2 addTarget:self
             action:@selector(toIntro:)
   forControlEvents:UIControlEventTouchUpInside];
-    [bt2 setTitle:@"Intro to Adler" forState:UIControlStateNormal];
+    [bt2 setTitle:@"Adler FAQ" forState:UIControlStateNormal];
     [bt2 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     bt2.frame = CGRectMake(80.0, 180.0, 160.0, 40.0);
     bt2.layer.borderWidth = 1.5f;
@@ -62,7 +63,7 @@
     [bt3 addTarget:self
             action:@selector(toWebsite:)
   forControlEvents:UIControlEventTouchUpInside];
-    [bt3 setTitle:@"Go to Adler Website" forState:UIControlStateNormal];
+    [bt3 setTitle:@"Adler Website" forState:UIControlStateNormal];
     [bt3 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     bt3.frame = CGRectMake(80.0, 280.0, 160.0, 40.0);
     bt3.layer.borderWidth = 1.5f;
@@ -83,17 +84,6 @@
     [bt4.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     [self.view addSubview:bt4];
     
-    UIButton *adlerIntro = (UIButton *)[self.view viewWithTag:1];
-    adlerIntro.layer.cornerRadius = 9.0f;
-    
-    UIButton *appTutorial = (UIButton *)[self.view viewWithTag:2];
-    appTutorial.layer.cornerRadius = 9.0f;
-    
-    UIButton *adlerWebsite = (UIButton *)[self.view viewWithTag:3];
-    adlerWebsite.layer.cornerRadius = 9.0f;
-    
-    UIButton *appSponsors = (UIButton *)[self.view viewWithTag:4];
-    appSponsors.layer.cornerRadius = 9.0f;
 }
 
 - (void)didReceiveMemoryWarning
@@ -101,11 +91,11 @@
     [super didReceiveMemoryWarning];
 }
 
+
 - (IBAction) toTutorial: (id)sender
 {
     [self performSegueWithIdentifier: @"getTutorial" sender: self];
 }
-
 
 
 - (IBAction)toWebsite:(id)sender {
@@ -114,14 +104,13 @@
 
 - (IBAction) toIntro: (id)sender
 {
-    [self performSegueWithIdentifier: @"getAdlerIntro" sender: self];
+    [self performSegueWithIdentifier: @"getFAQ" sender: self];
 }
 
 - (IBAction) toSponsors: (id)sender
 {
     [self performSegueWithIdentifier: @"getSponsors" sender: self];
 }
-
 
 
 
@@ -132,11 +121,11 @@
         AboutDetailsViewController * vc = [segue destinationViewController];
         vc.data = @"getSponsors";
     }
-    if ([[segue identifier] isEqualToString:@"getAdlerIntro"])
-    {
-       AboutDetailsViewController * vc = [segue destinationViewController];
-       vc.data = @"getAdlerIntro";
-    }
+//    if ([[segue identifier] isEqualToString:@"getFAQ"])
+//    {
+//       AboutDetailsViewController * vc = [segue destinationViewController];
+//       vc.data = @"getAdlerIntro";
+//    }
 
 }
 

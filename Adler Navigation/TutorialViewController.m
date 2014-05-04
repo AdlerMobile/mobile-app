@@ -27,16 +27,19 @@
     self.pageViewController.dataSource = self;
     
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    //NSArray *viewControllers = @[startingViewController];
-    //[self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     // Change the size of page view controller
-    //self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 40);
     
-    //[self addChildViewController:_pageViewController];
-    //[self.view addSubview:_pageViewController.view];
-    //[self.pageViewController didMoveToParentViewController:self];
+    [self addChildViewController:_pageViewController];
+    [self.view addSubview:_pageViewController.view];
+    [self.pageViewController didMoveToParentViewController:self];
+    
+ 
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -89,6 +92,7 @@
     return pageContentViewController;
 }
 
+
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
     return [self.pageTitles count];
@@ -97,6 +101,12 @@
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
     return 0;
+}
+
+- (IBAction)startWalkthrough:(id)sender {
+    PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    NSArray *viewControllers = @[startingViewController];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
 }
 
 

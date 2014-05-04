@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
 @property (strong, nonatomic) IBOutlet UIView *sponsorView;
 @property (strong, nonatomic) IBOutlet UIView *howToUseView;
+@property (strong, nonatomic) IBOutlet UITextView *FAQ;
 
 @property (strong, nonatomic) IBOutlet UIWebView *howToUse;
 @property (strong, nonatomic) IBOutlet UIImageView *uiucLogo;
