@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304998E71915CD19003C7AAA /* leftexit_to_obs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 304998E51915CD19003C7AAA /* leftexit_to_obs.pdf */; };
+		304998E81915CD19003C7AAA /* rightexit_to_obs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 304998E61915CD19003C7AAA /* rightexit_to_obs.pdf */; };
 		30D1C675183DD41F00E71EDD /* MapGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C674183DD41F00E71EDD /* MapGraphTests.m */; };
 		30E3740B18403EAB00996B60 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740A18403EAB00996B60 /* MapViewController.m */; };
 		30E3740D18408BCC00996B60 /* MapViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3740C18408BCC00996B60 /* MapViewControllerTests.m */; };
@@ -142,6 +144,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		304998E51915CD19003C7AAA /* leftexit_to_obs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = leftexit_to_obs.pdf; path = "Map Data/leftexit_to_obs.pdf"; sourceTree = "<group>"; };
+		304998E61915CD19003C7AAA /* rightexit_to_obs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = rightexit_to_obs.pdf; path = "Map Data/rightexit_to_obs.pdf"; sourceTree = "<group>"; };
 		30D1C674183DD41F00E71EDD /* MapGraphTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGraphTests.m; sourceTree = "<group>"; };
 		30E3740918403EAB00996B60 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		30E3740A18403EAB00996B60 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -586,6 +590,8 @@
 		727A22EF18F0BA31005DF50E /* Map Data */ = {
 			isa = PBXGroup;
 			children = (
+				304998E51915CD19003C7AAA /* leftexit_to_obs.pdf */,
+				304998E61915CD19003C7AAA /* rightexit_to_obs.pdf */,
 				FE3AE8BD18F3692800319486 /* downstairs.pdf */,
 				FE3AE8BE18F3692800319486 /* upstairs.pdf */,
 				72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */,
@@ -743,6 +749,7 @@
 				72714FBD19124286002D39CA /* Adler_Intro.pdf in Resources */,
 				B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */,
 				72DF6DF518F0BEE200B7B6F6 /* map_data_all.plist in Resources */,
+				304998E81915CD19003C7AAA /* rightexit_to_obs.pdf in Resources */,
 				FEA4A88C18F4E0D000A01AA8 /* black.png in Resources */,
 				FE9F45EC1911F5DA00B8CC6C /* store.jpg in Resources */,
 				72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */,
@@ -786,6 +793,7 @@
 				726E857B1903B332007F5803 /* solar1.jpg in Resources */,
 				726E858D1903B332007F5803 /* sund4.jpg in Resources */,
 				726E85811903B332007F5803 /* solar_long.txt in Resources */,
+				304998E71915CD19003C7AAA /* leftexit_to_obs.pdf in Resources */,
 				726E85731903B332007F5803 /* cyb_short.txt in Resources */,
 				72714FCE19124989002D39CA /* page4.png in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
