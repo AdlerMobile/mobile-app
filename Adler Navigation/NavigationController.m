@@ -150,7 +150,20 @@
 - (void)drawPath:(UIWebView *)view node1:(Node *)n1 node2:(Node *)n2
 {
     [[self textDirection] setText:@""];
-    if ([n1.floor isEqualToString:n2.floor]) {
+    
+    if ([n2.id isEqualToString:@"Observatory"]) {
+        NSString *filename;
+        if ([n1.id isEqualToString:@"getout33"] ||[n1.id isEqualToString:@"getoutSouth"]) {
+            filename = @"rightexit_to_obs";
+        }
+        else {
+            filename = @"leftexit_to_obs";
+        }
+        NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:filename ofType: @"pdf"];
+        NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
+        [view loadRequest:[NSURLRequest requestWithURL:targetURL]];
+    }
+    else if ([n1.floor isEqualToString:n2.floor]) {
         NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:n1.floor ofType: @"pdf"];
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         CGPDFDocumentRef document = CGPDFDocumentCreateWithURL ((CFURLRef)targetURL);
