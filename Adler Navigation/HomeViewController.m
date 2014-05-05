@@ -8,6 +8,9 @@
 
 #import "HomeViewController.h"
 
+/**
+ *  <#Description#>
+ */
 @interface HomeViewController ()
 
 @end
@@ -23,6 +26,9 @@
 
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -14,6 +14,9 @@
 
 @implementation EachMapViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,6 +44,9 @@
     [_FloorMap loadRequest:request];
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

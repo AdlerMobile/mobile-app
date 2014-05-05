@@ -16,6 +16,9 @@
 
 @implementation FacilityDetailViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,6 +41,12 @@
     
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ */
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"takeToFacility"]) {
     NavigationInputViewController * vc = [segue destinationViewController];
@@ -45,13 +54,18 @@
     }
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
+/**
+ *  <#Description#>
+ */
 - (IBAction)viewOnlineStore {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://adlerplanetarium.ordercompletion.com"]];
 }

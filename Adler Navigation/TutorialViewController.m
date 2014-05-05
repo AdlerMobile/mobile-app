@@ -14,7 +14,9 @@
 
 @implementation TutorialViewController
 
-
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,11 +38,11 @@
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
-    
- 
 }
 
-
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,7 +51,14 @@
 
 
 #pragma mark - Page View Controller Data Source
-
+/**
+ *  <#Description#>
+ *
+ *  @param pageViewController <#pageViewController description#>
+ *  @param viewController     <#viewController description#>
+ *
+ *  @return <#return value description#>
+ */
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     NSUInteger index = ((PageContentViewController*) viewController).pageIndex;
@@ -62,6 +71,14 @@
     return [self viewControllerAtIndex:index];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param pageViewController <#pageViewController description#>
+ *  @param viewController     <#viewController description#>
+ *
+ *  @return <#return value description#>
+ */
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     NSUInteger index = ((PageContentViewController*) viewController).pageIndex;
@@ -77,6 +94,13 @@
     return [self viewControllerAtIndex:index];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param index <#index description#>
+ *
+ *  @return <#return value description#>
+ */
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
     if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
@@ -92,17 +116,35 @@
     return pageContentViewController;
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @param pageViewController <#pageViewController description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
     return [self.pageTitles count];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param pageViewController <#pageViewController description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
     return 0;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ */
 - (IBAction)startWalkthrough:(id)sender {
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];

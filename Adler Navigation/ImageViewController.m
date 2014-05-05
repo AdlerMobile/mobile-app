@@ -15,6 +15,9 @@
 
 @implementation ImageViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,23 +44,38 @@
     }
 }
 
-
-
+/**
+ *  <#Description#>
+ *
+ *  @param sender <#sender description#>
+ */
 - (IBAction)toNavigate:(id)sender {
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param value <#value description#>
+ */
 - (void) setCurrentExhibit:(Exhibit*)value {
     _curExhibit = value;
 }
 
-
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ */
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"NavigateToExhibit"]) {

@@ -14,6 +14,13 @@
 
 @implementation ExhibitViewController
 
+/**
+ *  <#Description#>
+ *
+ *  @param style <#style description#>
+ *
+ *  @return <#return value description#>
+ */
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -23,6 +30,9 @@
     return self;
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -76,20 +86,41 @@
 
 
 #pragma mark - Table view data source
-
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
     return 1;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
     return [self.exhibits count];;
 }
 
-
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExhibitCell" forIndexPath:indexPath];
@@ -112,13 +143,21 @@
     return cell;
 }
 
-
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ */
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"viewExhibitDetail"]) {
