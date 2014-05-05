@@ -8,6 +8,7 @@
 
 #import "FloorViewController.h"
 #import "EachFloorViewController.h"
+#import "NavigationInputViewController.h"
 
 @interface FloorViewController ()
 
@@ -52,10 +53,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if ([_sourceORDestination isEqualToString:@"1"])
     {
-        return 4;
+        return 5;
     }
     
-    else return 5;
+    else return 6;
 }
 
 /**
@@ -105,6 +106,10 @@
     }
     
     if (indexPath.row == 4) {
+        cell.textLabel.text = @"Observatory";
+    }
+    
+    if (indexPath.row == 5) {
         cell.textLabel.text = @"Facilities";
     }
     
@@ -119,7 +124,13 @@
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self performSegueWithIdentifier:@"EachFloorView" sender:self];
+    if (indexPath.row == 4) {
+        if ([_sourceORDestination isEqualToString:@"1"]) {
+             [self performSegueWithIdentifier:@"source" sender:self];
+        }
+        else [self performSegueWithIdentifier:@"destination" sender:self];
+    }
+    else [self performSegueWithIdentifier:@"EachFloorView" sender:self];
     
 }
 
@@ -151,10 +162,15 @@
         if (myIndexPath.row == 3) {
             ViewController.currentFloor = @"star";
         }
-        if (myIndexPath.row == 4) {
+        if (myIndexPath.row == 5) {
             ViewController.currentFloor = @"facilities";
         }
         
+    }
+    
+    else {
+        NavigationInputViewController * ViewController = [segue destinationViewController];
+        ViewController.data = @"Observatory";
     }
 }
 

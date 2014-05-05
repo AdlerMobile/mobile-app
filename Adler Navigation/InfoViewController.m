@@ -26,9 +26,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self displayHoursSegment];
-    [self displayShowTimesSegment];
+    BOOL hoursData = [self displayHoursSegment];
+    BOOL showTimesData = [self displayShowTimesSegment];
 
+    if (!hoursData && !showTimesData) {
+        _HoursTitle.hidden = YES;
+        _todayTitle.hidden = YES;
+        _weekdayTitle.hidden = YES;
+        _weekendTitle.hidden = YES;
+        _today.hidden = YES;
+        _weekday.hidden = YES;
+        _weekend.hidden = YES;
+    }
+    
+    else _noInternetView.hidden = YES;
     self.facilitiesTableViewItems = @[ @"Coat Check",
                                        @"Nearest Exit",
                                        @"Box Office",
@@ -44,11 +55,14 @@
 /**
  *  <#Description#>
  */
-- (void) displayShowTimesSegment
+- (BOOL) displayShowTimesSegment
 {
     NSString *str=@"http://adlersiteserver.herokuapp.com/show_times";
     NSURL *url=[NSURL URLWithString:str];
     NSData *data=[NSData dataWithContentsOfURL:url];
+    if (data == nil) {
+        return NO;
+    }
     NSError *error=nil;
     NSDictionary * response=[NSJSONSerialization JSONObjectWithData:data options:
                              NSJSONReadingMutableContainers error:&error];
@@ -86,6 +100,7 @@
         }
         [_allTimings setValue:allTimes forKey:[_allShows objectAtIndex:i]];
     }
+    return YES;
 }
 
 /**
@@ -203,12 +218,15 @@
 /**
  *  <#Description#>
  */
-- (void) displayHoursSegment
+- (BOOL) displayHoursSegment
 {
     
     NSString *str=@"http://adlersiteserver.herokuapp.com/open_hours";
     NSURL *url=[NSURL URLWithString:str];
     NSData *data=[NSData dataWithContentsOfURL:url];
+    if (data == nil) {
+        return NO;
+    }
     NSError *error=nil;
     NSDictionary * response=[NSJSONSerialization JSONObjectWithData:data options:
                              NSJSONReadingMutableContainers error:&error];
@@ -307,6 +325,7 @@
     {
         _today.text = times[1];
     }
+    return YES;
 }
 
 /**
@@ -323,13 +342,14 @@
  *  @param sender <#sender description#>
  */
 - (IBAction)segmentedValueChanged:(UISegmentedControl *)sender {
+    
     switch (sender.selectedSegmentIndex) {
         case 0:
             self.HoursView.hidden = NO;
             self.FacilitiesView.hidden = YES;
             self.ShowTimesView.hidden = YES;
             break;
-
+        
         case 1:
             self.HoursView.hidden = YES;
             self.ShowTimesView.hidden = NO;
@@ -344,5 +364,6 @@
         default:
             break;
     }
+    
 }
 @end
