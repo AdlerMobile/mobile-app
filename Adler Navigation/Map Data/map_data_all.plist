@@ -1525,5 +1525,25 @@
 			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
+    <dict>
+		<key>isSourceOrDestination</key>
+		<true/>
+		<key>uid</key>
+		<string>Observatory</string>
+		<key>floor</key>
+		<string>mid</string>
+		<key>x</key>
+		<integer>350</integer>
+		<key>y</key>
+		<integer>20</integer>
+		<key>adjacent</key>
+		<array>
+			<string>getout</string>
+            <string>getout27</string>
+            <string>getout33</string>
+            <string>getoutMain</string>
+            <string>getoutSouth</string>
+		</array>
+	</dict>
 </array>
 </plist>
