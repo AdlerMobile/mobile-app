@@ -123,7 +123,7 @@
 		FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */; };
 		FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87F418D634C3009E2CC2 /* HomeViewController.m */; };
 		FE5C87FE18D634C3009E2CC2 /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE5C87F618D634C3009E2CC2 /* Home.jpg */; };
-		FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */; };
+		FE5C880118D64072009E2CC2 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C880018D64072009E2CC2 /* NavigationController.m */; };
 		FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */; };
 		FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8D8697190F4780002CCE9A /* uiuc_logo.png */; };
 		FE9F45E11910FD8D00B8CC6C /* EnterCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */; };
@@ -285,8 +285,8 @@
 		FE5C87F418D634C3009E2CC2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		FE5C87F518D634C3009E2CC2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FE5C87F618D634C3009E2CC2 /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home.jpg; sourceTree = "<group>"; };
-		FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateTableViewController.h; sourceTree = "<group>"; };
-		FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateTableViewController.m; sourceTree = "<group>"; };
+		FE5C87FF18D64072009E2CC2 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		FE5C880018D64072009E2CC2 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailsViewController.h; sourceTree = "<group>"; };
 		FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailsViewController.m; sourceTree = "<group>"; };
 		FE8D8697190F4780002CCE9A /* uiuc_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uiuc_logo.png; sourceTree = "<group>"; };
@@ -383,20 +383,20 @@
 				FE9F45E31911EF9200B8CC6C /* FacilityDetailViewController.m */,
 				72D5FAE91916001C006207E7 /* FAQViewController.h */,
 				72D5FAEA1916001C006207E7 /* FAQViewController.m */,
-				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
 				FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */,
-				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
+				FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */,
 				FE5C87F518D634C3009E2CC2 /* HomeViewController.h */,
+				FE5C87F418D634C3009E2CC2 /* HomeViewController.m */,
 				FED8ED8718F76290005A285B /* InfoViewController.h */,
 				FED8ED8818F76290005A285B /* InfoViewController.m */,
 				726E853D19039777007F5803 /* ImageViewController.h */,
 				726E853E19039777007F5803 /* ImageViewController.m */,
-				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
 				FE5C87F318D634C3009E2CC2 /* MapFloorViewController.h */,
+				FE5C87F218D634C3009E2CC2 /* MapFloorViewController.m */,
 				30E3740918403EAB00996B60 /* MapViewController.h */,
 				30E3740A18403EAB00996B60 /* MapViewController.m */,
-				FE5C880018D64072009E2CC2 /* NavigateTableViewController.m */,
-				FE5C87FF18D64072009E2CC2 /* NavigateTableViewController.h */,
+				FE5C87FF18D64072009E2CC2 /* NavigationController.h */,
+				FE5C880018D64072009E2CC2 /* NavigationController.m */,
 				FE5C87E818D63449009E2CC2 /* NavigationViewController.h */,
 				FE5C87E618D63449009E2CC2 /* NavigationViewController.m */,
 				FE9F45ED1911FF6C00B8CC6C /* MenuViewController.h */,
@@ -871,7 +871,7 @@
 				FE9F45E11910FD8D00B8CC6C /* EnterCodeViewController.m in Sources */,
 				30E502891836084000BCDA41 /* Node.m in Sources */,
 				72714FC619124706002D39CA /* PageContentViewController.m in Sources */,
-				FE5C880118D64072009E2CC2 /* NavigateTableViewController.m in Sources */,
+				FE5C880118D64072009E2CC2 /* NavigationController.m in Sources */,
 				FE9F45E41911EF9200B8CC6C /* FacilityDetailViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
 				FE9F45EF1911FF6C00B8CC6C /* MenuViewController.m in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PCi-Ir-NiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PCi-Ir-NiF">
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="3752" y="-1181"/>
         </scene>
-        <!--Navigate Table View Controller - Navigate-->
+        <!--Navigation Controller - Navigate-->
         <scene sceneID="M9y-3V-8T2">
             <objects>
-                <viewController id="aBc-ok-hIC" customClass="NavigateTableViewController" sceneMemberID="viewController">
+                <viewController id="aBc-ok-hIC" customClass="NavigationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xl0-4s-ysy"/>
                         <viewControllerLayoutGuide type="bottom" id="fom-k4-O9d"/>
@@ -118,8 +118,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nextImage" destination="6UP-05-I7G" id="FjV-BF-opY"/>
                         <outlet property="pinchLabel" destination="Y3v-sH-sfe" id="w55-CS-kZe"/>
+                        <outlet property="stepper" destination="6UP-05-I7G" id="RMJ-lZ-Q85"/>
                         <outlet property="textDirection" destination="MYB-f8-blp" id="krU-wN-uGz"/>
                         <outlet property="view1" destination="MP2-C6-kbA" id="3Cy-Ro-kDh"/>
                         <outlet property="view2" destination="tjV-Oc-Cea" id="dNS-aA-kA1"/>
@@ -825,7 +825,6 @@ We Value
                     <connections>
                         <outlet property="destination" destination="C7z-GM-WKD" id="lN0-py-ljj"/>
                         <outlet property="enterCode" destination="khf-Eo-9Il" id="Rja-Fh-T70"/>
-                        <outlet property="giveDirections" destination="scW-Dc-VgU" id="oZf-TO-yUw"/>
                         <outlet property="source" destination="srR-rB-4QV" id="y5X-xe-QVf"/>
                     </connections>
                 </viewController>
