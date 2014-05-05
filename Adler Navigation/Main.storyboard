@@ -587,7 +587,7 @@ We Value
 	•	Adherence to results-oriented planning
 	•	A professional work environment and highly motivated, diverse staff
 	•	Long-term financial stability and the economic viability of our endeavors.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                             </textView>
                         </subviews>
