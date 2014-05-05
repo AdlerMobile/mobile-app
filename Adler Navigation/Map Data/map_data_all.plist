@@ -496,6 +496,7 @@
 		<integer>250</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Observatory^^Walk around to the back of the planetarium.</string>
 			<string>traveltemp</string>
 		</array>
 	</dict>
@@ -752,6 +753,7 @@
 		<integer>250</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Observatory^^Walk around to the back of the planetarium.</string>
 			<string>Education Pavilion</string>
 		</array>
 	</dict>
@@ -1101,6 +1103,7 @@
 		<integer>475</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Observatory^^Walk around to the back of the planetarium.</string>
 			<string>Café Galileo&apos;s</string>
 			<string>ATM</string>
 		</array>
@@ -1206,6 +1209,7 @@
 		<integer>470</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Observatory^^Walk around to the back of the planetarium.</string>
 			<string>planet_explorers_exitnode</string>
 			<string>Adler Store</string>
 		</array>
@@ -1522,10 +1526,11 @@
 		<integer>694</integer>
 		<key>adjacent</key>
 		<array>
+			<string>Observatory^^Walk around to the back of the planetarium.</string>
 			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
@@ -1539,10 +1544,10 @@
 		<key>adjacent</key>
 		<array>
 			<string>getout</string>
-            <string>getout27</string>
-            <string>getout33</string>
-            <string>getoutMain</string>
-            <string>getoutSouth</string>
+			<string>getout27</string>
+			<string>getout33</string>
+			<string>getoutMain</string>
+			<string>getoutSouth</string>
 		</array>
 	</dict>
 </array>

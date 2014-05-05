@@ -141,7 +141,10 @@
 }
 
 /**
- *  Draws an arrow from Node n1 to Node n2 on the given UIWebView.
+ *  Displays the next direction on the given UIWebView.
+ *
+ *  Draws an arrow from Node n1 to Node n2, if they are on the same floor. Otherwise, displays the
+ *  floor change image. Displays the text direction at the label.
  *
  *  @param view The UIWebView to draw the arrow on.
  *  @param n1   The Node at which to begin the arrow.
@@ -162,6 +165,11 @@
         NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:filename ofType: @"pdf"];
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         [view loadRequest:[NSURLRequest requestWithURL:targetURL]];
+        
+        Edge *e = [[self mg] getEdgeFrom:n1 to:n2];
+        [[self textDirection] setText:[e textDirection]];
+        
+        [[self pinchLabel] setHidden:YES];
     }
     else if ([n1.floor isEqualToString:n2.floor]) {
         NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:n1.floor ofType: @"pdf"];
@@ -171,7 +179,7 @@
         
         NSMutableArray *pathVisible = [[NSMutableArray alloc] init];
         for (Node *n in self.path) {
-            if ([n.floor isEqualToString:n1.floor]) {
+            if ([n.floor isEqualToString:n1.floor] && ![n.id isEqualToString:@"Observatory"]) {
                 [pathVisible addObject:n];
             }
         }
@@ -263,7 +271,8 @@
         nextView = self.view2;
     }
     
-    if ([self.n1.floor isEqualToString:self.n2.floor]) {
+    if ([self.n1.floor isEqualToString:self.n2.floor]
+        && ![self.n2.id isEqualToString:@"Observatory"]) {
         [self copyZoomFrom:[curView scrollView] to:[nextView scrollView]];
     }
     
@@ -271,7 +280,8 @@
     [nextView setHidden:NO];
     [curView setHidden:YES];
     
-    if ([self.n1.floor isEqualToString:self.n2.floor] && ![self.n1.floor isEqualToString:@"star"]) {
+    if ([self.n1.floor isEqualToString:self.n2.floor] && ![self.n1.floor isEqualToString:@"star"]
+         && ![self.n2.id isEqualToString:@"Observatory"]) {
         [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(zoomOnArrow:)
                                        userInfo:nextView repeats:NO];
     }
