@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  Class for custom buttons used across the app
+ */
 @interface CustomButton : UIButton
 
 @end
