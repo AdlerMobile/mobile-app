@@ -16,7 +16,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *source; // my location.
 @property (strong, nonatomic) IBOutlet UITextField *destination; // my destination.
 @property (strong, nonatomic) NSString *data; // used to store data on unwind in order to display it in the fields.
-@property (strong, nonatomic) IBOutlet UIButton *giveDirections; // button to send user inputs and get path.
 @property (strong, nonatomic) IBOutlet UIButton *enterCode; // button to allow user to input code to get location.
 
 /// A destination passed to Navigation from another view.

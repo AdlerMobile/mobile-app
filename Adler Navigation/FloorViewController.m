@@ -15,6 +15,9 @@
 
 @implementation FloorViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,12 +32,23 @@
     }
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if ([_sourceORDestination isEqualToString:@"1"])
     {
@@ -44,11 +58,26 @@
     else return 5;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
     
@@ -82,12 +111,24 @@
     return cell;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [self performSegueWithIdentifier:@"EachFloorView" sender:self];
     
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     

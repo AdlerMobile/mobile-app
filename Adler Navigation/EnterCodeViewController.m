@@ -15,22 +15,32 @@
 
 @implementation EnterCodeViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     _inputField.keyboardType = UIKeyboardTypeNumberPad;
-    
-    UIButton *btn = (UIButton *)[self.view viewWithTag:1];
-    btn.layer.borderWidth = 1.5f;
-    btn.layer.cornerRadius = 9.0f;
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param identifier <#identifier description#>
+ *  @param sender     <#sender description#>
+ *
+ *  @return <#return value description#>
+ */
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     
     
@@ -59,6 +69,12 @@
     else return YES;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ */
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];

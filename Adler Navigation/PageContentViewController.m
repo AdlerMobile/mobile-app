@@ -15,6 +15,14 @@
 
 @implementation PageContentViewController
 
+/**
+ *  <#Description#>
+ *
+ *  @param nibNameOrNil   <#nibNameOrNil description#>
+ *  @param nibBundleOrNil <#nibBundleOrNil description#>
+ *
+ *  @return <#return value description#>
+ */
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -24,6 +32,9 @@
     return self;
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,6 +42,9 @@
     self.titleLabel.text = self.titleText;
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

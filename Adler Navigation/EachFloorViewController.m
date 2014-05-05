@@ -15,6 +15,9 @@
 
 @implementation EachFloorViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -65,22 +68,48 @@
     }
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param section   <#section description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return [self.exhibits_to_display count];
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *
+ *  @return <#return value description#>
+ */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ *
+ *  @return <#return value description#>
+ */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
     
@@ -94,8 +123,12 @@
     return cell;
 }
 
-
-
+/**
+ *  <#Description#>
+ *
+ *  @param tableView <#tableView description#>
+ *  @param indexPath <#indexPath description#>
+ */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
    
@@ -110,6 +143,12 @@
     }
 }
 
+/**
+ *  <#Description#>
+ *
+ *  @param segue  <#segue description#>
+ *  @param sender <#sender description#>
+ */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"source"])

@@ -146,7 +146,6 @@
                 if (splitIndex+2 < [nodeString length]) {
                     textDirection = [nodeString substringFromIndex:splitIndex+2];
                 }
-                NSLog(@"%@:%@", id, textDirection);
             } else {
                 id = nodeString;
                 textDirection = @"";

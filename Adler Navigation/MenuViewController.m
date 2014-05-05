@@ -14,6 +14,9 @@
 
 @implementation MenuViewController
 
+/**
+ *  <#Description#>
+ */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,6 +26,9 @@
     // Do any additional setup after loading the view.
 }
 
+/**
+ *  <#Description#>
+ */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
