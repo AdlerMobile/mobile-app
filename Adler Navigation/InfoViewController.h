@@ -28,7 +28,12 @@
 
 - (IBAction)segmentedValueChanged:(id)sender;
 
-- (void) displayHoursSegment;
-- (void) displayShowTimesSegment;
+- (BOOL) displayHoursSegment;
+- (BOOL) displayShowTimesSegment;
 
+@property (strong, nonatomic) IBOutlet UILabel *noInternetView;
+@property (strong, nonatomic) IBOutlet UILabel *HoursTitle;
+@property (strong, nonatomic) IBOutlet UILabel *todayTitle;
+@property (strong, nonatomic) IBOutlet UILabel *weekdayTitle;
+@property (strong, nonatomic) IBOutlet UILabel *weekendTitle;
 @end

@@ -62,9 +62,12 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="navBarItem" destination="Nrp-Og-eD5" id="gLk-8l-ScE"/>
+                        <segue destination="8Eo-BO-U56" kind="unwind" identifier="destination" unwindAction="destinationUnwindToViewController:" id="Vr1-jN-ej2"/>
+                        <segue destination="8Eo-BO-U56" kind="unwind" identifier="source" unwindAction="sourceUnwindToViewController:" id="Hdf-Xl-65z"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfi-Gs-1im" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8Eo-BO-U56" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3752" y="-1181"/>
         </scene>
@@ -189,6 +192,13 @@
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need Internet Access for data. Sorry :(" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-KQ-6jq">
+                                        <rect key="frame" x="9" y="196" width="305" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8j3-xO-6J5" userLabel="ShowTimesView">
@@ -270,20 +280,25 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="FacilitiesView" destination="4Pc-4R-mtK" id="q7e-Fw-g43"/>
+                        <outlet property="HoursTitle" destination="iWF-HZ-awu" id="gfn-wx-vHB"/>
                         <outlet property="HoursView" destination="1FU-HV-MUJ" id="EIa-Vb-PDG"/>
                         <outlet property="ShowTimesView" destination="8j3-xO-6J5" id="9gk-NA-Vjd"/>
                         <outlet property="facilitiesTable" destination="sbJ-pY-lis" id="2D9-wU-9LP"/>
+                        <outlet property="noInternetView" destination="8a1-KQ-6jq" id="uiH-vL-UKi"/>
                         <outlet property="segmentedControl" destination="m7E-hr-JIq" id="5sG-rh-DYe"/>
                         <outlet property="showsTable" destination="NK1-cj-j1n" id="b59-jJ-AZD"/>
                         <outlet property="today" destination="j4i-Vl-cIA" id="ChC-Mi-NOK"/>
+                        <outlet property="todayTitle" destination="dy0-Oz-1rE" id="Ff5-a9-t7E"/>
                         <outlet property="weekday" destination="yLa-5a-Vrn" id="IYD-3u-olE"/>
+                        <outlet property="weekdayTitle" destination="K04-Ry-gdO" id="1qa-8Q-u9c"/>
                         <outlet property="weekend" destination="ugc-Dy-RPE" id="RbI-Kj-iGL"/>
+                        <outlet property="weekendTitle" destination="rM0-DJ-hDi" id="fmK-Cg-5xH"/>
                         <segue destination="Ubn-9S-Wlv" kind="push" identifier="toNavigationView" id="0dy-Dm-Q40"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUa-wT-tuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2679" y="-1250"/>
+            <point key="canvasLocation" x="2687" y="-1250"/>
         </scene>
         <!--Facility Detail View Controller - Detail Facility-->
         <scene sceneID="2eD-Vx-V5X">
@@ -649,19 +664,19 @@ We Value
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content="Prof. Michael Woodley">
+                                            <fragment content="Prof. Michael Woodley ">
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content="  Team Members  ">
+                                            <fragment content="   Team Members  ">
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="HelveticaNeue"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment content="Ahaan Ugale Lucas Qiu Paul Curry Rohan Shah Smit Patel">
+                                            <fragment content="Ahaan Ugale Lucas Qiu Paul Curry Rohan Shah  Smit Patel">
                                                 <attributes>
                                                     <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
                                                     <font key="NSOriginalFont" size="24" name="HelveticaNeue-Bold"/>
@@ -1002,7 +1017,7 @@ We Value
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJX-Cr-BTI" customClass="CustomButton">
-                                <rect key="frame" x="94" y="319" width="132" height="48"/>
+                                <rect key="frame" x="94" y="273" width="132" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Locate Me!">
@@ -1099,7 +1114,7 @@ We Value
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="JOX-VC-a77"/>
+        <segue reference="0dy-Dm-Q40"/>
         <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>
