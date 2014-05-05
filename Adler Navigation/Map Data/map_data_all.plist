@@ -1543,7 +1543,6 @@
 		<integer>20</integer>
 		<key>adjacent</key>
 		<array>
-			<string>getout</string>
 			<string>getout27</string>
 			<string>getout33</string>
 			<string>getoutMain</string>
