@@ -95,15 +95,14 @@
 		72714FC619124706002D39CA /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FC519124706002D39CA /* PageContentViewController.m */; };
 		72714FD119124A86002D39CA /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72714FD019124A86002D39CA /* TutorialViewController.m */; };
 		727A228518F092ED005DF50E /* Exhibit.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A228418F092ED005DF50E /* Exhibit.m */; };
-		72BEAE221916E243000CF7D3 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE1D1916E243000CF7D3 /* code.png */; };
-		72BEAE231916E243000CF7D3 /* exhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE1E1916E243000CF7D3 /* exhi.png */; };
-		72BEAE241916E243000CF7D3 /* faci.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE1F1916E243000CF7D3 /* faci.png */; };
-		72BEAE251916E243000CF7D3 /* hours.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE201916E243000CF7D3 /* hours.png */; };
-		72BEAE261916E243000CF7D3 /* hp.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE211916E243000CF7D3 /* hp.png */; };
-		72BEAE291916E448000CF7D3 /* navi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE271916E448000CF7D3 /* navi.png */; };
-		72BEAE2A1916E448000CF7D3 /* showtimes.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BEAE281916E448000CF7D3 /* showtimes.png */; };
 		72D5FAE81915CCFF006207E7 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D5FAE71915CCFF006207E7 /* about.png */; };
-		72D5FAEB1916001C006207E7 /* FAQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D5FAEA1916001C006207E7 /* FAQViewController.m */; };
+		72DDE9C019170DD5000E0B2F /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9B919170DD5000E0B2F /* code.png */; };
+		72DDE9C119170DD5000E0B2F /* exhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9BA19170DD5000E0B2F /* exhi.png */; };
+		72DDE9C219170DD5000E0B2F /* faci.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9BB19170DD5000E0B2F /* faci.png */; };
+		72DDE9C319170DD5000E0B2F /* hours.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9BC19170DD5000E0B2F /* hours.png */; };
+		72DDE9C419170DD5000E0B2F /* hp.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9BD19170DD5000E0B2F /* hp.png */; };
+		72DDE9C519170DD5000E0B2F /* navi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9BE19170DD5000E0B2F /* navi.png */; };
+		72DDE9C619170DD5000E0B2F /* shows.png in Resources */ = {isa = PBXBuildFile; fileRef = 72DDE9BF19170DD5000E0B2F /* shows.png */; };
 		72DF6DF218F0BEE200B7B6F6 /* lower_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */; };
 		72DF6DF318F0BEE200B7B6F6 /* lower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE118F0BEE200B7B6F6 /* lower.pdf */; };
 		72DF6DF518F0BEE200B7B6F6 /* map_data_all.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DE318F0BEE200B7B6F6 /* map_data_all.plist */; };
@@ -114,9 +113,10 @@
 		72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */; };
 		72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEE18F0BEE200B7B6F6 /* top.pdf */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
+		F34B278E1916F96A0003FE8C /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F34B278D1916F96A0003FE8C /* CustomButton.m */; };
 		FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BD18F3692800319486 /* downstairs.pdf */; };
 		FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BE18F3692800319486 /* upstairs.pdf */; };
-		FE5C87E918D63449009E2CC2 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* NavigationViewController.m */; };
+		FE5C87E918D63449009E2CC2 /* NavigationInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87E618D63449009E2CC2 /* NavigationInputViewController.m */; };
 		FE5C87F718D634C3009E2CC2 /* EachFloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */; };
 		FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */; };
 		FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */; };
@@ -250,16 +250,14 @@
 		727A228318F092ED005DF50E /* Exhibit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exhibit.h; path = Model/Exhibit.h; sourceTree = "<group>"; };
 		727A228418F092ED005DF50E /* Exhibit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exhibit.m; path = Model/Exhibit.m; sourceTree = "<group>"; };
 		728FD49F18D0F66D0073C43F /* comparable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = comparable.h; sourceTree = "<group>"; };
-		72BEAE1D1916E243000CF7D3 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
-		72BEAE1E1916E243000CF7D3 /* exhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exhi.png; sourceTree = "<group>"; };
-		72BEAE1F1916E243000CF7D3 /* faci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faci.png; sourceTree = "<group>"; };
-		72BEAE201916E243000CF7D3 /* hours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hours.png; sourceTree = "<group>"; };
-		72BEAE211916E243000CF7D3 /* hp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hp.png; sourceTree = "<group>"; };
-		72BEAE271916E448000CF7D3 /* navi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi.png; sourceTree = "<group>"; };
-		72BEAE281916E448000CF7D3 /* showtimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showtimes.png; sourceTree = "<group>"; };
 		72D5FAE71915CCFF006207E7 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
-		72D5FAE91916001C006207E7 /* FAQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAQViewController.h; sourceTree = "<group>"; };
-		72D5FAEA1916001C006207E7 /* FAQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAQViewController.m; sourceTree = "<group>"; };
+		72DDE9B919170DD5000E0B2F /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		72DDE9BA19170DD5000E0B2F /* exhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exhi.png; sourceTree = "<group>"; };
+		72DDE9BB19170DD5000E0B2F /* faci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faci.png; sourceTree = "<group>"; };
+		72DDE9BC19170DD5000E0B2F /* hours.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hours.png; sourceTree = "<group>"; };
+		72DDE9BD19170DD5000E0B2F /* hp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hp.png; sourceTree = "<group>"; };
+		72DDE9BE19170DD5000E0B2F /* navi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi.png; sourceTree = "<group>"; };
+		72DDE9BF19170DD5000E0B2F /* shows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shows.png; sourceTree = "<group>"; };
 		72DF6DE018F0BEE200B7B6F6 /* lower_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = lower_paths.pdf; path = "Map Data/lower_paths.pdf"; sourceTree = "<group>"; };
 		72DF6DE118F0BEE200B7B6F6 /* lower.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = lower.pdf; path = "Map Data/lower.pdf"; sourceTree = "<group>"; };
 		72DF6DE318F0BEE200B7B6F6 /* map_data_all.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = map_data_all.plist; path = "Map Data/map_data_all.plist"; sourceTree = "<group>"; };
@@ -270,11 +268,13 @@
 		72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top_paths.pdf; path = "Map Data/top_paths.pdf"; sourceTree = "<group>"; };
 		72DF6DEE18F0BEE200B7B6F6 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top.pdf; path = "Map Data/top.pdf"; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F34B278C1916F96A0003FE8C /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		F34B278D1916F96A0003FE8C /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		FE3AE8BD18F3692800319486 /* downstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = downstairs.pdf; sourceTree = "<group>"; };
 		FE3AE8BE18F3692800319486 /* upstairs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = upstairs.pdf; sourceTree = "<group>"; };
-		FE5C87E618D63449009E2CC2 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		FE5C87E618D63449009E2CC2 /* NavigationInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationInputViewController.m; sourceTree = "<group>"; };
 		FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachFloorViewController.h; sourceTree = "<group>"; };
-		FE5C87E818D63449009E2CC2 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		FE5C87E818D63449009E2CC2 /* NavigationInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationInputViewController.h; sourceTree = "<group>"; };
 		FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachFloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EB18D634C3009E2CC2 /* FloorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorViewController.m; sourceTree = "<group>"; };
 		FE5C87EC18D634C3009E2CC2 /* FloorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorViewController.h; sourceTree = "<group>"; };
@@ -365,16 +365,18 @@
 		30E50259183607E100BCDA41 /* Adler Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F34B278C1916F96A0003FE8C /* CustomButton.h */,
+				F34B278D1916F96A0003FE8C /* CustomButton.m */,
 				30E50262183607E100BCDA41 /* AppDelegate.h */,
 				30E50263183607E100BCDA41 /* AppDelegate.m */,
 				72714FB719123AF2002D39CA /* AboutViewController.h */,
 				72714FB819123AF2002D39CA /* AboutViewController.m */,
 				FE8D8694190F3519002CCE9A /* AboutDetailsViewController.h */,
 				FE8D8695190F3519002CCE9A /* AboutDetailsViewController.m */,
-				FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */,
 				FE5C87E718D63449009E2CC2 /* EachFloorViewController.h */,
-				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
+				FE5C87EA18D634C3009E2CC2 /* EachFloorViewController.m */,
 				FE5C87F118D634C3009E2CC2 /* EachMapViewController.h */,
+				FE5C87EF18D634C3009E2CC2 /* EachMapViewController.m */,
 				FE9F45DF1910FD8C00B8CC6C /* EnterCodeViewController.h */,
 				FE9F45E01910FD8D00B8CC6C /* EnterCodeViewController.m */,
 				720700DD18F8F2C400B17AD3 /* ExhibitViewController.h */,
@@ -626,8 +628,13 @@
 		72BEAE1C1916E216000CF7D3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				72BEAE271916E448000CF7D3 /* navi.png */,
-				72BEAE281916E448000CF7D3 /* showtimes.png */,
+				72DDE9B919170DD5000E0B2F /* code.png */,
+				72DDE9BA19170DD5000E0B2F /* exhi.png */,
+				72DDE9BB19170DD5000E0B2F /* faci.png */,
+				72DDE9BC19170DD5000E0B2F /* hours.png */,
+				72DDE9BD19170DD5000E0B2F /* hp.png */,
+				72DDE9BE19170DD5000E0B2F /* navi.png */,
+				72DDE9BF19170DD5000E0B2F /* shows.png */,
 				72D5FAE71915CCFF006207E7 /* about.png */,
 				72714FBC19124286002D39CA /* Adler_Intro.pdf */,
 				FE9F45F01911FFEA00B8CC6C /* galileo_menu_2014.pdf */,
@@ -638,11 +645,6 @@
 				FEA4A88D18F4E0D900A01AA8 /* blue.png */,
 				FE5C87F618D634C3009E2CC2 /* Home.jpg */,
 				7269812A1907658D003D3C60 /* home2.png */,
-				72BEAE1D1916E243000CF7D3 /* code.png */,
-				72BEAE1E1916E243000CF7D3 /* exhi.png */,
-				72BEAE1F1916E243000CF7D3 /* faci.png */,
-				72BEAE201916E243000CF7D3 /* hours.png */,
-				72BEAE211916E243000CF7D3 /* hp.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -757,7 +759,6 @@
 				720700DB18F8F28800B17AD3 /* cla_short.txt in Resources */,
 				726E85A11903C8A6007F5803 /* sfm_name.txt in Resources */,
 				726E85921903B332007F5803 /* tele_short.txt in Resources */,
-				72BEAE291916E448000CF7D3 /* navi.png in Resources */,
 				726E85771903B332007F5803 /* hist0.png in Resources */,
 				FE8D8698190F4780002CCE9A /* uiuc_logo.png in Resources */,
 				726E85721903B332007F5803 /* cyb_long.txt in Resources */,
@@ -778,14 +779,14 @@
 				FE9F45EC1911F5DA00B8CC6C /* store.jpg in Resources */,
 				72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */,
 				726E857C1903B332007F5803 /* solar2.jpg in Resources */,
-				72BEAE2A1916E448000CF7D3 /* showtimes.png in Resources */,
 				726E85911903B332007F5803 /* tele_long.txt in Resources */,
 				726E85A91903C8CA007F5803 /* ast_name.txt in Resources */,
 				726E858E1903B332007F5803 /* sund_long.txt in Resources */,
 				726E857F1903B332007F5803 /* solar5.jpg in Resources */,
-				72BEAE261916E243000CF7D3 /* hp.png in Resources */,
 				FE9F45EA1911F5CD00B8CC6C /* cafe.jpg in Resources */,
 				726E85751903B332007F5803 /* hid_long.txt in Resources */,
+				72DDE9C619170DD5000E0B2F /* shows.png in Resources */,
+				72DDE9C219170DD5000E0B2F /* faci.png in Resources */,
 				726E85801903B332007F5803 /* solar6.jpg in Resources */,
 				726E857A1903B332007F5803 /* solar0.png in Resources */,
 				72DF6DF318F0BEE200B7B6F6 /* lower.pdf in Resources */,
@@ -797,15 +798,17 @@
 				72DF6DF818F0BEE200B7B6F6 /* mid.pdf in Resources */,
 				726E85841903B332007F5803 /* pe_long.txt in Resources */,
 				726E85791903B332007F5803 /* hist_short.txt in Resources */,
+				72DDE9C319170DD5000E0B2F /* hours.png in Resources */,
+				72DDE9C419170DD5000E0B2F /* hp.png in Resources */,
 				726E85821903B332007F5803 /* solar_short.txt in Resources */,
 				726E85831903B332007F5803 /* pe0.png in Resources */,
-				72BEAE221916E243000CF7D3 /* code.png in Resources */,
 				72DF6DF718F0BEE200B7B6F6 /* mid_paths.pdf in Resources */,
 				7269812B1907658D003D3C60 /* home2.png in Resources */,
 				726E85871903B332007F5803 /* sfm_long.txt in Resources */,
 				726E85741903B332007F5803 /* hid0.jpg in Resources */,
 				726E85A71903C8C4007F5803 /* unv_name.txt in Resources */,
 				726E85941903B332007F5803 /* unv_long.txt in Resources */,
+				72DDE9C019170DD5000E0B2F /* code.png in Resources */,
 				72DF6DFB18F0BEE200B7B6F6 /* star_paths.pdf in Resources */,
 				726E859F1903C89B007F5803 /* pe_name.txt in Resources */,
 				726E85901903B332007F5803 /* tele0.png in Resources */,
@@ -816,23 +819,22 @@
 				72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */,
 				726E857B1903B332007F5803 /* solar1.jpg in Resources */,
 				726E858D1903B332007F5803 /* sund4.jpg in Resources */,
-				72BEAE251916E243000CF7D3 /* hours.png in Resources */,
 				726E85811903B332007F5803 /* solar_long.txt in Resources */,
 				304998E71915CD19003C7AAA /* leftexit_to_obs.pdf in Resources */,
 				726E85731903B332007F5803 /* cyb_short.txt in Resources */,
 				30E50269183607E100BCDA41 /* Images.xcassets in Resources */,
+				72DDE9C119170DD5000E0B2F /* exhi.png in Resources */,
 				726E85A51903C8BA007F5803 /* tele_name.txt in Resources */,
 				FE3AE8C018F3692800319486 /* upstairs.pdf in Resources */,
+				72DDE9C519170DD5000E0B2F /* navi.png in Resources */,
 				726E859D1903C88E007F5803 /* solar_name.txt in Resources */,
 				FE9F45F11911FFEA00B8CC6C /* galileo_menu_2014.pdf in Resources */,
 				726E85931903B332007F5803 /* unv0.png in Resources */,
-				72BEAE231916E243000CF7D3 /* exhi.png in Resources */,
 				726E857E1903B332007F5803 /* solar4.jpg in Resources */,
 				726E859B1903C882007F5803 /* hist_name.txt in Resources */,
 				726E85951903B332007F5803 /* unv_short.txt in Resources */,
 				726E85891903B332007F5803 /* sund0.jpg in Resources */,
 				FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */,
-				72BEAE241916E243000CF7D3 /* faci.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,14 +859,13 @@
 				30E374161858464500996B60 /* PriorityQueue.m in Sources */,
 				FE5C87FC18D634C3009E2CC2 /* MapFloorViewController.m in Sources */,
 				30E50267183607E100BCDA41 /* Adler_Navigation.xcdatamodeld in Sources */,
-				FE5C87E918D63449009E2CC2 /* NavigationViewController.m in Sources */,
+				FE5C87E918D63449009E2CC2 /* NavigationInputViewController.m in Sources */,
 				30E502921836222000BCDA41 /* Edge.m in Sources */,
 				726E853F19039777007F5803 /* ImageViewController.m in Sources */,
 				FE5C87FD18D634C3009E2CC2 /* HomeViewController.m in Sources */,
 				72714FD119124A86002D39CA /* TutorialViewController.m in Sources */,
 				FE5C87FA18D634C3009E2CC2 /* EachMapViewController.m in Sources */,
 				72714FB919123AF2002D39CA /* AboutViewController.m in Sources */,
-				72D5FAEB1916001C006207E7 /* FAQViewController.m in Sources */,
 				30E502951836263100BCDA41 /* MapGraph.m in Sources */,
 				30E3740B18403EAB00996B60 /* MapViewController.m in Sources */,
 				720700DF18F8F2C400B17AD3 /* ExhibitViewController.m in Sources */,
@@ -875,6 +876,7 @@
 				FE9F45E41911EF9200B8CC6C /* FacilityDetailViewController.m in Sources */,
 				727A228518F092ED005DF50E /* Exhibit.m in Sources */,
 				FE9F45EF1911FF6C00B8CC6C /* MenuViewController.m in Sources */,
+				F34B278E1916F96A0003FE8C /* CustomButton.m in Sources */,
 				FED8ED8918F76290005A285B /* InfoViewController.m in Sources */,
 				FE8D8696190F3519002CCE9A /* AboutDetailsViewController.m in Sources */,
 				FE5C87F818D634C3009E2CC2 /* FloorViewController.m in Sources */,

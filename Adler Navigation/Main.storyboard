@@ -198,7 +198,7 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxB-it-UX5">
                                         <rect key="frame" x="0.0" y="15" width="320" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NK1-cj-j1n">
@@ -242,7 +242,7 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b26-ca-vKd">
                                         <rect key="frame" x="0.0" y="-21" width="320" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -308,7 +308,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-Of-a59">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6g-Of-a59" customClass="CustomButton">
                                 <rect key="frame" x="96" y="480" width="129" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
@@ -320,23 +320,23 @@
                                     <segue destination="Ubn-9S-Wlv" kind="push" identifier="takeToFacility" id="kbg-Hk-ZC9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09R-qP-9qT">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09R-qP-9qT" customClass="CustomButton">
                                 <rect key="frame" x="106" y="442" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="View Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0053233662489999998" green="0.0018636604199999999" blue="0.061587126360000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="eAa-qS-fNt" kind="push" identifier="viewMenu" id="tez-14-0JG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-Bi-Qwz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-Bi-Qwz" customClass="CustomButton">
                                 <rect key="frame" x="84" y="442" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="View Online Store">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0053233662489999998" green="0.0018636604199999999" blue="0.061587126360000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="viewOnlineStore" destination="YwU-uU-Kal" eventType="touchUpInside" id="ssm-NF-jOc"/>
@@ -524,65 +524,13 @@
                     <navigationItem key="navigationItem" id="sDf-H8-otX"/>
                     <connections>
                         <segue destination="VNH-8P-ZFL" kind="push" identifier="getSponsors" id="9qI-XO-kTR"/>
-                        <segue destination="pbQ-jD-liQ" kind="push" identifier="getFAQ" id="4ek-vq-gJz"/>
                         <segue destination="0Zc-5M-HhX" kind="push" identifier="getTutorial" id="OIL-uy-3Zn"/>
+                        <segue destination="VNH-8P-ZFL" kind="push" identifier="getFAQ" id="8vf-cB-osh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8O-no-efp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3207" y="932"/>
-        </scene>
-        <!--View Controller - FAQ-->
-        <scene sceneID="UDG-5w-YRY">
-            <objects>
-                <viewController id="pbQ-jD-liQ" customClass="FAQViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3vF-pW-4mH"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZmT-wv-CEe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="psK-P7-bRt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-V7-9iT">
-                                <rect key="frame" x="0.0" y="66" width="320" height="451"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Frequently Asked Questions
-
-Q: When did the Adler first open?
-A: May 12, 1930 was the Adler’s opening date, and Max Adler's 64th birthday.
-
-Q: What is the building made of?
-A: The exterior of the twelve-sided polygon (dodecagon) original building is made of St. Cloud (Minnesota) Rainbow Granite. The granite from the 1929 construction and the 1999 Sky Pavilion both came from the same vein in a Cold Spring, Minnesota quarry. They match perfectly!  The dome is copper. The front doors are bronze and nickel bronze set with beveled glass. The setting sun shines through the beveled glass, which refracts the rays creating a rainbow effect in the Main Lobby. 
-
-Q: How tall is the building?
-A: The original building sits on a terrace several feet above ground level. From the sidewalk to the top of the original dome is just under 90-feet. There have been several additions and modifications to the museum over its lifetime, above ground and underground. The most significant addition, the Sky Pavilion, is a 60,000-square foot glass and steel structure that opened in 1999. Many of the offices and research quarters at the Adler are literally under the road leading to the planetarium.  All areas of the Adler add up to just over 145,500 square feet. Impress your friends when you tell them that there are 1,387 separate pieces of glass on the upper level of the Sky Pavilion. 
-
-Q: What is planetarium's historical significance?
-A: It was the first modern planetarium in the Western Hemisphere and houses one of the world's finest collections of antique astronomical instruments including sundials, telescopes, astrolabes and more. Some of the oldest artifacts date back to the twelfth century. You can learn more about our collection on our collections page.
-
-Q: What is Adler's mission?
-The mission of the Adler is to inspire exploration and understanding of our Universe.
-We Value
-	•	An engaging, user-friendly museum serving diverse audiences
-	•	Excitement and curiosity about space science and space exploration
-	•	Programs based on credible science and educational research
-	•	Well-managed collections
-	•	Adherence to results-oriented planning
-	•	A professional work environment and highly motivated, diverse staff
-	•	Long-term financial stability and the economic viability of our endeavors.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="FAQ" id="0yc-wu-2Ka"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RwF-NT-DrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3744" y="1618"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="UAB-hU-E2u">
@@ -682,6 +630,37 @@ We Value
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </webView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VT-Jz-BWp">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <mutableString key="text">Frequently Asked Questions
+
+Q: When did the Adler first open?
+A: May 12, 1930 was the Adler’s opening date, and Max Adler's 64th birthday.
+
+Q: What is the building made of?
+A: The exterior of the twelve-sided polygon (dodecagon) original building is made of St. Cloud (Minnesota) Rainbow Granite. The granite from the 1929 construction and the 1999 Sky Pavilion both came from the same vein in a Cold Spring, Minnesota quarry. They match perfectly!  The dome is copper. The front doors are bronze and nickel bronze set with beveled glass. The setting sun shines through the beveled glass, which refracts the rays creating a rainbow effect in the Main Lobby. 
+
+Q: How tall is the building?
+A: The original building sits on a terrace several feet above ground level. From the sidewalk to the top of the original dome is just under 90-feet. There have been several additions and modifications to the museum over its lifetime, above ground and underground. The most significant addition, the Sky Pavilion, is a 60,000-square foot glass and steel structure that opened in 1999. Many of the offices and research quarters at the Adler are literally under the road leading to the planetarium.  All areas of the Adler add up to just over 145,500 square feet. Impress your friends when you tell them that there are 1,387 separate pieces of glass on the upper level of the Sky Pavilion. 
+
+Q: What is planetarium's historical significance?
+A: It was the first modern planetarium in the Western Hemisphere and houses one of the world's finest collections of antique astronomical instruments including sundials, telescopes, astrolabes and more. Some of the oldest artifacts date back to the twelfth century. You can learn more about our collection on our collections page.
+
+Q: What is Adler's mission?
+The mission of the Adler is to inspire exploration and understanding of our Universe.
+We Value
+	•	An engaging, user-friendly museum serving diverse audiences
+	•	Excitement and curiosity about space science and space exploration
+	•	Programs based on credible science and educational research
+	•	Well-managed collections
+	•	Adherence to results-oriented planning
+	•	A professional work environment and highly motivated, diverse staff
+	•	Long-term financial stability and the economic viability of our endeavors.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                             </view>
                         </subviews>
@@ -743,12 +722,12 @@ We Value
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcD-D5-mPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4599" y="932"/>
+            <point key="canvasLocation" x="4623" y="1618"/>
         </scene>
-        <!--Navigation View Controller - Navigation-->
+        <!--Navigation Input View Controller - Navigation-->
         <scene sceneID="4Du-NY-UXA">
             <objects>
-                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="NavigationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="prepareNavigate" id="Ubn-9S-Wlv" customClass="NavigationInputViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PFr-52-9ci"/>
                         <viewControllerLayoutGuide type="bottom" id="hN8-Z7-dws"/>
@@ -775,10 +754,10 @@ We Value
                                     <segue destination="9wA-nO-xUJ" kind="push" identifier="DestinationTableView" id="dCW-N5-2nI"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scW-Dc-VgU">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scW-Dc-VgU" customClass="CustomButton">
                                 <rect key="frame" x="87" y="418" width="147" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Get Directions">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -799,10 +778,10 @@ We Value
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khf-Eo-9Il">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khf-Eo-9Il" customClass="CustomButton">
                                 <rect key="frame" x="101" y="176" width="119" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <state key="normal" title="Or Enter Code">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -939,19 +918,18 @@ We Value
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" tag="50" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ak2-H7-WdQ">
-                                <rect key="frame" x="0.0" y="66" width="320" height="303"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="223"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVX-N4-yDQ">
-                                <rect key="frame" x="0.0" y="368" width="320" height="108"/>
+                                <rect key="frame" x="0.0" y="290" width="320" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolmollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEe-BL-xLa">
-                                <rect key="frame" x="94" y="484" width="133" height="31"/>
+                                <rect key="frame" x="94" y="470" width="133" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
@@ -1002,7 +980,7 @@ We Value
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJX-Cr-BTI">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJX-Cr-BTI" customClass="CustomButton">
                                 <rect key="frame" x="94" y="319" width="132" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
@@ -1100,7 +1078,8 @@ We Value
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="dCW-N5-2nI"/>
+        <segue reference="8vf-cB-osh"/>
         <segue reference="JOX-VC-a77"/>
+        <segue reference="dCW-N5-2nI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,7 +7,7 @@
 //
 
 #import "EnterCodeViewController.h"
-#import "NavigationViewController.h"
+#import "NavigationInputViewController.h"
 
 @interface EnterCodeViewController ()
 
@@ -19,10 +19,6 @@
 {
     [super viewDidLoad];
     _inputField.keyboardType = UIKeyboardTypeNumberPad;
-    
-    UIButton *btn = (UIButton *)[self.view viewWithTag:1];
-    btn.layer.borderWidth = 1.5f;
-    btn.layer.cornerRadius = 9.0f;
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,7 +60,7 @@
     NSString * filePath = [[NSBundle mainBundle] pathForResource:@"map_data_all" ofType:@"plist"];
     NSArray * nodeDataArray = [[NSArray alloc] initWithContentsOfFile:filePath];
     int index = [_inputField.text intValue];
-    NavigationViewController * vc = [segue destinationViewController];
+    NavigationInputViewController * vc = [segue destinationViewController];
     
     vc.data = [nodeDataArray[index] objectForKey:@"uid"];
 }

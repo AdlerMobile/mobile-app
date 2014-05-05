@@ -11,7 +11,7 @@
  * This View Controller Allows user to select their current location and destination. 
  * Sends the user inputs to display the path from source to destionation.
  */
-@interface NavigationViewController : UIViewController <UITextFieldDelegate>
+@interface NavigationInputViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *source; // my location.
 @property (strong, nonatomic) IBOutlet UITextField *destination; // my destination.
