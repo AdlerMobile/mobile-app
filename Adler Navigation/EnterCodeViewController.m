@@ -19,10 +19,6 @@
 {
     [super viewDidLoad];
     _inputField.keyboardType = UIKeyboardTypeNumberPad;
-    
-    UIButton *btn = (UIButton *)[self.view viewWithTag:1];
-    btn.layer.borderWidth = 1.5f;
-    btn.layer.cornerRadius = 9.0f;
 }
 
 - (void)didReceiveMemoryWarning
