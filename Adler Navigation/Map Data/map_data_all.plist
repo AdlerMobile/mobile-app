@@ -202,7 +202,7 @@
 			<string>left_exitnode</string>
 			<string>travel1</string>
 			<string>travel2</string>
-            <string>ATM</string>
+			<string>ATM</string>
 		</array>
 	</dict>
 	<dict>
@@ -444,8 +444,8 @@
 		<key>adjacent</key>
 		<array>
 			<string>Men&apos;s Restroom Mid Level</string>
-			<string>travel9</string>
-			<string>left_exitnode</string>
+			<string>travel9^^Walk towards the women&apos;s restroom</string>
+			<string>left_exitnode^^Walk towards the stairs</string>
 		</array>
 	</dict>
 	<dict>
@@ -462,11 +462,11 @@
 		<key>adjacent</key>
 		<array>
 			<string>Women&apos;s Restroom Mid Level</string>
-			<string>travel8</string>
-            <string>traveltemp</string>
+			<string>travel8^^Walk towards the stairs</string>
+			<string>traveltemp</string>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>
@@ -479,12 +479,11 @@
 		<integer>250</integer>
 		<key>adjacent</key>
 		<array>
-			<string>travel9</string>
-            <string>getout</string>
+			<string>travel9^^Walk towards the restroom</string>
+			<string>getout^^Walk towards the exit</string>
 		</array>
 	</dict>
-    
-    <dict>
+	<dict>
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>
@@ -500,7 +499,6 @@
 			<string>traveltemp</string>
 		</array>
 	</dict>
-
 	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
@@ -564,10 +562,10 @@
 		<integer>127</integer>
 		<key>adjacent</key>
 		<array>
-			<string>right_exitnode</string>
+			<string>right_exitnode^^Walk towards the stairs</string>
 			<string>Men&apos;s Restroom South Side</string>
-			<string>travel12</string>
-			<string>travel11</string>
+			<string>travel12^^Walk towards the red wall</string>
+			<string>travel11^^Go through the passage across from the restrooms</string>
 		</array>
 	</dict>
 	<dict>
@@ -583,7 +581,7 @@
 		<integer>117</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Lockers</string>
+			<string>Lockers^^Walk towards the restroom</string>
 			<string>Classroom B</string>
 			<string>Vending</string>
 		</array>
@@ -666,9 +664,9 @@
 		<integer>195</integer>
 		<key>adjacent</key>
 		<array>
-			<string>Education Pavilion</string>
+			<string>Education Pavilion^^Walk towards the red wall</string>
 			<string>Women&apos;s Restroom South Side</string>
-			<string>travel13</string>
+			<string>travel13^^Walk towards Classroom A</string>
 			<string>Lockers</string>
 		</array>
 	</dict>
@@ -719,10 +717,10 @@
 		<integer>244</integer>
 		<key>adjacent</key>
 		<array>
-			<string>South Entrance</string>
-            <string>getoutSouth</string>
-			<string>South Elevator</string>
-			<string>travel12</string>
+			<string>South Entrance^^Walk to the revolving door</string>
+			<string>getoutSouth</string>
+			<string>South Elevator^^Walk towards the glass wall</string>
+			<string>travel12^^Walk towards the restroom</string>
 		</array>
 	</dict>
 	<dict>
@@ -741,7 +739,7 @@
 			<string>Education Pavilion</string>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>
@@ -1260,10 +1258,10 @@
 		<key>adjacent</key>
 		<array>
 			<string>Coat Check</string>
-            <string>Box Office</string>
+			<string>Box Office</string>
 			<string>travel30</string>
 			<string>Main Entrance</string>
-            <string>getoutMain</string>
+			<string>getoutMain</string>
 		</array>
 	</dict>
 	<dict>
@@ -1283,7 +1281,7 @@
 			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>isSourceOrDestination</key>
 		<true/>
 		<key>uid</key>
@@ -1316,7 +1314,7 @@
 			<string>travel20</string>
 			<string>travel21</string>
 			<string>Coat Check</string>
-            <string>Box Office</string>
+			<string>Box Office</string>
 		</array>
 	</dict>
 	<dict>
@@ -1511,7 +1509,7 @@
 			<string>Rainbow Lobby</string>
 		</array>
 	</dict>
-    <dict>
+	<dict>
 		<key>isSourceOrDestination</key>
 		<false/>
 		<key>uid</key>

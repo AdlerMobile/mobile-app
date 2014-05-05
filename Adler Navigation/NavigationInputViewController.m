@@ -9,7 +9,7 @@
 #import "NavigationInputViewController.h"
 #import "FloorViewController.h"
 #import "EachFloorViewController.h"
-#import "NavigateTableViewController.h"
+#import "NavigationController.h"
 #import "MapGraph.h"
 
 @interface NavigationInputViewController ()
@@ -120,7 +120,7 @@
     
     else if ([[segue identifier] isEqualToString:@"Navigate"])
     {
-        NavigateTableViewController * navigate = [segue destinationViewController];
+        NavigationController * navigate = [segue destinationViewController];
 
         navigate.source = _source.text;
         navigate.destination = _destination.text;
