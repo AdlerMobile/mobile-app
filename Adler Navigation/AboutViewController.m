@@ -121,11 +121,11 @@
         AboutDetailsViewController * vc = [segue destinationViewController];
         vc.data = @"getSponsors";
     }
-//    if ([[segue identifier] isEqualToString:@"getFAQ"])
-//    {
-//       AboutDetailsViewController * vc = [segue destinationViewController];
-//       vc.data = @"getAdlerIntro";
-//    }
+    if ([[segue identifier] isEqualToString:@"getFAQ"])
+    {
+       AboutDetailsViewController * vc = [segue destinationViewController];
+       vc.data = @"getFAQ";
+    }
 
 }
 
