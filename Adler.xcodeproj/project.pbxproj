@@ -113,6 +113,7 @@
 		72DF6DFF18F0BEE200B7B6F6 /* top_paths.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */; };
 		72DF6E0018F0BEE200B7B6F6 /* top.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72DF6DEE18F0BEE200B7B6F6 /* top.pdf */; };
 		72E9EB3A1918CB89003A8CBF /* long.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E9EB391918CB89003A8CBF /* long.png */; };
+		72E9EB3C1918CBF1003A8CBF /* navi.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E9EB3B1918CBF1003A8CBF /* navi.png */; };
 		B6D85FAF184FC4B9002B33BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D85FAE184FC4B9002B33BF /* Main.storyboard */; };
 		F34B278E1916F96A0003FE8C /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F34B278D1916F96A0003FE8C /* CustomButton.m */; };
 		FE3AE8BF18F3692800319486 /* downstairs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FE3AE8BD18F3692800319486 /* downstairs.pdf */; };
@@ -270,6 +271,7 @@
 		72DF6DED18F0BEE200B7B6F6 /* top_paths.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top_paths.pdf; path = "Map Data/top_paths.pdf"; sourceTree = "<group>"; };
 		72DF6DEE18F0BEE200B7B6F6 /* top.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = top.pdf; path = "Map Data/top.pdf"; sourceTree = "<group>"; };
 		72E9EB391918CB89003A8CBF /* long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long.png; sourceTree = "<group>"; };
+		72E9EB3B1918CBF1003A8CBF /* navi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi.png; sourceTree = "<group>"; };
 		B6D85FAE184FC4B9002B33BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F34B278C1916F96A0003FE8C /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		F34B278D1916F96A0003FE8C /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
@@ -631,6 +633,7 @@
 		72BEAE1C1916E216000CF7D3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				72E9EB3B1918CBF1003A8CBF /* navi.png */,
 				72E9EB391918CB89003A8CBF /* long.png */,
 				722FBDD01917641C000669BB /* hours.png */,
 				72DDE9B919170DD5000E0B2F /* code.png */,
@@ -800,6 +803,7 @@
 				726E85761903B332007F5803 /* hid_short.txt in Resources */,
 				720700DA18F8F28800B17AD3 /* cla_long.txt in Resources */,
 				72DF6DF218F0BEE200B7B6F6 /* lower_paths.pdf in Resources */,
+				72E9EB3C1918CBF1003A8CBF /* navi.png in Resources */,
 				72DF6DF818F0BEE200B7B6F6 /* mid.pdf in Resources */,
 				726E85841903B332007F5803 /* pe_long.txt in Resources */,
 				726E85791903B332007F5803 /* hist_short.txt in Resources */,
