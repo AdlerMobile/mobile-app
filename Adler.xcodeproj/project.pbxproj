@@ -108,7 +108,6 @@
 		728730AA1918CFF40064FB9E /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 7287309A1918CFF40064FB9E /* black.png */; };
 		728730AB1918CFF40064FB9E /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7287309B1918CFF40064FB9E /* blue.png */; };
 		728730AC1918CFF40064FB9E /* cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7287309C1918CFF40064FB9E /* cafe.jpg */; };
-		728730AD1918CFF40064FB9E /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 7287309D1918CFF40064FB9E /* code.png */; };
 		728730AF1918CFF40064FB9E /* Home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7287309F1918CFF40064FB9E /* Home.jpg */; };
 		728730B01918CFF40064FB9E /* home2.png in Resources */ = {isa = PBXBuildFile; fileRef = 728730A01918CFF40064FB9E /* home2.png */; };
 		728730B71918CFF40064FB9E /* store.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 728730A71918CFF40064FB9E /* store.jpg */; };
@@ -268,7 +267,6 @@
 		7287309A1918CFF40064FB9E /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black.png; path = Images/black.png; sourceTree = "<group>"; };
 		7287309B1918CFF40064FB9E /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = Images/blue.png; sourceTree = "<group>"; };
 		7287309C1918CFF40064FB9E /* cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cafe.jpg; path = Images/cafe.jpg; sourceTree = "<group>"; };
-		7287309D1918CFF40064FB9E /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = code.png; path = Images/code.png; sourceTree = "<group>"; };
 		7287309F1918CFF40064FB9E /* Home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Home.jpg; path = Images/Home.jpg; sourceTree = "<group>"; };
 		728730A01918CFF40064FB9E /* home2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home2.png; path = Images/home2.png; sourceTree = "<group>"; };
 		728730A71918CFF40064FB9E /* store.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = store.jpg; path = Images/store.jpg; sourceTree = "<group>"; };
@@ -664,7 +662,6 @@
 				7287309A1918CFF40064FB9E /* black.png */,
 				7287309B1918CFF40064FB9E /* blue.png */,
 				7287309C1918CFF40064FB9E /* cafe.jpg */,
-				7287309D1918CFF40064FB9E /* code.png */,
 				7287309F1918CFF40064FB9E /* Home.jpg */,
 				728730A01918CFF40064FB9E /* home2.png */,
 				728730A71918CFF40064FB9E /* store.jpg */,
@@ -833,7 +830,6 @@
 				726E85941903B332007F5803 /* unv_long.txt in Resources */,
 				728730AB1918CFF40064FB9E /* blue.png in Resources */,
 				728730A91918CFF40064FB9E /* about.png in Resources */,
-				728730AD1918CFF40064FB9E /* code.png in Resources */,
 				72DF6DFB18F0BEE200B7B6F6 /* star_paths.pdf in Resources */,
 				726E859F1903C89B007F5803 /* pe_name.txt in Resources */,
 				726E85901903B332007F5803 /* tele0.png in Resources */,
