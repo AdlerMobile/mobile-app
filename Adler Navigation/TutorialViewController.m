@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	
     _pageTitles = @[@"Get to know Adler",@"Choose your location and desination", @"Enter code to find out where you are", @"View current exhibits Adler has to offer", @"Check the openning hours", @"Make sure you catch the events on time", @"All you need at your fingertips"];
-    _pageImages = @[@"hp.png", @"navi3.png", @"code2.png", @"exhi.png", @"hours.png", @"shows.png", @"faci.png" ];
+    _pageImages = @[@"hp5.png", @"navi5.png", @"code5.png", @"exhi5.png", @"hours5.png", @"shows5.png", @"faci5.png" ];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
@@ -33,7 +33,7 @@
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-30);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-33);
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
