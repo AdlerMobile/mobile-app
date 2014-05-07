@@ -154,14 +154,34 @@
 {
     [[self textDirection] setText:@""];
     
-    if ([n2.id isEqualToString:@"Observatory"]) {
-        NSString *filename;
-        if ([n1.id isEqualToString:@"getout33"] ||[n1.id isEqualToString:@"getoutSouth"]) {
-            filename = @"rightexit_to_obs";
+    if ([n1.id isEqualToString:@"Observatory"] || [n2.id isEqualToString:@"Observatory"]) {
+        Node *exit, *obs;
+        NSString *exitStr, *toOrFrom;
+        
+        if ([n1.id isEqualToString:@"Observatory"]) {
+            obs = n1;
+            exit = n2;
+            toOrFrom = @"from";
         }
         else {
-            filename = @"leftexit_to_obs";
+            obs = n2;
+            exit = n1;
+            toOrFrom = @"to";
         }
+        
+        if ([exit.id isEqualToString:@"getoutMain"]) {
+            exitStr = @"main";
+        }
+        else if ([exit.id isEqualToString:@"getout33"] && [n1.id isEqualToString:@"Observatory"]) {
+            exitStr = @"top_right";
+        }
+        else if ([exit.id isEqualToString:@"getout33"] ||[exit.id isEqualToString:@"getoutSouth"]) {
+            exitStr = @"right";
+        }
+        else {
+            exitStr = @"left";
+        }
+        NSString *filename = [NSString stringWithFormat:@"%@exit_%@_obs", exitStr, toOrFrom];
         NSString *myPdfFilePath  = [[NSBundle mainBundle] pathForResource:filename ofType: @"pdf"];
         NSURL *targetURL = [NSURL fileURLWithPath:myPdfFilePath];
         [view loadRequest:[NSURLRequest requestWithURL:targetURL]];
@@ -272,6 +292,7 @@
     }
     
     if ([self.n1.floor isEqualToString:self.n2.floor]
+        && ![self.n1.id isEqualToString:@"Observatory"]
         && ![self.n2.id isEqualToString:@"Observatory"]) {
         [self copyZoomFrom:[curView scrollView] to:[nextView scrollView]];
     }
@@ -281,6 +302,7 @@
     [curView setHidden:YES];
     
     if ([self.n1.floor isEqualToString:self.n2.floor] && ![self.n1.floor isEqualToString:@"star"]
+         && ![self.n1.id isEqualToString:@"Observatory"]
          && ![self.n2.id isEqualToString:@"Observatory"]) {
         [NSTimer scheduledTimerWithTimeInterval:0 target:self selector:@selector(zoomOnArrow:)
                                        userInfo:nextView repeats:NO];

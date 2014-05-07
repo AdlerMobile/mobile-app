@@ -1543,11 +1543,10 @@
 		<integer>20</integer>
 		<key>adjacent</key>
 		<array>
-			<string>getout</string>
-			<string>getout27</string>
-			<string>getout33</string>
-			<string>getoutMain</string>
-			<string>getoutSouth</string>
+			<string>getout27^^Walk around the planetarium to the entrance near Café Galileo&apos;s.</string>
+			<string>getout33^^Walk around the planetarium and up the stairs to the South Entrance.</string>
+			<string>getoutMain^^Walk around the planetarium to the Main Entrance.</string>
+			<string>getoutSouth^^Walk around the planetarium to the South Entrance.</string>
 		</array>
 	</dict>
 </array>
