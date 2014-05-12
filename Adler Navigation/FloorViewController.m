@@ -12,6 +12,8 @@
 
 @interface FloorViewController ()
 
+@property (strong, nonatomic) NSArray *choices;
+
 @end
 
 @implementation FloorViewController
@@ -25,11 +27,29 @@
     if ([_sourceORDestination isEqualToString:@"1"])
     {
         [_navBarItem setTitle:@"My Location Level"];
+        
+        _choices = @[@"Upper Level",
+                     @"Mid Level",
+                     @"Lower Level",
+                     @"Star Level",
+                     @"Observatory"];
     }
     
     if ([_sourceORDestination isEqualToString:@"2"])
     {
         [_navBarItem setTitle:@"Destionation Level"];
+        
+        _choices = @[@"Upper Level",
+                     @"Mid Level",
+                     @"Lower Level",
+                     @"Star Level",
+                     @"Observatory",
+                     @"Sky Theater",
+                     @"Space Theater",
+                     @"Star Theater",
+                     @"Men's Restroom",
+                     @"Women's Restroom",
+                     @"Facilities"];
     }
 }
 
@@ -51,12 +71,7 @@
  *  @return <#return value description#>
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if ([_sourceORDestination isEqualToString:@"1"])
-    {
-        return 5;
-    }
-    
-    else return 6;
+    return [self.choices count];
 }
 
 /**
@@ -89,29 +104,7 @@
     }
     //Retrieve information form each dictionary in array and display them in labels.
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Upper Level";
-    }
-    
-    if (indexPath.row == 1) {
-        cell.textLabel.text = @"Mid Level";
-    }
-    
-    if (indexPath.row == 2) {
-        cell.textLabel.text = @"Lower Level";
-    }
-    
-    if (indexPath.row == 3) {
-        cell.textLabel.text = @"Star Level";
-    }
-    
-    if (indexPath.row == 4) {
-        cell.textLabel.text = @"Observatory";
-    }
-    
-    if (indexPath.row == 5) {
-        cell.textLabel.text = @"Facilities";
-    }
+    cell.textLabel.text = [self.choices objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -124,7 +117,7 @@
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == 4) {
+    if (indexPath.row >= 4 && indexPath.row <= 9) {
         if ([_sourceORDestination isEqualToString:@"1"]) {
              [self performSegueWithIdentifier:@"source" sender:self];
         }
@@ -162,7 +155,7 @@
         if (myIndexPath.row == 3) {
             ViewController.currentFloor = @"star";
         }
-        if (myIndexPath.row == 5) {
+        if (myIndexPath.row == 10) {
             ViewController.currentFloor = @"facilities";
         }
         
@@ -170,7 +163,10 @@
     
     else {
         NavigationInputViewController * ViewController = [segue destinationViewController];
-        ViewController.data = @"Observatory";
+
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+
+        ViewController.data = [self.choices objectAtIndex:myIndexPath.row];
     }
 }
 
