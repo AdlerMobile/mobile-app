@@ -37,7 +37,7 @@
     
     if ([_sourceORDestination isEqualToString:@"2"])
     {
-        [_navBarItem setTitle:@"Destionation Level"];
+        [_navBarItem setTitle:@"Destination Level"];
         
         _choices = @[@"Upper Level",
                      @"Mid Level",
