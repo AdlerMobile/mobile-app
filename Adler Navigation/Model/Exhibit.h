@@ -11,7 +11,7 @@
 @interface Exhibit : NSObject
 
 @property NSString* ID;
-@property NSString* description;
+@property (strong, nonatomic, readwrite) NSString* description;
 @property NSMutableArray* images;
 
 @end

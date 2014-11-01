@@ -985,7 +985,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.1;
 			};
 			name = Debug;
 		};
@@ -1016,7 +1016,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1059,7 +1059,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1081,7 +1081,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Adler Navigation/Adler Planetarium-Prefix.pch";
+				GCC_PREFIX_HEADER = "Adler Navigation/Adler-Prefix.pch";
 				INFOPLIST_FILE = "Adler NavigationTests/AdlerTests-Info.plist";
 				PRODUCT_NAME = AdlerTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";

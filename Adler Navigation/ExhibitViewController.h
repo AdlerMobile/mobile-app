@@ -11,7 +11,7 @@
 #import "ImageViewController.h"
 
 @interface ExhibitViewController : UITableViewController
-@property (nonatomic, strong) NSMutableArray *exhibits;
+@property (nonatomic, strong, readwrite) NSMutableArray *exhibits;
 @property (strong, nonatomic) ImageViewController *imageViewController;
 @property int exhibitIndex;
 @end

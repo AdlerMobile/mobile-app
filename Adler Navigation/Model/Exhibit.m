@@ -10,4 +10,6 @@
 
 @implementation Exhibit
 
+@synthesize description;
+
 @end
